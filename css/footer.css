@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+.maniera-footer {
+	background: #2f2f2f;
+	color: #ffffff;
+}
+.maniera-footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.maniera-footer .footer-logo h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.maniera-footer .footer-subscription-form div {
+	background: #ffffff;
+}
+.maniera-footer .footer-subscription-form div input {
+	width: 63%;
+	border: none;
+	outline: none;
+}
+
+.maniera-footer .footer-subscription-form div button span {
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.maniera-footer h4 {
+	text-transform: uppercase;
+}
+
+.maniera-footer .footer-btn {
+	background: #e2594e;
+}
