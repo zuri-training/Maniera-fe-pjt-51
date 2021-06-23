@@ -18,18 +18,18 @@
         <div class="wrapper">
             <!-- HEADER START HERE-->
             <header>
-                <h1>Maniera</h1>
+                <h1 class="maniera-home">Maniera</h1>
                 <div class="maniera-nav">
                     <div class="search">
                         <form>
                             <div class="form-group">
-                                <input type="text" name="search" id="" placeholder="Search Clothes..." />
-                                <button class="btn"><i class="fal fa-search"></i></button>
+                                <input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+                                <button class="btn home-search"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
                     </div>
                     <nav>
-                        <ul>
+                        <ul class="main-nav">
                             <li>Categories</li>
                             <li>Cart <span></span></li>
                             <li>My Requests</li>
@@ -43,7 +43,7 @@
             <div class="maniera-hero-content">
                 <div class="hero-text">
                     <h2>Sell your designs at no charge</h2>
-                    <button type="submit" class="btn">Become a seller</button>
+                    <button type="submit" class="btn btn-seller">Become a seller</button>
                     <small>Terms and conditions apply</small>
 
                     <div class="hero-text-date">
@@ -58,121 +58,249 @@
         </div>
         <!-- PAGE HERO ENDS HERE-->
     </div>
-    <div class="wrapper">
-        <div class="top-rated">
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
+    <main>
+        <div class="wrapper">
+            <section class="top-rated">
+                <div class="main-heading">
+                    <h3>Top Rated</h3>
+                    <p>View all</p>
                 </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
+
+                <div class="products-listing">
+                    <div class="product-thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.imgur.com/uZTi0jr.png" alt="maniera-products-listing">
+                        </div>
+                        <h4></h4>
+                        <div class="rated-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(10)</span>
+                        </div>
+                        <div class="category">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <div class="purchase-selector">
+                            <button class="btn-product">Add to cart</button>
+                            <button class="btn-product">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="product-thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.imgur.com/SbFyzI8.png" alt="maniera-products-listing">
+                        </div>
+                        <h4></h4>
+                        <div class="rated-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(10)</span>
+                        </div>
+                        <div class="category">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <div class="purchase-selector">
+                            <button class="btn-product">Add to cart</button>
+                            <button class="btn-product">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="product-thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.imgur.com/w5slyPN.png" alt="maniera-products-listing">
+                        </div>
+                        <h4></h4>
+                        <div class="rated-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(10)</span>
+                        </div>
+                        <div class="category">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <div class="purchase-selector">
+                            <button class="btn-product">Add to cart</button>
+                            <button class="btn-product">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="product-thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.imgur.com/ypGZkF7.png" alt="maniera-products-listing">
+                        </div>
+                        <h4></h4>
+                        <div class="rated-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(10)</span>
+                        </div>
+                        <div class="category">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <div class="purchase-selector">
+                            <button class="btn-product">Add to cart</button>
+                            <button class="btn-product">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="product-thumbnail">
+                        <div class="thumbnail-img">
+                            <img src="https://i.imgur.com/OXsUVNc.png" alt="maniera-products-listing">
+                        </div>
+                        <h4></h4>
+                        <div class="rated-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(10)</span>
+                        </div>
+                        <div class="category">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <div class="purchase-selector">
+                            <button class="btn-product">Add to cart</button>
+                            <button class="btn-product">Buy now</button>
+                        </div>
+                    </div>
+            </section>
+            <section class="newly-added">
+                <div class="main-heading">
+                    <h3>Newly Added</h3>
+                    <p>View all</p>
                 </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
+                <div class="product-thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="" alt="maniera-products-listing">
+                    </div>
+                    <h4></h4>
+                    <div class="rated-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(10)</span>
+                    </div>
+                    <div class="category">
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="purchase-selector">
+                        <button class="btn-product">Add to cart</button>
+                        <button class="btn-product">Buy now</button>
+                    </div>
                 </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
+                <div class="product-thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="" alt="maniera-products-listing">
+                    </div>
+                    <h4></h4>
+                    <div class="rated-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(10)</span>
+                    </div>
+                    <div class="category">
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="purchase-selector">
+                        <button class="btn-product">Add to cart</button>
+                        <button class="btn-product">Buy now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
+                <div class="product-thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="" alt="maniera-products-listing">
+                    </div>
+                    <h4></h4>
+                    <div class="rated-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(10)</span>
+                    </div>
+                    <div class="category">
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="purchase-selector">
+                        <button class="btn-product">Add to cart</button>
+                        <button class="btn-product">Buy now</button>
+                    </div>
                 </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
+                <div class="product-thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="" alt="maniera-products-listing">
+                    </div>
+                    <h4></h4>
+                    <div class="rated-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(10)</span>
+                    </div>
+                    <div class="category">
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="purchase-selector">
+                        <button class="btn-product">Add to cart</button>
+                        <button class="btn-product">Buy now</button>
+                    </div>
                 </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
+                <div class="product-thumbnail">
+                    <div class="thumbnail-img">
+                        <img src="" alt="maniera-products-listing">
+                    </div>
+                    <h4></h4>
+                    <div class="rated-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(10)</span>
+                    </div>
+                    <div class="category">
+                        <span></span>
+                        <p></p>
+                    </div>
+                    <div class="purchase-selector">
+                        <button class="btn-product">Add to cart</button>
+                        <button class="btn-product">Buy now</button>
+                    </div>
                 </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
         </div>
-        <div class="newly-added">
-            <div class="product-thumbail">
+        </section>
+        <section class="recently-viewed">
+            <div class="main-heading">
+                <h3>Recenty Viewed</h3>
+                <p>View all</p>
+            </div>
+            <div class="product-thumbnail">
                 <div class="thumbnail-img">
                     <img src="" alt="maniera-products-listing">
                 </div>
@@ -194,7 +322,7 @@
                     <button class="btn-product">Buy now</button>
                 </div>
             </div>
-            <div class="product-thumbail">
+            <div class="product-thumbnail">
                 <div class="thumbnail-img">
                     <img src="" alt="maniera-products-listing">
                 </div>
@@ -216,7 +344,7 @@
                     <button class="btn-product">Buy now</button>
                 </div>
             </div>
-            <div class="product-thumbail">
+            <div class="product-thumbnail">
                 <div class="thumbnail-img">
                     <img src="" alt="maniera-products-listing">
                 </div>
@@ -238,7 +366,7 @@
                     <button class="btn-product">Buy now</button>
                 </div>
             </div>
-            <div class="product-thumbail">
+            <div class="product-thumbnail">
                 <div class="thumbnail-img">
                     <img src="" alt="maniera-products-listing">
                 </div>
@@ -260,7 +388,7 @@
                     <button class="btn-product">Buy now</button>
                 </div>
             </div>
-            <div class="product-thumbail">
+            <div class="product-thumbnail">
                 <div class="thumbnail-img">
                     <img src="" alt="maniera-products-listing">
                 </div>
@@ -282,120 +410,9 @@
                     <button class="btn-product">Buy now</button>
                 </div>
             </div>
+        </section>
         </div>
-        <div class="recently-viewed">
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-            <div class="product-thumbail">
-                <div class="thumbnail-img">
-                    <img src="" alt="maniera-products-listing">
-                </div>
-                <h4></h4>
-                <div class="rated-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(10)</span>
-                </div>
-                <div class="category">
-                    <span></span>
-                    <p></p>
-                </div>
-                <div class="purchase-selector">
-                    <button class="btn-product">Add to cart</button>
-                    <button class="btn-product">Buy now</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
     <div class="maniera-order">
         <h2>We offer the fastest delivery to your doorstep round the globe</h2>
         <button class="btn-order">Place an order</button>

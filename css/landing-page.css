@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;700;800&display=swap');
 
 * {
     padding: 0;
@@ -8,6 +8,22 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 2.1;
+    color: #222222;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
 }
 
 .wrapper {
@@ -18,15 +34,206 @@ body {
     margin-left: auto;
 }
 
-@media only screen and (min-width: 1200px) {
-    .wrapper {
-        max-width: 1120px;
-    }
+.btn {
+    background-color: #db3022;
 }
 
-@media only screen and (min-width: 992px) {
+/** HEADER SECTION STYLE  **/
+header {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    margin-top: 3rem;
+}
+
+.maniera-home {
+    margin-right: 2rem;
+}
+
+.maniera-nav {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    width: 75%;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-nav li {
+    padding-right: 0.625rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-nav > li > button.btn {
+    width: 6rem;
+    height: 2.65rem;
+    border-radius: 4px;
+    border: 2px solid #db3022;
+    color: #fdf0ef;
+    font-size: 0.952rem;
+}
+
+.search {
+    width: 53.3333%;
+}
+
+div.form-group {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    height: 48px;
+}
+
+.form-group:hover {
+    border: 1px solid #f9f9f9;
+}
+
+.form-control {
+    outline: none;
+    border: none;
+    width: 85%;
+    padding-left: 0.852rem;
+    border: 2px solid #979797;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.btn.home-search {
+    width: 15%;
+    border: 2px solid #db3022;
+    border-radius: 0 4px 4px 0px;
+}
+
+.fal.fa-search {
+    color: #fdf0ef;
+}
+
+nav {
+    margin-left: 0.52rem;
+    width: 44.21111%;
+}
+
+/** HERO SECTION STYLE ENDS **/
+
+/** HERO SECTION STYLE  **/
+.maniera-hero {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    background: #f3f3f3;
+}
+
+.maniera-hero-content {
+    position: absolute;
+    z-index: 9;
+    margin-top: 14rem;
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.hero-text > h2 {
+    font-size: 2.325rem;
+    width: 67%;
+    line-height: 47px;
+}
+
+.btn.btn-seller {
+    color: #ffcaca;
+    border: 2px solid #db3022;
+    width: 13.625rem;
+    height: 2.3rem;
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    font-family: 'Metropolis', sans-serif;
+}
+
+small {
+    display: block;
+    margin-top: 0.52rem;
+    margin-left: 1.125rem;
+}
+
+.hero-text-date {
+    margin-top: 5rem;
+    margin-left: 1.125rem;
+}
+
+.hero-text-date > p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.825rem;
+}
+
+.hero-text-date > h2 {
+    font-size: 2.25rem;
+    color: #e2271c;
+    margin-left: -1.125rem;
+}
+
+.hero-image {
+    width: 51%;
+    margin-top: -203px;
+    margin-left: 119px;
+}
+
+.hero-image > img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/** HERO SECTION STYLE ENDS **/
+
+main {
+    margin-top: 5rem;
+}
+
+div.main-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-listing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+}
+
+.product-thumbnail {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    background: #ffffff;
+    border: 1px solid rgba(218, 218, 218, 0.5);
+    height: 23.5rem;
+    margin-right: 0.5rem;
+}
+
+.product-thumbnail:nth-of-type(5) {
+    margin-right: 0rem;
+}
+
+.thumbnail-img > img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
     .wrapper {
-        max-width: 950px;
+        max-width: 540px;
     }
 }
 
@@ -36,8 +243,14 @@ body {
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
     .wrapper {
-        max-width: 540px;
+        max-width: 950px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
     }
 }
