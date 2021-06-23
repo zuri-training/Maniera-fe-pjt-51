@@ -9,6 +9,7 @@
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1 {
@@ -26,6 +27,18 @@ img {
     display: block;
 }
 
+@font-face {
+    font-family: 'Metropolis';
+    font-weight: normal;
+    src: url('../Fonts/metropolis.thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-weight: bold;
+    src: url('../Fonts/metropolis.bold.otf') format('opentype');
+}
+
 .wrapper {
     width: 100vw;
     padding-right: 1rem;
@@ -36,6 +49,7 @@ img {
 
 .btn {
     background-color: #db3022;
+    cursor: pointer;
 }
 
 /** HEADER SECTION STYLE  **/
@@ -50,21 +64,21 @@ header {
 }
 
 .maniera-home {
-    margin-right: 2rem;
+    width: 10%;
 }
 
 .maniera-nav {
     display: flex;
     align-items: center;
     flex-flow: row;
-    width: 75%;
+    width: 80%;
 }
 
 .main-nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
 }
 
 .main-nav li {
@@ -80,10 +94,20 @@ header {
     border: 2px solid #db3022;
     color: #fdf0ef;
     font-size: 0.952rem;
+    cursor: pointer;
+}
+
+.cart-count {
+    background-color: #e2271c;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 0.812rem;
+    padding: 0.2rem 0.435em 0.15rem 0.45rem;
+    text-align: center;
 }
 
 .search {
-    width: 53.3333%;
+    width: 50.3333%;
 }
 
 div.form-group {
@@ -120,7 +144,7 @@ div.form-group {
 
 nav {
     margin-left: 0.52rem;
-    width: 44.21111%;
+    width: 45.21111%;
 }
 
 /** HERO SECTION STYLE ENDS **/
@@ -158,8 +182,13 @@ nav {
     width: 13.625rem;
     height: 2.3rem;
     margin-top: 1.3rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Metropolis', sans-serif;
+}
+
+.btn-seller:hover {
+    background-color: #ffcaca;
+    color: #222222;
 }
 
 small {
@@ -198,7 +227,7 @@ small {
 /** HERO SECTION STYLE ENDS **/
 
 main {
-    margin-top: 5rem;
+    margin: 5rem 0rem 3rem;
 }
 
 div.main-heading {
@@ -211,6 +240,7 @@ div.main-heading {
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row;
+    margin-top: 1.725rem;
 }
 
 .product-thumbnail {
@@ -219,7 +249,7 @@ div.main-heading {
     flex-grow: 1;
     background: #ffffff;
     border: 1px solid rgba(218, 218, 218, 0.5);
-    height: 23.5rem;
+    height: 22rem;
     margin-right: 0.5rem;
 }
 
@@ -229,6 +259,126 @@ div.main-heading {
 
 .thumbnail-img > img {
     width: 100%;
+}
+
+.thumbnail-text {
+    padding: 0 0.425rem;
+    width: 100%;
+}
+
+.thumbnail-text > h4 {
+    font-size: 1.341rem;
+    line-height: 37px;
+}
+
+.category {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    line-height: 35px;
+}
+
+.fas.fa-star {
+    color: #ffba49;
+}
+
+.far.fa-star {
+    color: #efefef;
+}
+
+.category > span,
+.rated-stars > span {
+    font-family: 'Metropolis';
+    font-size: 0.967rem;
+    color: #9b9b9b;
+    font-weight: 400;
+}
+
+.category > p {
+    font-weight: 600;
+    font-size: 0.967rem;
+}
+
+.purchase-selector {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.325rem;
+}
+
+.btn-product {
+    background-color: #ffff;
+    color: #00579f;
+    border: 2px solid #00579f;
+    border-radius: 4px;
+    width: 5.4rem;
+    height: 1.85rem;
+    font-weight: 500;
+    font-size: 0.74rem;
+    cursor: pointer;
+}
+
+.btn-product:hover,
+.btn-product:nth-of-type(2):hover {
+    background-color: #79b0dd;
+    color: #222222;
+}
+
+.btn-product:nth-of-type(2) {
+    background-color: #00579f;
+    color: #ffffff;
+}
+
+.maniera-order {
+    background: url('https://i.imgur.com/rTYNL48.png') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(4px);
+    height: 25rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.maniera-order-content {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8.125rem;
+    width: 75vw;
+}
+
+.maniera-order-content > h2 {
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-weight: 600;
+    font-size: 3.525rem;
+}
+
+.btn-order {
+    margin-top: 2rem;
+    background-color: #e2594e;
+    border-radius: 6rem;
+    height: 3.325rem;
+    width: 15rem;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-weight: 600;
+    border: none;
+    font-size: 1.11rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #ffcaca;
+    color: #222222;
+}
+
+section.newly-added,
+section.recently-viewed {
+    margin-top: 2.625rem;
 }
 
 @media only screen and (min-width: 576px) {
