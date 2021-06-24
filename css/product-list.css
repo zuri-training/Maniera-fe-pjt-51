@@ -137,3 +137,42 @@ header nav{
 .side-bar{
     margin-right: 20px;
 }
+
+/*MEDIA Qz*/
+@media(max-width:768px){
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .main-header nav ul li{
+        padding: 1rem;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .side-bar{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .page{
+        text-align: center;
+    }
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .showcase h1{
+        padding-top: 1rem;
+    }
+    .main-card p{
+        font-size: 14px;
+    }
+    .main-card{
+        width: 12rem;
+    }
+}
