@@ -13,33 +13,43 @@
 
 <body>
 
-
-    <div class="maniera-hero">
+    <!-- PAGE HERO START HERE-->
+    <!-- HEADER START HERE-->
+    <header>
         <div class="wrapper">
-            <!-- HEADER START HERE-->
-            <header>
+            <nav>
                 <h1 class="maniera-home">Maniera</h1>
-                <div class="maniera-nav">
-                    <div class="search">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
-                                <button class="btn home-search"><i class="fal fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                    <nav>
-                        <ul class="main-nav">
-                            <li>Categories</li>
-                            <li>Cart <span class="cart-count">3</span></li>
-                            <li>My Requests</li>
-                            <li><button class="btn" type="submit">Join us</button></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!--  HEADER ENDS HERE -->
 
+                <div class="search">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+                            <button class="btn home-search"><i class="fal fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="maniera-nav">
+                    <ul class="main-nav">
+                        <li>Categories</li>
+                        <li>Cart <span class="cart-count">3</span></li>
+                        <li>My Requests</li>
+                        <li><button class="btn" type="submit">Join us</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="maniera-hero">
+        <div class="wrapper">
+            <!--  HEADER ENDS HERE -->
             <div class="maniera-hero-content">
                 <div class="hero-text">
                     <h2>Sell your designs at no charge</h2>
@@ -55,9 +65,9 @@
                     <img src="https://i.imgur.com/XsSoa33.png" alt="maniera-hero">
                 </div>
             </div>
+            <!-- PAGE HERO ENDS HERE-->
         </div>
-        <!-- PAGE HERO ENDS HERE-->
-    </div>
+    </section>
     <main>
         <div class="wrapper">
             <section class="top-rated">
@@ -460,6 +470,9 @@
             <button class="btn-order">Place an order</button>
         </div>
     </div>
+
+
+    <script src="../javascript/navbar.js"></script>
 </body>
 
 </html>
