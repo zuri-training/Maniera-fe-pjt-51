@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 100vh;
+  background: #fefefe;
+  font-size: 62.5%;
+}
+
+/* logo */
+.logo-text {
+  position: absolute;
+  width: 19px;
+  height: 32px;
+  left: 64px;
+  top: 55px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.logo-text-01 {
+  margin-left: 10px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.logo {
+  margin: 52px 0 0 55px;
+}
+
+.logo-text-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.left-section {
+  width: 826px;
+  height: 100vh;
+}
+.lead-wrapper {
+  width: 681px;
+  margin: 0 91px 0 54px;
+  padding: 14px;
+  padding-top: 160px;
+}
+
+.maniera-text {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 14px;
+}
+
+.text-lead {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  width: 393px;
+  line-height: 56px;
+}
+
+.small {
+  width: 461px;
+  height: 48px;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* stlying the from */
+.form-holder {
+  margin-top: 80px;
+  margin-left: 55px;
+}
+
+.form {
+  margin-top: 20px;
+}
+.seller-btn {
+  position: absolute;
+  top: 33px;
+  left: 1340px;
+  width: 151px;
+  height: 41px;
+  background: #db3022;
+  border-radius: 4px;
+}
+
+label {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 6px;
+  line-height: 18px;
+}
+.form-control {
+  width: 378px;
+  padding: 4px;
+  background: #efefef;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.sign-up-btn {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  width: 377px;
+}
+
+.form-group {
+  padding-bottom: 18px;
+}
+
+.right-section {
+  width: 614px;
+  height: 100vh;
+}
+
+.pass {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 31px;
+  left: 330px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.lower-text {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.lower-text a {
+  text-decoration: none;
+}
+
+/* setting the media query */
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+    width: 500px;
+  }
+  .left-section {
+    width: 100px;
+  }
+
+  .logo {
+    margin: 46px 0 0 37px;
+  }
+
+  .seller-btn {
+    position: absolute;
+    top: 33px;
+    left: 400px;
+    width: 151px;
+    height: 33px;
+  }
+}

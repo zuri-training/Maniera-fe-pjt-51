@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/sing-up.css" />
+    <title>Maniera Sign Up</title>
+  </head>
+  <body>
+    <div class="sing-up-wrapper d-flex">
+      <section
+        class="left-section bg-danger text-white d-none d-md-block d-lg-block"
+      >
+        <div class="logo d-flex">
+          <h3 class="text-dark bg-white logo-text-wrapper">
+            <span class="logo-text"> M </span>
+          </h3>
+          <p class="logo-text-01 align-self-center d-flex align-item-center">
+            Maniera
+          </p>
+        </div>
+        <div class="lead-wrapper">
+          <h3 class="maniera-text">Maniera</h3>
+          <p class="text-lead lead">Look through the clothes of your choice</p>
+          <p class="small">
+            Maniera is a platform that connect fashion designers and their
+            client.
+          </p>
+        </div>
+      </section>
+      <section class="right-section bg-white">
+        <div class="container">
+          <div class="seller-btn">
+            <a href="/" class="text-white btn">Become a seller</a>
+          </div>
+          <div class="form-holder">
+            <h2>Sing Up</h2>
+            <form action="" class="form" id="myform">
+              <div class="form-group">
+                <label for="first-name" id="first-name-label" class="from-label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  name="First name"
+                  id="first-name"
+                  class="form-control form-control-lg form-control-sm"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name" id="last-name-label" class="from-label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  name="Last name"
+                  id="last-name"
+                  class="form-control form-control-lg form-control-sm"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" id="email-label" class="from-label"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  name="Email"
+                  id="email"
+                  class="form-control form-control-lg form-control-sm"
+                  required
+                />
+              </div>
+              <div class="form-group pass">
+                <label for="password" id="password-label" class="from-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="First name"
+                  id="password"
+                  class="form-control form-control-lg form-control-sm"
+                  required
+                />
+                <i class="bi bi-eye-slash-fill" id="toggle-Password"></i>
+              </div>
+              <div class="form-group pass">
+                <label
+                  for="confirm-password"
+                  id="confirm-password-label"
+                  class="from-label"
+                >
+                  Confirm Password</label
+                >
+
+                <input
+                  type="password"
+                  name="First name"
+                  id="confirm-password"
+                  class="form-control form-control-lg form-control-sm"
+                  required
+                />
+                <i
+                  class="bi bi-eye-slash-fill"
+                  id="toggle-confirm-password"
+                ></i>
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn btn-danger sign-up-btn"
+                >
+                  Sign up
+                </button>
+              </div>
+              <p class="lower-text">
+                Already have an account?
+                <a href="/" class="link-danger">Login</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/sign-in.js"></script>
+  </body>
+</html>

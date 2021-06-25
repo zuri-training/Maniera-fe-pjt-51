@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", sans-serif;
+}
+
+.seller-sign-up-left-side {
+	background: #db3022;
+	width: 30%;
+}
+
+.seller-sign-up-left-side .mind-your-business {
+	height: 80vh;
+}
+.seller-sign-up-left-side .mind-your-business p {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.seller-sign-up-right-side {
+	width: 70%;
+}
+
+.tab-4 div .page-one,
+.tab-4 div .page-two,
+.tab-4 div .page-three,
+.sign-up-success-div .continue-shopping-btn {
+	color: #db3022;
+}
+
+.tab-4 div .page-dash-one,
+.tab-4 div .page-dash-two,
+.sign-up-success-div .continue-shopping-btn {
+	border: 2px solid #db3022;
+}
+
+.sign-up-success-div .all-done h1 strong {
+	font-size: 50px;
+	font-family: "Metropolis", sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+	.seller-sign-up-left-side {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.seller-sign-up-right-side {
+		width: 100%;
+	}
+
+	.logo-div span {
+		color: #db3022 !important;
+	}
+	.logo-div img {
+		border: 2px solid#db3022 !important;
+		border-radius: 50%;
+	}
+}
