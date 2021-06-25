@@ -48,7 +48,6 @@ img {
 	margin-left: auto;
 }
 
-
 /** HEADER SECTION STYLE  **/
 header {
 	width: 100%;
@@ -88,7 +87,7 @@ h1.maniera-home {
 	color: #fdf0ef;
 	font-size: 0.952rem;
 	cursor: pointer;
-    	background-color: #db3022;
+	background-color: #db3022;
 }
 
 .cart-count {
@@ -131,8 +130,8 @@ div.form-group {
 	width: 15%;
 	border: 2px solid #db3022;
 	border-radius: 0 4px 4px 0px;
-    	background-color: #db3022;
-    	cursor: pointer;
+	background-color: #db3022;
+	cursor: pointer;
 }
 
 .fal.fa-search {
@@ -166,6 +165,7 @@ div.form-group {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px 0px;
+	z-index: 1;
 }
 
 .maniera-hero-content {
@@ -195,8 +195,8 @@ div.form-group {
 	margin-top: 1.3rem;
 	font-size: 1.2rem;
 	font-family: "Metropolis", sans-serif;
-    	background-color: #db3022;
-    	cursor: pointer;
+	background-color: #db3022;
+	cursor: pointer;
 }
 
 .btn-seller:hover {
