@@ -444,8 +444,8 @@ section.recently-viewed {
 		position: fixed;
 		flex-direction: column;
 		left: -160%;
-		top: 11%;
-		z-index: 2;
+		top: 15%;
+		z-index: 9;
 	}
 
 	.main-nav.active {
