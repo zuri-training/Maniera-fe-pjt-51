@@ -5,6 +5,13 @@
 	font-family: "Inter", sans-serif;
 }
 
+.maniera-footer p {
+	font-size: 15px;
+}
+.maniera-footer h4 {
+	font-size: 18px;
+}
+
 .footer-logo a,
 .footer-logo h1 {
 	color: #ffffff;
@@ -22,7 +29,7 @@
 }
 
 .maniera-footer .footer-logo h1 {
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 600;
 }
 
@@ -50,4 +57,8 @@
 
 .maniera-footer .footer-btn {
 	background: #e2594e;
+	font-size: 13px;
+}
+.maniera-footer .footer-btn .send {
+	font-size: 18px;
 }
