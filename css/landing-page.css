@@ -48,11 +48,6 @@ img {
     margin-left: auto;
 }
 
-.btn {
-    background-color: #db3022;
-    cursor: pointer;
-}
-
 /** HEADER SECTION STYLE  **/
 header {
     width: 100%;
@@ -70,13 +65,8 @@ nav {
     align-items: center;
 }
 
-.maniera-home {
+h1.maniera-home {
     width: 9%;
-}
-
-.maniera-nav {
-    width: 40%;
-    margin-left: 0.652rem;
 }
 
 .main-nav {
@@ -85,9 +75,11 @@ nav {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    width: 40%;
+    margin-left: 0.652rem;
 }
 
-.main-nav > li > button.btn {
+.main-nav > li > button.btn.join-now {
     width: 6rem;
     height: 2.65rem;
     border-radius: 4px;
@@ -95,6 +87,7 @@ nav {
     color: #fdf0ef;
     font-size: 0.952rem;
     cursor: pointer;
+    background-color: #db3022;
 }
 
 .cart-count {
@@ -137,6 +130,8 @@ div.form-group {
     width: 15%;
     border: 2px solid #db3022;
     border-radius: 0 4px 4px 0px;
+    background-color: #db3022;
+    cursor: pointer;
 }
 
 .fal.fa-search {
@@ -170,6 +165,7 @@ div.form-group {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px 0px;
+    z-index: 1;
 }
 
 .maniera-hero-content {
@@ -199,6 +195,8 @@ div.form-group {
     margin-top: 1.3rem;
     font-size: 1.2rem;
     font-family: 'Metropolis', sans-serif;
+    background-color: #db3022;
+    cursor: pointer;
 }
 
 .btn-seller:hover {
@@ -446,8 +444,8 @@ section.recently-viewed {
         position: fixed;
         flex-direction: column;
         left: -160%;
-        top: 11%;
-        z-index: 2;
+        top: 15%;
+        z-index: 9;
     }
 
     .main-nav.active {
@@ -461,9 +459,10 @@ section.recently-viewed {
         position: relative;
     }
 
-    .maniera-home {
+    h1.maniera-home {
         width: 10vw;
     }
+
     .search {
         width: 70.33vw;
         margin-left: 1.5rem;
