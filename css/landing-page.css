@@ -28,6 +28,14 @@ img {
 	display: block;
 }
 
+.wrapper a {
+	color: unset;
+	text-decoration: none;
+}
+.wrapper a:hover {
+	color: unset;
+}
+
 @font-face {
 	font-family: "Metropolis";
 	font-weight: normal;
