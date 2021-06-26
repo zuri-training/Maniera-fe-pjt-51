@@ -1,6 +1,6 @@
 // decarling gobal varible
 
-const togglePassword = document.querySelector("#toggle-Password");
+const togglePassword = document.querySelector("#togglePassword");
 const toggleConfirmPassword = document.querySelector("#toggle-confirm-password");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirmPassword");
@@ -27,22 +27,38 @@ toggleConfirmPassword.addEventListener("click", function (e) {
 // sending form data with fetch api
 myForm.addEventListener("submit", function (e) {
 	e.preventDefault();
-	const formData = new FormData(this);
+
+	const firstName = document.querySelector("#firstName").value;
+	const lastName = document.querySelector("#lastName").value;
+	const email = document.querySelector("#email").value;
+	const password = document.querySelector("#password").value;
+	const confirmPassword = document.querySelector("#confirmPassword").value;
+
+	const user = {
+		firstName: firstName,
+		lastName: lastName,
+		email: email,
+		password: password,
+		confirmPassword: confirmPassword,
+	};
+
+	console.log(user);
+	// const formData = new FormData(this);
 
 	fetch("https://maniera-dev.herokuapp.com/api/auth/signup", {
 		method: "POST",
-		body: formData,
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(user),
 	})
-		.then(function (response) {
-			return response.text();
+		.then((response) => response.json())
+		.then((user) => {
+			console.log("success:", user);
+			console.log(user);
 		})
-		.then(function (text) {
-			console.log(text);
-			console.log(formData);
-			console.log("boy");
-		})
-		.catch(function (error) {
-			console.log(error);
-			console.log(formData);
+		.catch((error) => {
+			console.log("error:", error);
+			console.log(user);
 		});
 });
