@@ -147,7 +147,7 @@ header nav{
         justify-content: flex-start;
     }
     .main-header nav ul li{
-        padding: 1rem;
+        padding: 10px;
     }
     section{
         display: flex;
@@ -163,8 +163,7 @@ header nav{
     }
     .product-list{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
+        grid-template-columns: 1fr;
     }
     .showcase h1{
         padding-top: 1rem;
@@ -173,6 +172,11 @@ header nav{
         font-size: 14px;
     }
     .main-card{
-        width: 12rem;
+        width: 18rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
