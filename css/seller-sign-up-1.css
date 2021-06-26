@@ -89,6 +89,7 @@ input.invalid {
 .seller-details-form .input-div .select-div:focus,
 .seller-details-form .input-div select:focus {
 	border: 2px solid #000000;
+	background: #ffffff;
 }
 .seller-details-form .input-div:focus-within .input-label,
 .seller-details-form .input-div .select-div:focus-within .input-label {
