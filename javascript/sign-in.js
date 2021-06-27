@@ -22,4 +22,5 @@ form.addEventListener('submit', async e => {
     })
     localStorage.setItem('token', response.data.token);
     loading.style.display = 'none';
+    window.location.replace('/index.html');
 })
