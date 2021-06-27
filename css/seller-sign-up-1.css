@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+.form-tab {
+	display: none;
+}
+
+input.invalid {
+	border: 2px solid red;
+}
+
+.current {
+	display: block;
+}
+
+.seller-sign-up-left-side {
+	background: #db3022;
+	width: 30%;
+}
+
+.seller-sign-up-left-side .mind-your-business {
+	height: 80vh;
+}
+.seller-sign-up-left-side .mind-your-business p {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.seller-sign-up-right-side {
+	width: 70%;
+}
+
+.seller-sign-up-right-side div button {
+	color: #db3022;
+}
+
+.tab-1 div .page-one {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background: #db3022;
+	color: #ffffff;
+}
+
+.tab-1 div .page-two,
+.tab-1 div .page-three {
+	color: #fdb2ac;
+}
+
+.tab-1 div .page-dash-one,
+.tab-1 div .page-dash-two {
+	border: 2px solid #9ea09f;
+}
+
+.seller-details-form div .input-label {
+	color: #adadad;
+	transition: all 0.3s ease;
+}
+
+.seller-details-form div input,
+.seller-details-form .input-div .select-div {
+	outline: none;
+	background: #efefef;
+	border: 2px solid #0000004d;
+	height: 45px;
+	transition: all 0.3s ease;
+}
+
+.seller-details-form .input-div select {
+	outline: none;
+	border: none;
+	background: #efefef;
+	border-right: 2px solid #0000004d;
+	border-radius: 4px;
+}
+
+.seller-details-form .input-div .select-div .phone-number {
+	border: none;
+}
+.seller-details-form .input-div .select-div .phone-number:focus {
+	border: 2px solid #000000;
+}
+
+.seller-details-form div input:focus,
+.seller-details-form .input-div .select-div:focus,
+.seller-details-form .input-div select:focus {
+	border: 2px solid #000000;
+	background: #ffffff;
+}
+.seller-details-form .input-div:focus-within .input-label,
+.seller-details-form .input-div .select-div:focus-within .input-label {
+	color: #000000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+	.seller-sign-up-left-side {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.seller-sign-up-right-side {
+		width: 100%;
+	}
+
+	.logo-div span {
+		color: #db3022 !important;
+	}
+	.logo-div img {
+		border: 2px solid#db3022 !important;
+		border-radius: 50%;
+	}
+}

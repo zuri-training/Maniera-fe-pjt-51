@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=Metropolis");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=Inter");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Metropolis", sans-serif !important;
+}
+
+body {
+	height: 100vh;
+	background: #fefefe;
+}
+
+/* logo */
+
+.logo-text-01 {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.logo-text-wrapper {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.left-section {
+	background: #db3022;
+	width: 60%;
+	height: 115vh;
+}
+.lead-wrapper {
+	padding-top: 160px;
+}
+
+.maniera-text {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.text-lead {
+	font-family: "Metropolis";
+	font-weight: bold;
+	font-size: 56px;
+	width: 393px;
+	line-height: 60px;
+}
+
+.small {
+	width: 450px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+/* stlying the from */
+.right-section {
+	width: 40%;
+}
+
+.seller-btn {
+	background: #db3022;
+	border-radius: 4px;
+	font-family: "Inter", sans-serif !important;
+}
+
+.right-section label {
+	font-weight: 500;
+	font-size: 18px;
+	padding-bottom: 6px;
+	line-height: 18px;
+	color: #8a8a8a;
+}
+
+.form-group:focus-within label {
+	color: #000000;
+}
+
+.form-control {
+	padding: 4px;
+	background: #efefef;
+	border-radius: 4px;
+}
+
+.form-control:focus {
+	border: 2px solid #000000;
+	outline: 0px !important;
+	box-shadow: none !important;
+}
+
+.sign-up-btn {
+	background: #db3022;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.form-group {
+	position: relative;
+	padding-bottom: 18px;
+}
+
+.pass {
+	position: relative;
+}
+
+i {
+	position: absolute;
+	top: 35px;
+	right: 0;
+	padding-right: 20px;
+	font-size: 20px;
+	z-index: 4;
+}
+
+.lower-text {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.lower-text a {
+	text-decoration: none;
+	color: #db3022;
+}
+
+/* setting the media query */
+@media screen and (max-width: 768px) {
+	.left-section {
+		width: 0px;
+	}
+	.right-section {
+		width: 100%;
+	}
+
+	.logo {
+		margin: 46px 0 0 37px;
+	}
+}

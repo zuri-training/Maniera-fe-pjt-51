@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+.maniera-footer p {
+	font-size: 15px;
+}
+.maniera-footer h4 {
+	font-size: 18px;
+}
+
+.footer-logo a,
+.footer-logo h1 {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.maniera-footer {
+	margin-top: 60px;
+	background: #2f2f2f;
+	color: #ffffff;
+}
+.maniera-footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.maniera-footer .footer-logo h1 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.footer-btn img {
+	display: inline;
+}
+
+.maniera-footer .footer-subscription-form div {
+	background: #ffffff;
+}
+.maniera-footer .footer-subscription-form div input {
+	width: 63%;
+	border: none;
+	outline: none;
+}
+
+.maniera-footer .footer-subscription-form div button span {
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.maniera-footer h4 {
+	text-transform: uppercase;
+}
+
+.maniera-footer .footer-btn {
+	background: #e2594e;
+	font-size: 13px;
+}
+.maniera-footer .footer-btn .send {
+	font-size: 18px;
+}
