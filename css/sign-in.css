@@ -107,6 +107,10 @@ button{
     margin: 4px;
 }
 
+.signin-forms form button{
+    width: 330px;
+}
+
 .signin-forms form input::placeholder{
     text-align: center;
 }
