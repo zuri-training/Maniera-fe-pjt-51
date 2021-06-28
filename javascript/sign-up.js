@@ -80,7 +80,7 @@ myForm.addEventListener("submit", function (e) {
 			.then((res) => {
 				if (res.status === 200 || res.status === 201) {
 					localStorage.setItem("user", JSON.stringify(res.json()));
-					window.location = "/sign-in.html";
+					window.location = "/html/sign-in.html";
 				} else if (res.status === 401 || res.status === 404) {
 					console.log("error");
 				}
