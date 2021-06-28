@@ -45,6 +45,11 @@
 	border: 2px solid #db3022;
 }
 
+.tab-3 .other {
+	height: 30px;
+	border: 1px solid #db3022;
+}
+
 .tab-3 .submit-application-btn {
 	background: #db3022;
 }
@@ -87,6 +92,10 @@
 	background-color: #ccc;
 }
 
+.checkbox-option input:checked ~ .checkmarker {
+	background-color: #db3022;
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmarker:after {
 	content: "";
@@ -105,7 +114,7 @@
 	top: 1px;
 	width: 10px;
 	height: 15px;
-	border: solid #db3022;
+	border: solid #ffffff;
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);

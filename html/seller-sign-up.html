@@ -35,7 +35,10 @@
 			<section class="seller-sign-up-right-side py-5 px-4 px-lg-5">
 				<!-- The below displays only on mobile and tablet screen -->
 				<div class="logo-div d-flex align-items-center d-md-none d-block mb-4">
-					<img src="../assets/icons/M-logo.png" alt="maniera logo" />
+					<a href="/">
+						<img src="../assets/icons/M-logo.png" alt="maniera logo" />
+					</a>
+					
 					<span class="d-flex align-items-center text-white ms-3">Maniera</span>
 				</div>
 				<!-- The above displays only on mobile and tablet screen -->
@@ -57,34 +60,35 @@
 
 						<p class="fw-bolder fs-5 pt-5 pb-3">Personal Details</p>
 
-						<p class="error-message text-danger text-center"></p>
+						<p class="error-message text-danger text-center fw-bold"></p>
 
 						<div class="d-md-flex justify-content-between">
 							<div class="input-div my-3 me-md-4 w-100">
 								<label for="" class="input-label pb-2">First Name</label><br />
-								<input type="text" class="py-2 rounded w-100" id="firstName" name="firstName" />
+								<input type="text" class="p-2 rounded w-100" id="firstName" name="firstName" minlength="2" required/>
 							</div>
 							<div class="input-div my-3 ms-md-4 w-100">
 								<label for="" class="input-label pb-2">Last Name</label><br />
-								<input type="text" class="py-2 rounded w-100" id="lastName" name="lastName" />
+								<input type="text" class="p-2 rounded w-100" id="lastName" name="lastName" required minlength="2"/>
 							</div>
 						</div>
 						<div class="d-md-flex pt-md-3 justify-content-between">
 							<div class="input-div my-3 me-md-4 w-100">
 								<label for="" class="input-label pb-2">Email</label><br />
-								<input type="email" class="py-2 rounded w-100" id="email" name="email" />
+								<input type="email" class="p-2 rounded w-100" id="email" name="email" required/>
+								<p class="email-error fw-bold p-2" role="alert"></p>
 							</div>
 							<div class="input-div my-3 ms-md-4 w-100">
 								<label for="" class="input-label pb-2">Phone Number</label><br />
 								<div class="select-div w-100 d-flex rounded">
-									<select class="w-25 h-100 px-1" id="pickCountry" name="pickCountry">
-										<option value="volvo">Vol</option>
-										<option value="saab">Saa</option>
-										<option value="mercedes">Mer</option>
-										<option value="audi">Aud</option>
+									<select class="w-25 h-100 px-1" id="phoneNumberSelect" name="phoneNumberSelect">
+										<option value="nigeria">NIG</option>
 									</select>
-									<input type="text" class="phone-number px-2 w-75 h-100 rounded" id="phoneNumber" name="phoneNumber" placeholder="+234" />
+									<img src="../assets/icons/twemoji_flag-for-flag-nigeria.png" alt="flag" /></option>
+									<input type="text" class="phone-number px-2 w-75 h-100 rounded" id="phoneNumber" name="phoneNumber" placeholder="+234" required/>
+									
 								</div>
+								<p class="number-error fw-bold p-2" role="alert"></p>
 							</div>
 						</div>
 						<div class="d-flex justify-content-end mt-5">
@@ -107,31 +111,28 @@
 
 						<p class="fw-bolder fs-5 pt-5 pb-3">Business Details</p>
 
-						<p class="error-message2 text-danger text-center"></p>
+						<p class="error-message2 text-danger text-center fw-bold"></p>
 
 						<div class="d-md-flex justify-content-between">
 							<div class="input-div my-3 me-md-4 w-100">
 								<label for="" class="input-label pb-2">Business Name</label><br />
-								<input type="text" class="py-2 rounded w-100" id="businessName" name="businessName" />
+								<input type="text" class="p-2 rounded w-100" id="businessName" name="businessName" minlength="2" required/>
 							</div>
 							<div class="input-div my-3 ms-md-4 w-100">
 								<label for="" class="input-label pb-2">Country</label><br />
-								<input type="text" class="py-2 rounded w-100" id="country" name="country" />
+								<input type="text" class="p-2 rounded w-100" id="country" name="country" minlength="2" required/>
 							</div>
 						</div>
 						<div class="d-md-flex pt-md-3 justify-content-between">
 							<div class="input-div my-3 me-md-4 w-100">
 								<label for="" class="input-label pb-2">Address</label><br />
-								<input type="text" class="py-2 rounded w-100" id="address" name="address" />
+								<input type="text" class="p-2 rounded w-100" id="address" name="address" minlength="2" required/>
 							</div>
 							<div class="input-div my-3 ms-md-4 w-100">
 								<label for="" class="input-label pb-2">Business Phone Number</label><br />
 								<div class="select-div w-100 d-flex rounded">
-									<select class="w-25 h-100 px-1" id="pickCountry" name="pickCountry">
-										<option value="volvo">Vol</option>
-										<option value="saab">Saa</option>
-										<option value="mercedes">Mer</option>
-										<option value="audi">Aud</option>
+									<select class="w-25 h-100 px-1" id="businessPhoneNumberSelect" name="businessPhoneNumberSelect">
+										<option value="nigeria">NIG</option>
 									</select>
 									<input
 										type="text"
@@ -141,6 +142,7 @@
 										placeholder="+234"
 									/>
 								</div>
+								<p class="business-number-error fw-bold p-2"></p>
 							</div>
 						</div>
 						<p class="pt-5 pb-1">What scale is your business currently in?</p>
@@ -148,14 +150,14 @@
 							<div class="w-100">
 								<label class="cont"
 									>Just me <span>(1 worker)</span>
-									<input type="radio" checked="checked" name="radio" />
+									<input type="radio" name="businessScale" value="Just me" checked/>
 									<span class="checkmark"></span>
 								</label>
 							</div>
 							<div class="w-100">
 								<label class="cont"
 									>Small scale <span>(2-15 workers)</span>
-									<input type="radio" checked="checked" name="radio" />
+									<input type="radio" name="businessScale" value="Small scale" />
 									<span class="checkmark"></span>
 								</label>
 							</div>
@@ -164,14 +166,14 @@
 							<div class="w-100">
 								<label class="cont"
 									>Medium scale <span>(16-30 workers)</span>
-									<input type="radio" checked="checked" name="radio" />
+									<input type="radio" name="businessScale" value="Medium scale" />
 									<span class="checkmark"></span>
 								</label>
 							</div>
 							<div class="w-100">
 								<label class="cont"
 									>Large scale <span>(40 and above workers)</span>
-									<input type="radio" checked="checked" name="radio" />
+									<input type="radio" name="businessScale" value="Large scale" />
 									<span class="checkmark"></span>
 								</label>
 							</div>
@@ -204,34 +206,38 @@
 						<div class="w-100 mt-1">
 							<label class="checkbox-option"
 								>Hand-Sewn Clothes
-								<input type="checkbox" checked="checked" name="radio" />
+								<input type="checkbox" checked="checked" name="clothType" value="Hand-sewn clothes" />
 								<span class="checkmarker"></span>
 							</label>
 							<label class="checkbox-option"
 								>Factory Made Clothes
-								<input type="checkbox" name="radio" />
+								<input type="checkbox" name="clothType" value="Factory made clothes" />
 								<span class="checkmarker"></span>
 							</label>
 							<label class="checkbox-option"
 								>Clothes For Men
-								<input type="checkbox" checked="checked" name="radio" />
+								<input type="checkbox" checked="checked" name="clothType" value="Clothes for men" />
 								<span class="checkmarker"></span>
 							</label>
 							<label class="checkbox-option"
 								>Clothes For Women
-								<input type="checkbox" checked="checked" name="radio" />
+								<input type="checkbox" checked="checked" name="clothType" value="Clothes for women" />
 								<span class="checkmarker"></span>
 							</label>
 							<label class="checkbox-option"
 								>Clothes For Children
-								<input type="checkbox" name="radio" />
+								<input type="checkbox" name="clothType" value="Clothes for children" />
 								<span class="checkmarker"></span>
 							</label>
-							<label class="checkbox-option"
+							<div class="d-flex align-items-end">
+								<label class="checkbox-option d-flex mb-0"
 								>Other
-								<input type="checkbox" name="radio" />
+								<input type="checkbox" name="otherType" />
 								<span class="checkmarker"></span>
 							</label>
+							<input type="text" id="other" class="other ps-2 ms-2 border-top-0 border-start-0 border-end-0 bg-white" placeholder="Please Specify" >
+							</div>
+							
 						</div>
 						<div class="d-flex justify-content-center mt-5">
 							<button class="submit-application-btn btn text-white py-2 px-5" type="submit" onclick="validateTab3()">Submit my Application</button>
