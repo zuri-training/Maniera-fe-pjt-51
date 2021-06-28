@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden !important;
+}
+
+.sign-in-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+.top-bar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    padding: 10px;
+}
+.top-bar img{
+    position: relative;
+    top: 18px;
+}
+
+button{
+    position: relative;
+    width: 153px;
+    height: 33px;
+    color: white;
+    background: #DB3022;
+    border-radius: 5px;
+    border: none;
+}
+
+.warm-welcome p{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 34.66px;
+    padding-top: 70px;
+}    
+
+.signin-buttons-container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook{
+    width: 330px;
+    height: 43px;
+    background: #253B80;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.google{
+    width: 330px;
+    height: 43px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+}
+
+.or{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 6fr 2fr 6fr;
+}
+
+.or img{
+    padding-top: 15px;
+    width: 130px;
+}
+
+.or p{
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 21.33px;
+    font-weight: 400;
+}
+
+.signin-forms form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-forms form input{
+    width: 330px;
+    height: 43px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.signin-forms form button{
+    width: 330px;
+}
+
+.signin-forms form input::placeholder{
+    text-align: center;
+}
+
+.signin-forms form .login-button{
+    width: 330px;
+    height: 46px;
+    background: #DB3022;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+}
+
+.signin-button-container button{
+    width: 330px;
+    height: 46px;
+    background: #DB3022;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.signin-links span a{
+    color:  #DB3022;
+    text-decoration: none;
+}
+
+
