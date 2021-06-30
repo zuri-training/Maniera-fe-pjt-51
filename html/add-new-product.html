@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/add-new-product.css">
+    <title>Maniera</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="container d-flex align-items-center flex-wrap text-sm-right main-header">
+        <div class="header-logo my-3">
+            <h1>Maniera</h1>
+        </div>
+        <form class="my-3">
+            <div class="input-group mb-2">
+                <input type="text" class="form-control header-input" placeholder="Search Clothes..."
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary btn-danger header-btn" type="button"
+                    id="button-addon2"><span><img src="../assets/icons/search.png" alt="search"></button>
+            </div>
+
+        </form>
+        <nav>
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart<span class="badge bg-danger rounded-pill">3</span></a></li>
+                <li><a href="#">My Requests</a></li>
+                <li><a href="#">Profile <img src="../assets/icons/chevron-down.svg" alt="down"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TOP HALF -->
+    <div class="top-half">
+        <h1>Add a New Product</h1>
+        <p>Fill the form to showcase your product.</p>
+    </div>
+
+    <!--SECTIONS-->
+
+    <section class="container d-flex justify-content-between main">
+
+        <form action="" class="container">
+            <label for="b-name" class="label">Brand Name</label>
+            <br>
+            <input type="text" name="b-name" id="b-name" class="full-width">
+            <br>
+            <label for="p-name" class="label">Product Name</label>
+            <br>
+            <input type="text" name="p-name" id="p-name" class="full-width">
+            <br>
+            <label for="p-cat" class="label">Product Category</label>
+            <br>
+            <input type="checkbox" name="Hand Sewn" id="" class="checkbox" checked>
+            <label for="">Hand Sewn</label>
+
+            <input type="checkbox" name="Factory Made" id="" class="margin-left checkbox">
+            <label for="">Factory Made</label>
+
+            <input type="checkbox" name="For Men" id="" class="margin-left checkbox" checked>
+            <label for="">For Men</label>
+
+            <input type="checkbox" name="For Women" id="" class="margin-left checkbox" checked>
+            <label for="">For Women</label>
+            <br>
+            <input type="checkbox" name="For Children" id="" class="checkbox" checked>
+            <label for="">For Children</label>
+
+            <input type="checkbox" name="Others" id="" class="margin-left checkbox">
+            <label for="">Others</label>
+            <br>
+
+            <label for="size" class="label margin-top">Size</label>
+            <br>
+            <input type="checkbox" name="Small" id="" class="checkbox" checked>
+            <label for="">Small</label>
+
+            <input type="checkbox" name="Medium" id="" class="margin-left checkbox">
+            <label for="">Medium</label>
+
+            <input type="checkbox" name="Large" id="" class="margin-left checkbox" checked>
+            <label for="" class="margin-right">Large</label>
+
+            <input type="checkbox" name="Extra Large" id="" class="margin-left checkbox" checked>
+            <label for="">Extra Large</label>
+            <br>
+
+            <div class="float">
+                <label for="amount" class="label">Amount per unit ($)</label>
+                <br>
+                <input type="text" name="amount" id="amount">
+                <br>
+
+            </div>
+
+            <label for="color" class="label margin-top">Color</label>
+            <br>
+            <input type="text" name="color" id="color">
+            <span onclick="newElement()" class="addBtn"><i class="material-icons">add</i></span>
+            <br>
+            <ul id="colorList">
+                <li class="list">Black</li>
+            </ul>
+
+
+
+            <label for="description" class="label big-margin-top">Description</label>
+            <br>
+            <textarea name="description" id="" cols="30" rows="5" placeholder="Type description here"
+                class="full-width"></textarea>
+            <br>
+
+            <label for="upload" class="label">Upload a Sample File/Picture</label>
+            <div class="container upload full-width">
+                <p>Drag file here or click the button below</p>
+                <!-- <input type="file" id="myFile" name="filename"> -->
+                <input type="file" id="actual-btn" hidden />
+                <label for="actual-btn">Upload File</label>
+                <span id="file-chosen"></span>
+                <!-- <button>Upload File</button> -->
+            </div>
+
+            <br>
+            <input type="submit" value="Add Product" class="submit">
+        </form>
+
+    </section>
+
+    <footer class="maniera-footer py-2">
+        <section
+            class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
+            <div class="footer-logo my-3">
+                <!-- <img src="./assets/logos/Maniera.png" alt="footer logo" /> -->
+                <h1><a href="/">Maniera</a></h1>
+            </div>
+            <form class="footer-subscription-form my-3">
+                <h4>NEW TO MANIERA?</h4>
+                <p>Subscribe to our newsletter to get updates on our latest offers</p>
+                <div class="d-flex justify-content-between rounded">
+                    <input type="text" />
+                    <button class="btn footer-btn rounded-0">
+                        <span><img src="../assets/icons/footer-arrow.png" alt="arrow" /></span><span
+                            class="ms-2 send">Send</span>
+                    </button>
+                </div>
+            </form>
+            <div class="footer-download-app my-3">
+                <h4>DOWNLOAD THE MANIERA APP</h4>
+            </div>
+        </section>
+        <section class="footer-section-2 container d-flex flex-wrap justify-content-between pt-sm-5 mb-5">
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Contact Us</h4>
+                <div class="d-flex justify-content-evenly">
+                    <div class="footer-social-icons">
+                        <a href="www.facebook.com"><img src="../assets/icons/Facebook Icon.png" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="www.twitter.com"><img src="../assets/icons/Twitter Icon.png" alt="twitter" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Let us help</h4>
+                <p><a href="">How to Shop?</a></p>
+                <p><a href="">How to request a design?</a></p>
+                <p><a href="">Delivery Options</a></p>
+                <p><a href="">Delivery timeline</a></p>
+                <p><a href="">How to upload my product?</a></p>
+                <p><a href="">Bulk purchases</a></p>
+                <p><a href="">Return policy</a></p>
+                <p><a href="">Report a product</a></p>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">FAQ</a></p>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">About Maniera</h4>
+                <p><a href=""> About Us</a></p>
+                <p><a href="">Terms and Conditions</a></p>
+                <p><a href="">Privacy policy</a></p>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Earn on Maniera</h4>
+                <p><a href="">Become a Seller</a></p>
+                <p><a href="">Become a Logistics Partner</a></p>
+            </div>
+        </section>
+    </footer>
+    <script>
+
+        var indexList = document.getElementsByClassName("list");
+        var i;
+        for (i = 0; i < indexList.length; i++) {
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            indexList[i].appendChild(span);
+        }
+
+
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+
+
+        function newElement() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("color").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+            if (inputValue === '') {
+                alert("You haven't added a color");
+            } else {
+                document.getElementById("colorList").appendChild(li);
+            }
+            document.getElementById("color").value = "";
+
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function () {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        const actualBtn = document.getElementById('actual-btn');
+
+        const fileChosen = document.getElementById('file-chosen');
+
+        actualBtn.addEventListener('change', function () {
+            fileChosen.textContent = this.files[0].name
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
