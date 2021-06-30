@@ -71,29 +71,32 @@
 				<button class="seller-button">Become a seller</button>
 		
 				<div>
-					<form action="" method="post" style="display: flex; flex-direction: column;">
+					<form action="" method="post" style="display: flex; flex-direction: column;" id="form">
 						<p style="font-family: Metropolis;font-style: normal;font-weight: 600;font-size: 36px;line-height: 36px;">Login</p>
 						<label for="">Email</label>
-						<input type="email" style="margin-bottom: 20px;">
+						<input type="email" id="email" style="margin-bottom: 20px;">
 						<label>Password</label>
-						<input type="password">
+						<input type="password" id="password">
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
 							<div class="empty-div" style="margin-right: 5px;"></div>
 							<span style="font-size: smaller;">Keep me logged in</span>
-							<span style="color: red; font-size: x-small; margin-left: 20px;">Forgot your password?</span>
+							<span style="color: red; font-size: x-small; margin-left: 50px; margin-top: 2px;">Forgot your password?</span>
 						</div>
-						<button class="login-button">Login</button>
+						<button class="login-button" type="submit">Login</button>
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
 							<p style="width: 175px;">Don't hav an account?</p>
-							<span style="color: red; margin-top: 0px; margin-left: 30px;">Sign Up</span>
+							<span style="color: red; margin-top: 0px; margin-left: 50px;">Sign Up</span>
 						</div>
 						<div style="display: grid; grid-template-columns: 2fr 2fr; gap: 10px;">
-							<button class="google"><img src="/assets/images/google.png"> with google</button>
-							<button class="facebook"><img src="/assets/images/facebook.png"> with facebook</button>
+							<button class="google"><img src="/assets/images/google.png">continue with google</button>
+							<button class="facebook"><img src="/assets/images/facebook.png" style="background-color: white;">continue with facebook</button>
 						</div>
 					</form>
 				</div>
 			</div>
+		</div>
+		<div>
+			<h3 id="loading">loading</h3>
 		</div>
 
 		<script
