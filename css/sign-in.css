@@ -5,8 +5,10 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     overflow-y: hidden !important;
+    background-color: whitesmoke;
+    font-family: Playfair Display, sanserif;
 }
-
+/* 
 .sign-in-container{
     width: 100vw;
     height: 100vh;
@@ -118,7 +120,7 @@ button{
 .signin-forms form .login-button{
     width: 330px;
     height: 46px;
-    background: #DB3022;
+    background: cc;
     border-radius: 5px;
     margin-top: 30px;
     color: white;
@@ -135,6 +137,129 @@ button{
 .signin-links span a{
     color:  #DB3022;
     text-decoration: none;
+} */
+
+/* Desktop view */
+
+.signin-container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.first-column{
+    width: 80%;
+    height: auto;
+    background-color: #DB3022;
+    width: 400px;
+    color: white;
+    padding: 130px 30px;
+}
+
+.first-column .top-row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -100px;
+}
+
+.first-column .second-row{
+    position: relative;
+    top: -10px;
+    padding: 0%;
+}
+
+.first-column .second-row .connect{
+    width: 300px;
+    height: 50px;
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.57px;
+    color: #FFFFFF;
+}
+
+.look-through{
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+
+.second-column{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    padding-top: 113px;
+    padding-bottom: 100px;
+}
+
+.second-column .seller-button{
+   border: none;
+   border-radius: 4px;
+   color: white;
+   background-color: #DB3022;
+    margin-left: 200px;
+    font-size: 13px;
+    width: 120px;
+    padding: 5px;
+    position: relative;
+    top: -70px;
+}
+
+.second-column input{
+    width: 250px;
+    height: 30px;
+}
+
+.second-column input:focus{
+    background-color: whitesmoke;
+    border-color: 1px solid black;
+}
+
+.second-column span{
+    margin-top: -5px;
+}
+
+.empty-div{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #2F2F2F;
+}
+
+.login-button{
+    margin-top: 20px;
+    background: #DB3022;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.google{
+    border: none;
+    color: black;
+}
+
+.facebook{
+    border: none;
+    background-color: #395185;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 /* Loader Style goes here */

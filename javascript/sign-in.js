@@ -2,8 +2,6 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
-
-
 const BASE_URL = 'https://maniera-dev.herokuapp.com/api/';
 
 //----signin loader---

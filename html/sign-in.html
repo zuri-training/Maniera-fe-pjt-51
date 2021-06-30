@@ -14,9 +14,9 @@
 		<title>Maniera Sign In</title>
 	</head>
 	<body>
-		<!-- Sign In Container -->
-		<div class="sign-in-container">
-			<!-- Sign In Topbar -->
+		<!-- Sign In Container 
+		<div class="sign-in-container" style="display: none">
+			 Sign In Topbar 
 			<div class="top-bar">
 					<img src="/assets/images/path.png" alt="" srcset="">
 					<button>Become a seller</button>
@@ -50,6 +50,48 @@
 				<p>Not Registered? <span><a href="#">Sign Up</a></span></p>
 				<div>
 					<h3 id="loading">loading</h3>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="signin-container">
+			<div class="first-column">
+				<div class="top-row">
+					<div style="border-radius: 50%; color: black; background-color: white; height: 30px; width: 30px; text-align: center;">M</div>
+					<p>Maniera</p>
+				</div>
+				<div class="second-row">
+					<p>Maniera</p>
+					<p class="look-through">Look through <br/> the clothes <br/> of your choice</p>
+					<p class="connect">Maniera is a platform that connects designers<br> to their clients</p>
+				</div>
+			</div>
+
+			<div class="second-column">
+				<button class="seller-button">Become a seller</button>
+		
+				<div>
+					<form action="" method="post" style="display: flex; flex-direction: column;">
+						<p style="font-family: Metropolis;font-style: normal;font-weight: 600;font-size: 36px;line-height: 36px;">Login</p>
+						<label for="">Email</label>
+						<input type="email" style="margin-bottom: 20px;">
+						<label>Password</label>
+						<input type="password">
+						<div style="display: flex; flex-direction: row; margin-top: 10px;">
+							<div class="empty-div" style="margin-right: 5px;"></div>
+							<span style="font-size: smaller;">Keep me logged in</span>
+							<span style="color: red; font-size: x-small; margin-left: 20px;">Forgot your password?</span>
+						</div>
+						<button class="login-button">Login</button>
+						<div style="display: flex; flex-direction: row; margin-top: 10px;">
+							<p style="width: 175px;">Don't hav an account?</p>
+							<span style="color: red; margin-top: 0px; margin-left: 30px;">Sign Up</span>
+						</div>
+						<div style="display: grid; grid-template-columns: 2fr 2fr; gap: 10px;">
+							<button class="google"><img src="/assets/images/google.png"> with google</button>
+							<button class="facebook"><img src="/assets/images/facebook.png"> with facebook</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
