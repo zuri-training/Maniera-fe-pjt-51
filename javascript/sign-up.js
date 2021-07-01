@@ -55,7 +55,8 @@ myForm.addEventListener("submit", function (e) {
 
 	if (!CheckPassword(password)) {
 		passwordError.classList.add("alert", "alert-danger");
-		passwordError.innerHTML = "Password should contain at least a letter, a digit, a symbol and not less than 8 characters";
+		passwordError.innerHTML =
+			"Password should contain at least an uppercase letter, a lower case letter, a digit, a symbol and not less than 8 characters in total";
 
 		setTimeout(() => {
 			passwordError.classList.remove("alert", "alert-danger");
