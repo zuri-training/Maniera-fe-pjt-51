@@ -1,140 +1,191 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Metropolis&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", sans-serif;
+}
+
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+.page-indicator {
+	margin: 4rem 0;
+	background: #f6f7f8;
+}
+.page-indicator span:first-child {
+	color: #db3022;
+}
+.page-indicator span {
+	font-weight: 600;
 }
 
 main {
-  position: relative;
-  font-family: "Raleway", sans-serif;
+	position: relative;
 }
 
-.img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+.left-section {
+	position: relative;
+	background: #db3022;
+	width: 50%;
+	padding: 12rem 0;
 }
 
 .img-bg {
-  position: absolute;
-  left: -2.2%;
-  top: 10.93%;
+	position: absolute;
+	left: -100px;
+	top: 0;
+}
+
+.img-bg > .img {
+	height: 600px;
 }
 
 .text-content-wrapper {
-  margin: 0 138px 0 255px;
-  padding: 140px 0 100px 0;
+	margin: 0 138px 0 255px;
+	padding: 140px 0 100px 0;
 }
 
 .text-content {
-  width: 70%;
+	width: 50%;
+	float: right;
 }
 .text {
-  font-size: 40px;
-  line-height: 47px;
+	font-size: 40px;
+	line-height: 47px;
 }
 
 .circle {
-  position: absolute;
-  top: 32.99%;
-  right: 52.8%;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-}
-
-form {
-  padding-top: 50px;
+	position: absolute;
+	top: 38.99%;
+	right: -18px;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background: #db3022 !important;
 }
 
 .form-wrapper {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
 }
 
 .form-group {
-  padding-bottom: 21px;
+	padding-bottom: 21px;
 }
 
 .form-group label {
-  font-size: 14px;
-  line-height: 16px;
-  padding-bottom: 7px;
-}
-
-::placeholder,
-::-moz-placeholder,
-::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 19px;
-  color: rgb(70, 69, 69);
+	line-height: 16px;
+	padding-bottom: 7px;
 }
 
 .search {
-  margin: auto;
-  width: 60%;
+	margin: auto;
+	width: 60%;
 }
 
 .query-search {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
-@media screen and (max-width: 978px) {
-  .img {
-    max-width: 400px;
-  }
-  .text-content {
-    width: 100%;
-  }
-
-  .text-content-wrapper {
-    margin: 0 100px 0 215px;
-  }
-
-  .circle {
-    right: 44.8%;
-  }
+.query-search input:focus,
+.top-section input:focus,
+.top-section textarea:focus {
+	box-shadow: none;
+	outline: none;
+	border: 2px solid #000000;
 }
 
-@media screen and (max-width: 844px) {
-  .circle {
-    right: 39.6%;
-  }
+.search-btn {
+	background: #db3022;
 }
 
-@media screen and (max-width: 760px) {
-  .img {
-    max-width: 360px;
-  }
-  .circle {
-    display: none;
-  }
-
-  .text-content-wrapper {
-    margin: 0 100px 0 180px;
-  }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.left-section {
+		width: 60%;
+	}
+	.form-wrapper {
+		width: 40%;
+	}
 }
 
-@media screen and (max-width: 600px) {
-  .small,
-  .img-bg {
-    display: none;
-  }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.img-bg {
+		display: none;
+	}
 
-  .section {
-    flex-direction: column;
-  }
+	.left-section {
+		width: 50%;
+	}
+	.form-wrapper {
+		width: 50%;
+	}
 
-  .text-content-wrapper {
-    margin: auto;
-    padding: 1px;
-  }
+	.text-content {
+		width: 50%;
+		float: unset;
+		margin: auto;
+	}
+}
 
-  .text {
-    text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-  }
+@media screen and (max-width: 767px) {
+	.top-section {
+		flex-direction: column;
+	}
 
-  .search {
-    width: 70%;
-  }
+	.img-bg {
+		display: none;
+	}
+
+	.left-section {
+		width: unset;
+		padding: 2rem 0;
+	}
+
+	.circle {
+		top: 10%;
+		right: -18px;
+	}
+
+	.text-content {
+		width: 100%;
+		float: unset;
+		margin: auto;
+		text-align: center;
+	}
+	.form {
+		margin: auto;
+	}
+
+	.text-content-wrapper {
+		margin: auto;
+	}
+
+	.text {
+		padding-bottom: 10px;
+		margin-bottom: 0;
+	}
+
+	.search {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	.left-section {
+		width: unset;
+		padding: 2rem 0;
+	}
+
+	.circle {
+		top: 32%;
+		right: -15px;
+	}
+
+	.text {
+		padding-bottom: unset;
+	}
 }
