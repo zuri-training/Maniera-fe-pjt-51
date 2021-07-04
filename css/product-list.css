@@ -42,6 +42,17 @@ header form{
 header nav{
     flex: 2;
 }
+.open-menu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .main-menu .close-menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
 .page{
     text-align: center;
     font-size: 14px;
@@ -140,15 +151,52 @@ header nav{
 
 /*MEDIA Qz*/
 @media(max-width:768px){
-    .main-header{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: flex-start;
+    header{
+        justify-content: space-between;
+    }
+    .header-logo{
+        flex: 1;
+    }
+    .open-menu{
+        flex: 1;
+    }
+    .main-header form{
+        display: none;
+    }
+    .main-header nav ul{
+        padding-left: 0;
     }
     .main-header nav ul li{
-        padding: 10px;
+        padding: 7px;
     }
+    nav .main-menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 240, 240);
+        transition: display 1s ease-in-out;
+        display: none;
+    }
+    nav .main-menu .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    header .open-menu{
+        display: block;
+        font-size: 2rem;
+    }
+    nav .main-menu li a:hover{
+        font-size: 1.6rem;
+    }
+
     section{
         display: flex;
         flex-direction: column;

@@ -10,10 +10,11 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
+		<script src="https://kit.fontawesome.com/b5b706e1e7.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
 		<link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/product-list.css">
-		<title>Maniera</title>
+		<title>Product-List</title>
 	</head>
 	<body>
         <!--HEADER-->
@@ -26,14 +27,15 @@
                     <input type="text" class="form-control header-input" placeholder="Search Clothes..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary btn-danger header-btn" type="button" id="button-addon2"><span><img src="../assets/icons/search.png" alt="search"></button>
                 </div>
-                
             </form>
+			<div class="open-menu"><i class="fas fa-bars"></i></div>
             <nav>
-                <ul>
+                <ul class="main-menu">
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">Cart<span class="badge bg-danger rounded-pill">3</span></a></li>
                     <li><a href="#">My Requests</a></li>
                     <li><a href="#">Profile <img src="../assets/icons/chevron-down.svg" alt="down"></a></li>
+					<div class="close-menu"><i class="fas fa-times"></i></div>
                 </ul>
             </nav>
         </header>
@@ -380,5 +382,6 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+		<script src="../javascript/product-list.js"></script>
 	</body>
 </html>
