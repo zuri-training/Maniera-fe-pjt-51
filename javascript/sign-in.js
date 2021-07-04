@@ -8,13 +8,7 @@ const BASE_URL = 'https://maniera-dev.herokuapp.com/api/';
 const loading = document.getElementById('loading');
 loading.style.display = 'none';
 
-// Desktop
-const DesktopForm = document.getElementById('desktop-form');
-const DesktopEmail = document.getElementById('desktop-email');
-const DesktopPassword = document.getElementById('desktop-password');
-//----signin loader---
-const loader = document.getElementById('loader');
-loader.style.display = 'none';
+
 
 
 
@@ -30,25 +24,8 @@ form.addEventListener('submit', async e => {
     })
     localStorage.setItem('token', response.data.token);
     loading.style.display = 'none';
-    // window.location.href('/index.html');
-    // debugger;
 })
 
-
-
-Desktopform.addEventListener('submit', async e => {
-    e.preventDefault();
-
-    loader.style.display = 'block';
-
-    let response = await axios.post(`${BASE_URL}auth/signin`, {
-        email: DesktopEmail.value,
-        password: DesktopPassword.value
-    })
-    localStorage.setItem('token', response.data.token);
-    loader.style.display = 'none';
-    // window.location.href('/index.html');
-})
 
 // google signin
 function onSignIn(googleUser) {
@@ -58,3 +35,19 @@ function onSignIn(googleUser) {
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
+
+// facebook login
+function facebookLogin() {
+    FB.login((response) => {
+        console.log(response)
+    })
+}
+
+window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '143288521228126',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+};

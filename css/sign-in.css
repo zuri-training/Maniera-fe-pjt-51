@@ -9,158 +9,18 @@ html, body{
     font-family: Playfair Display, sanserif;
 }
 
-/* Moblie View styles */
-.mobile-signin-container{
+
+.signin-container{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: -20px;
-}
-
-.top-bar{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
-    padding: 10px;
-}
-.top-bar img{
-    position: relative;
-    top: 18px;
-}
-
-button{
-    position: relative;
-    width: 153px;
-    height: 33px;
-    color: white;
-    background: #DB3022;
-    border-radius: 5px;
-    border: none;
-}
-
-.warm-welcome p{
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 34.66px;
-    padding-top: 70px;
-}    
-
-.signin-buttons-container{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.facebook{
-    width: 330px;
-    height: 43px;
-    background: #253B80;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.google{
-    width: 330px;
-    height: 43px;
-    background: #FFFFFF;
-    color: #000000;
-    border: 1px solid #EFEFEF;
-    border-radius: 5px;
-}
-
-.or{
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 6fr 2fr 6fr;
-}
-
-.or img{
-    padding-top: 15px;
-    width: 130px;
-}
-
-.or p{
-    margin-top: 5px;
-    font-size: 16px;
-    line-height: 21.33px;
-    font-weight: 400;
-}
-
-.signin-forms form{
-    display: grid;
-    grid-template-rows: 1fr 1fr 2fr;
-    align-items: center;
-    justify-content: center;
-}
-
-.signin-forms form input{
-    width: 330px;
-    height: 43px;
-    background: #FFFFFF;
-    color: #000000;
-    border: 1px solid #EFEFEF;
-    border-radius: 5px;
-    margin: 4px;
-}
-
-.signin-forms form button{
-    width: 330px;
-}
-
-.signin-forms form input::placeholder{
-    text-align: center;
-}
-
-.signin-forms form .login-button{
-    width: 330px;
-    height: 46px;
-    background: #DB3022;
-    border-radius: 5px;
-    margin-top: 30px;
-    color: white;
-}
-
-.signin-button-container button{
-    width: 330px;
-    height: 46px;
-    background: #DB3022;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.signin-links span a{
-    color:  #DB3022;
-    text-decoration: none;
-}
-
-/* Desktop view */
-
-.desktop-signin-container{
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    grid-template-columns: 5fr 4fr;
 }
 
 .first-column{
-    width: 80%;
-    height: auto;
     background-color: #DB3022;
-    width: 400px;
     color: white;
-    padding: 130px 30px;
+    padding: 130px 50px;
 }
 
 .first-column .top-row{
@@ -172,7 +32,7 @@ button{
 
 .first-column .second-row{
     position: relative;
-    top: -10px;
+    top: 50px;
     padding: 0%;
 }
 
@@ -197,7 +57,8 @@ button{
     font-family: metropolis, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.8rem;
+    width: 400px;
     line-height: 50px;
     color: #FFFFFF;
 }
@@ -205,16 +66,15 @@ button{
 
 .second-column{
     font-family: metropolis, sans-serif;
-    width: 30%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
     background-color: white;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
+    padding-left: 30px;
 }
 
 .login{
@@ -231,21 +91,28 @@ button{
    color: white;
    background-color: #DB3022;
     margin-left: 200px;
-    font-size: 13px;
-    width: 120px;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
     padding: 5px;
     position: relative;
-    top: -40px;
+    top: -25px;
+}
+
+.second-column label{
+    color: rgb(138, 138, 138);;
 }
 
 .second-column input{
     width: 280px;
     height: 30px;
-}
+    background-color: whitesmoke;
+} 
 
 .second-column input:focus{
-    background-color: whitesmoke;
-    border-color: 1px solid black;
+    background-color: white;
+    border: 2px solid black;
+    outline: none !important;
 }
 
 .second-column span{
@@ -290,48 +157,33 @@ button{
 } 
 
 @media screen and (max-width:768px) {
+
     html,body{
-        background-color: white;
+        overflow-x: hidden;
     }
-    .mobile-signin-container{
-        display: block;
-        position: relative;
-        top: 70px;
+
+    .signin-container{
+        width: 100vw;
+        height: 100vh;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
-    .signin-buttons-container{
+
+    .first-column{
+        display: none;
+    }
+
+    .second-column{
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: center;   
+        padding-left: 10px; 
     }
-    .desktop-signin-container{
-        display: none;
-    }
-    .or{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 8fr 1fr 8fr;
-    }
-    
-    .or img{
-        margin: 0 auto;
-        padding-top: 15px;
-        width: 130px;
-    }
-    
-}
-
-@media screen and (min-width:992px) {
-    body{
-        background-color: whitesmoke;
-    }
-    .mobile-signin-container{
-        display: none;
+    .second-column .seller-button{
+        position: relative;
+        right: 30px;
     }
 }
 
-/* Loader Style goes here */

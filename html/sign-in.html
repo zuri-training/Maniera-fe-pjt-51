@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google-signin-client_id" content="15817899799-2iddsqvg418sp0t8m1b4q7klbk4unrk7.apps.googleusercontent.com">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -16,54 +17,16 @@
 		<title>Maniera Sign In</title>
 	</head>
 	<body>
-		<!-- Mobile View -->
-		<div class="mobile-signin-container" >
-			<div class="top-bar">
-					<img src="/assets/images/path.png" alt="" srcset="">
-					<button>Become a seller</button>
-			</div>
-
-			<div class="warm-welcome">
-				<p>Welcome to Maniera</p>
-			</div>
-
-			<div class="signin-buttons-container">
-				<button class="facebook">Sign In with facebook</button>
-				<button class="google g-signin2" data-onsuccess="onSignIn">Sign In with google</button>
-			</div>
-
-			<div class="or">
-				<img src="/assets/images/Vector 2.png" alt="" srcset="" >
-				<p>OR</p>
-				<img src="/assets/images/Vector 2.png" alt="" srcset="">
-			</div>
-
-			<div class="signin-forms">
-				<form  method="post" id="form">
-					<input type="email" placeholder="Enter your Email" id="email">
-					<input type="password" placeholder="Enter your password" id="password">
-					<button type="submit" class="login-button"> Login </button>
-				</form>
-			</div>
-
-			
-			<div class="signin-links">
-				<p>Not Registered? <span><a href="#">Sign Up</a></span></p>
-			</div>
-			<div>
-				<p id="loading">loading</p>
-			</div> 
-		</div>
  		
-		<div class="desktop-signin-container">
+		<div class="signin-container">
 			<div class="first-column">
 				<div class="top-row">
-					<div style="border-radius: 50%; color: black; background-color: white; height: 30px; width: 30px; text-align: center;">M</div>
-					<p>Maniera</p>
+					<div style="border-radius: 50%; color: black; background-color: white; height: 30px; width: 30px; text-align: center; justify-content: center; align-items: center;">M</div>
+					<p style="padding-left: 10px;">Maniera</p>
 				</div>
 				<div class="second-row">
 					<p>Maniera</p>
-					<p class="look-through">Look through <br/> the clothes <br/> of your choice</p>
+					<p class="look-through">Look through the clothes of your choice</p>
 					<p class="connect">Maniera is a platform that connects designers<br> to their clients</p>
 				</div>
 			</div>
@@ -72,12 +35,12 @@
 				<button class="seller-button">Become a seller</button>
 		
 				<div>
-					<form action="" method="post" style="display: flex; flex-direction: column;" id="desktop-form">
+					<form action="" method="post" style="display: flex; flex-direction: column;" id="form">
 						<p  class="login">Login</p>
 						<label for="">Email</label>
-						<input type="email" id="desktop-email" style="margin-bottom: 20px;">
+						<input type="email" class="form-control form-control-lg form-control-sm" id="email" style="margin-bottom: 20px;">
 						<label>Password</label>
-						<input type="password" id="desktop-password">
+						<input class="form-control form-control-lg form-control-sm" type="password" id="password">
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
 							<div class="empty-div" style="margin-right: 5px;"></div>
 							<span style="font-size: smaller;">Keep me logged in</span>
@@ -88,12 +51,11 @@
 							<p style="width: 200px;">Don't have an account?</p>
 							<span style="color: red; margin-top: 0px; padding-right: -200px;">Sign Up</span>
 						</div>
-						<div style="display: grid; grid-template-columns: 2fr 2fr; gap: 10px;">
-							<button class="desktop-google"><img src="/assets/images/google.png">continue with google</button>
-							<button class="desktop-facebook"><img src="/assets/images/facebook.png" style="background-color: white;">continue with facebook</button>
+						<div style="display: grid; grid-template-rows: 2fr 2fr; gap: 10px;">
+							<div class="g-signin2" data-onsuccess="onSignIn" data-width="280" data-height="40" data-longtitle="false"></div>
+							<button class="facebook" onclick="facebookLogin()">Log in with facebook</button>
 						</div>
-					</form>
-					<p id="loader">loading</p>
+					<p id="loading">loading</p>
 				</div>
 			</div>
 		</div> 
