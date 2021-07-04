@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+	/>
+	<script src="https://kit.fontawesome.com/b5b706e1e7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+	<link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div class="page">
+        <h4 style="font-size: 16px;"><span style="color: #e2594e;">Home</span> / Top Rated</h4>
+    </div>
+
+    <section class="container-fluid">
+        <div class="product">
+            <h2>PRODUCT</h2>
+            <div>
+                <h2>PRICE</h2>
+                <h2>QTY</h2>
+                <h2>UNIT PRICE</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="item d-flex justify-content-between align-items-center my-3">
+        <div class=" item-1 d-flex justify-content-between align-items-center container-fluid">
+            <div style="color: #e2594e; cursor: pointer;"><i class="fas fa-times"></i></div>
+            <p>Denim Trousers</p>
+        </div>
+        <div class="item-2 container-fluid d-flex justify-content-around align-items-center my-3">
+            <p style="margin-bottom: 0;">$114</p>
+            <div class="spin">
+                <span style="color: #e2594e;" class="prev" onclick="prevNum()">-</span>
+                <div id="box">
+                    1
+                </div>
+                <span style="color: #e2594e;" class="next" onclick="nextNum()">+</span>
+            </div>
+            <p style="margin-bottom: 0;">$114</p>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="d-flex align-items-center justify-content-around flex-wrap bottom">
+            <div class="d-flex justify-content-between redeem">
+                <input type="text" />
+                <button class="btn btn-sm btn-danger">
+                    Redeem
+                </button>
+            </div>
+                
+            <div class="brand">
+                <ul>
+                    <li class="d-flex justify-content-between">Subtotal <span>$114</span></li>
+                    <li class="d-flex justify-content-between">Coupon <span>No</span></li>
+                    <li class="d-flex justify-content-between">Shipping Fee <span>$25</span></li>
+                    <li class="d-flex justify-content-between">Date of Delivery <span>10-June-2021</span></li>
+                    <li style="font-weight: bold;" class="d-flex justify-content-between">TOTAL <span>$139</span></li>
+                </ul>
+                <button style="width: 100%;" class="btn btn-primary btn-sm btn-danger btn-side">Checkout</button>
+            </div>    
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="maniera-footer py-2">
+        <section class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
+            <div class="footer-logo my-3">
+                <!-- <img src="./assets/logos/Maniera.png" alt="footer logo" /> -->
+                <h1><a href="/">Maniera</a></h1>
+            </div>
+            <form class="footer-subscription-form my-3">
+                <h4>NEW TO MANIERA?</h4>
+                <p>Subscribe to our newsletter to get updates on our latest offers</p>
+                <div class="d-flex justify-content-between rounded">
+                    <input type="text" />
+                    <button class="btn footer-btn rounded-0">
+                        <span><img src="../assets/icons/footer-arrow.png" alt="arrow" /></span><span class="ms-2 send">Send</span>
+                    </button>
+                </div>
+            </form>
+            <div class="footer-download-app my-3">
+                <h4>DOWNLOAD THE MANIERA APP</h4>
+            </div>
+        </section>
+
+        <section class="footer-section-2 container d-flex flex-wrap justify-content-between pt-sm-5 mb-5">
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Contact Us</h4>
+                <div class="d-flex justify-content-evenly">
+                    <div class="footer-social-icons">
+                        <a href="www.facebook.com"><img src="../assets/icons/Facebook Icon.png" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="www.twitter.com"><img src="../assets/icons/Twitter Icon.png" alt="twitter" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Let us help</h4>
+                <p><a href="">How to Shop?</a></p>
+                <p><a href="">How to request a design?</a></p>
+                <p><a href="">Delivery Options</a></p>
+                <p><a href="">Delivery timeline</a></p>
+                <p><a href="">How to upload my product?</a></p>
+                <p><a href="">Bulk purchases</a></p>
+                <p><a href="">Return policy</a></p>
+                <p><a href="">Report a product</a></p>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">FAQ</a></p>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">About Maniera</h4>
+                <p><a href=""> About Us</a></p>
+                <p><a href="">Terms and Conditions</a></p>
+                <p><a href="">Privacy policy</a></p>
+            </div>
+            <div class="my-3 mx-2">
+                <h4 class="pb-4">Earn on Maniera</h4>
+                <p><a href="">Become a Seller</a></p>
+                <p><a href="">Become a Logistics Partner</a></p>
+            </div>
+        </section>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/cart.js">
+        
+    </script>
+</body>
+</html>
