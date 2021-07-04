@@ -29,6 +29,7 @@ body{
 }
 .product h2{
     font-size: 16px;
+    font-weight: bold;
 }
 .item{
     border-bottom:1px solid lightgrey;
