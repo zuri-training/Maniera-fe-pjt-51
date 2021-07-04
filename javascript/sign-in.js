@@ -36,4 +36,18 @@ function onSignIn(googleUser) {
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
 
+// facebook login
+function facebookLogin() {
+    FB.login((response) => {
+        console.log(response)
+    })
+}
 
+window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '143288521228126',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+};
