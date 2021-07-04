@@ -6,6 +6,12 @@ const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirmPassword");
 const myForm = document.querySelector("#myform");
 
+const firstName = document.querySelector("#firstName");
+const lastName = document.querySelector("#lastName");
+const email = document.querySelector("#email");
+const passwordError = document.querySelector(".password-error");
+const confirmPasswordError = document.querySelector(".confirm-password-error");
+
 //  toggling the password visilibilty
 
 togglePassword.addEventListener("click", function (e) {
@@ -28,37 +34,60 @@ toggleConfirmPassword.addEventListener("click", function (e) {
 myForm.addEventListener("submit", function (e) {
 	e.preventDefault();
 
-	const firstName = document.querySelector("#firstName").value;
-	const lastName = document.querySelector("#lastName").value;
-	const email = document.querySelector("#email").value;
-	const password = document.querySelector("#password").value;
-	const confirmPassword = document.querySelector("#confirmPassword").value;
-
 	const user = {
-		firstName: firstName,
-		lastName: lastName,
-		email: email,
-		password: password,
-		confirmPassword: confirmPassword,
+		firstName: firstName.value,
+		lastName: lastName.value,
+		email: email.value,
+		password: password.value,
+		confirmPassword: confirmPassword.value,
 	};
 
 	console.log(user);
-	// const formData = new FormData(this);
 
-	fetch("https://maniera-dev.herokuapp.com/api/auth/signup", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify(user),
-	})
-		.then((response) => response.json())
-		.then((user) => {
-			console.log("success:", user);
-			console.log(user);
+	const CheckPassword = (inputtxt) => {
+		var decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+		if (inputtxt.value.match(decimal)) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	if (!CheckPassword(password)) {
+		passwordError.classList.add("alert", "alert-danger");
+		passwordError.innerHTML =
+			"Password should contain at least an uppercase letter, a lower case letter, a digit, a symbol and not less than 8 characters in total";
+
+		setTimeout(() => {
+			passwordError.classList.remove("alert", "alert-danger");
+			passwordError.innerHTML = "";
+		}, 10000);
+	} else if (password.value !== confirmPassword.value) {
+		confirmPasswordError.classList.add("alert", "alert-danger");
+		confirmPasswordError.innerHTML = "Password does not match";
+
+		setTimeout(() => {
+			confirmPasswordError.classList.remove("alert", "alert-danger");
+			confirmPasswordError.innerHTML = "";
+		}, 10000);
+	} else {
+		fetch("https://maniera-dev.herokuapp.com/api/auth/signup", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(user),
 		})
-		.catch((error) => {
-			console.log("error:", error);
-			console.log(user);
-		});
+			.then((res) => {
+				if (res.status === 200 || res.status === 201) {
+					localStorage.setItem("user", JSON.stringify(res.json()));
+					window.location = "/html/sign-in.html";
+				} else if (res.status === 401 || res.status === 404) {
+					console.log("error");
+				}
+			})
+			.catch((error) => {
+				console.error(error);
+			});
+	}
 });
