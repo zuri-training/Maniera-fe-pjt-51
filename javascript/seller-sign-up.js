@@ -140,21 +140,22 @@ form.addEventListener("submit", (e) => {
 	};
 
 	fetch("https://maniera-dev.herokuapp.com/api/auth/seller/userId", {
-		method: "post",
+		method: "POST",
 		body: JSON.stringify(seller),
 		headers: {
 			"Content-Type": "application/json",
 		},
+		body: JSON.stringify(seller),
 	})
 		.then((res) => {
 			if (res.status === 200 || res.status === 201) {
 				localStorage.setItem("seller", JSON.stringify(res.json()));
-				window.location = "/admin/html/dashboard.html";
+				window.location = "/";
 			} else if (res.status === 401 || res.status === 404) {
 				console.log("error");
 			}
 		})
-		.catch(function (error) {
+		.catch((error) => {
 			console.error(error);
 		});
 
