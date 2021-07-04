@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="google-signin-client_id" content="15817899799-2iddsqvg418sp0t8m1b4q7klbk4unrk7.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -14,9 +16,8 @@
 		<title>Maniera Sign In</title>
 	</head>
 	<body>
-		<!-- Sign In Container 
-		<div class="sign-in-container" style="display: none">
-			 Sign In Topbar 
+		<!-- Mobile View -->
+		<div class="mobile-signin-container" >
 			<div class="top-bar">
 					<img src="/assets/images/path.png" alt="" srcset="">
 					<button>Become a seller</button>
@@ -28,11 +29,11 @@
 
 			<div class="signin-buttons-container">
 				<button class="facebook">Sign In with facebook</button>
-				<button class="google">Sign In with google</button>
+				<button class="google g-signin2" data-onsuccess="onSignIn">Sign In with google</button>
 			</div>
 
 			<div class="or">
-				<img src="/assets/images/Vector 2.png" alt="" srcset="">
+				<img src="/assets/images/Vector 2.png" alt="" srcset="" >
 				<p>OR</p>
 				<img src="/assets/images/Vector 2.png" alt="" srcset="">
 			</div>
@@ -48,13 +49,13 @@
 			
 			<div class="signin-links">
 				<p>Not Registered? <span><a href="#">Sign Up</a></span></p>
-				<div>
-					<h3 id="loading">loading</h3>
-				</div>
 			</div>
-		</div> -->
-
-		<div class="signin-container">
+			<div>
+				<p id="loading">loading</p>
+			</div> 
+		</div>
+ 		
+		<div class="desktop-signin-container">
 			<div class="first-column">
 				<div class="top-row">
 					<div style="border-radius: 50%; color: black; background-color: white; height: 30px; width: 30px; text-align: center;">M</div>
@@ -71,33 +72,33 @@
 				<button class="seller-button">Become a seller</button>
 		
 				<div>
-					<form action="" method="post" style="display: flex; flex-direction: column;" id="form">
-						<p style="font-family: Metropolis;font-style: normal;font-weight: 600;font-size: 36px;line-height: 36px;">Login</p>
+					<form action="" method="post" style="display: flex; flex-direction: column;" id="desktop-form">
+						<p  class="login">Login</p>
 						<label for="">Email</label>
-						<input type="email" id="email" style="margin-bottom: 20px;">
+						<input type="email" id="desktop-email" style="margin-bottom: 20px;">
 						<label>Password</label>
-						<input type="password" id="password">
+						<input type="password" id="desktop-password">
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
 							<div class="empty-div" style="margin-right: 5px;"></div>
 							<span style="font-size: smaller;">Keep me logged in</span>
 							<span style="color: red; font-size: x-small; margin-left: 50px; margin-top: 2px;">Forgot your password?</span>
 						</div>
-						<button class="login-button" type="submit">Login</button>
+						<button class="desktop-login-button" type="submit">Login</button>
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
-							<p style="width: 175px;">Don't hav an account?</p>
-							<span style="color: red; margin-top: 0px; margin-left: 50px;">Sign Up</span>
+							<p style="width: 200px;">Don't have an account?</p>
+							<span style="color: red; margin-top: 0px; padding-right: -200px;">Sign Up</span>
 						</div>
 						<div style="display: grid; grid-template-columns: 2fr 2fr; gap: 10px;">
-							<button class="google"><img src="/assets/images/google.png">continue with google</button>
-							<button class="facebook"><img src="/assets/images/facebook.png" style="background-color: white;">continue with facebook</button>
+							<button class="desktop-google"><img src="/assets/images/google.png">continue with google</button>
+							<button class="desktop-facebook"><img src="/assets/images/facebook.png" style="background-color: white;">continue with facebook</button>
 						</div>
 					</form>
+					<p id="loader">loading</p>
 				</div>
 			</div>
-		</div>
-		<div>
-			<h3 id="loading">loading</h3>
-		</div>
+		</div> 
+		
+
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -106,5 +107,6 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 		<script src="/javascript/sign-in.js"></script>
+		
 	</body>
 </html>
