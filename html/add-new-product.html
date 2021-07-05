@@ -14,7 +14,7 @@
     <title>Maniera</title>
 </head>
 
-<body>
+<body>  
     <!--HEADER-->
     <header class="container d-flex align-items-center flex-wrap text-sm-right main-header">
         <div class="header-logo my-3">
@@ -60,78 +60,96 @@
             <br>
             <label for="p-cat" class="label">Product Category</label>
             <br>
-            
-            <label class="check-container">Hand Sewn
-                <input type="checkbox" name="Hand Sewn" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">Factory Made
-                <input type="checkbox" name="Factory Made" id="" class="checkbox">
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">For Men
-                <input type="checkbox" name="For Men" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">For Women
-                <input type="checkbox" name="For Women" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container">For Children
-                <input type="checkbox" name="For Children" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">Others
-                <input type="checkbox" name="Others" id="" class="checkbox">
-                <span class="checkmark"></span>
-            </label>
+            <div class="grid-container one">
+                <div class="grid-item">
+                    <label class="check-container">Hand Sewn
+                        <input type="checkbox" name="Hand Sewn" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">Factory Made
+                        <input type="checkbox" name="Factory Made" id="" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">For Men
+                        <input type="checkbox" name="For Men" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">For Women
+                        <input type="checkbox" name="For Women" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="grid-container two">
+                <div class="grid-item">
+                    <label class="check-container">For Children
+                        <input type="checkbox" name="For Children" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">Others
+                        <input type="checkbox" name="Others" id="" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
             <br>
 
             <label for="size" class="label margin-top">Size</label>
             <br>
-            <label class="check-container">Small
-                <input type="checkbox" name="Small" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>        
-
-            <label class="check-container margin-left">Medium
-                <input type="checkbox" name="Medium" id="" class="checkbox">
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">Large
-                <input type="checkbox" name="Large" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-
-            <label class="check-container margin-left">Extra Large
-                <input type="checkbox" name="Extra Large" id="" class="checkbox" checked>
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <div class="float">
-                <label for="amount" class="label">Amount per unit ($)</label>
-                <br>
-                <input type="text" name="amount" id="amount">
-                <br>
-
+            <div class="grid-container one">
+                <div class="grid-item">
+                    <label class="check-container">Small
+                        <input type="checkbox" name="Small" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>    
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">Medium
+                        <input type="checkbox" name="Medium" id="" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">Large
+                        <input type="checkbox" name="Large" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label class="check-container">Extra Large
+                        <input type="checkbox" name="Extra Large" id="" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
             </div>
-
-            <label for="color" class="label margin-top">Color</label>
             <br>
-            <input type="text" name="color" id="color">
-            <span onclick="newElement()" class="addBtn"><i class="material-icons">add</i></span>
-            <br>
-            <ul id="colorList">
-                <li class="list">Black</li>
-            </ul>
 
+            <div class="grid-container three">
+                <div class="grid-item">
+                    <label for="color" class="label margin-top">Color</label>
+                    <br>
+                    <input type="text" name="color" id="color" class="half-width">
+                    <span onclick="newElement()" class="addBtn"><i class="material-icons plus-icon">add</i></span>
+                    <br>
+                    <ul id="colorList">
+                        <li class="list">Black</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <label for="amount" class="label margin-top">Amount per unit ($)</label>
+                <br>
+                <input type="text" name="amount" id="amount" class="half-width">
+                <br>
+                </div>
+            </div>
 
 
             <label for="description" class="label big-margin-top">Description</label>
