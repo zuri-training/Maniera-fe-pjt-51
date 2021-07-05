@@ -60,38 +60,59 @@
             <br>
             <label for="p-cat" class="label">Product Category</label>
             <br>
-            <input type="checkbox" name="Hand Sewn" id="" class="checkbox" checked>
-            <label for="">Hand Sewn</label>
+            
+            <label class="check-container">Hand Sewn
+                <input type="checkbox" name="Hand Sewn" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="Factory Made" id="" class="margin-left checkbox">
-            <label for="">Factory Made</label>
+            <label class="check-container margin-left">Factory Made
+                <input type="checkbox" name="Factory Made" id="" class="checkbox">
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="For Men" id="" class="margin-left checkbox" checked>
-            <label for="">For Men</label>
+            <label class="check-container margin-left">For Men
+                <input type="checkbox" name="For Men" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="For Women" id="" class="margin-left checkbox" checked>
-            <label for="">For Women</label>
-            <br>
-            <input type="checkbox" name="For Children" id="" class="checkbox" checked>
-            <label for="">For Children</label>
+            <label class="check-container margin-left">For Women
+                <input type="checkbox" name="For Women" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="Others" id="" class="margin-left checkbox">
-            <label for="">Others</label>
+            <label class="check-container">For Children
+                <input type="checkbox" name="For Children" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container margin-left">Others
+                <input type="checkbox" name="Others" id="" class="checkbox">
+                <span class="checkmark"></span>
+            </label>
             <br>
 
             <label for="size" class="label margin-top">Size</label>
             <br>
-            <input type="checkbox" name="Small" id="" class="checkbox" checked>
-            <label for="">Small</label>
+            <label class="check-container">Small
+                <input type="checkbox" name="Small" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>        
 
-            <input type="checkbox" name="Medium" id="" class="margin-left checkbox">
-            <label for="">Medium</label>
+            <label class="check-container margin-left">Medium
+                <input type="checkbox" name="Medium" id="" class="checkbox">
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="Large" id="" class="margin-left checkbox" checked>
-            <label for="" class="margin-right">Large</label>
+            <label class="check-container margin-left">Large
+                <input type="checkbox" name="Large" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
 
-            <input type="checkbox" name="Extra Large" id="" class="margin-left checkbox" checked>
-            <label for="">Extra Large</label>
+            <label class="check-container margin-left">Extra Large
+                <input type="checkbox" name="Extra Large" id="" class="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
             <br>
 
             <div class="float">
@@ -195,67 +216,11 @@
             </div>
         </section>
     </footer>
-    <script>
-
-        var indexList = document.getElementsByClassName("list");
-        var i;
-        for (i = 0; i < indexList.length; i++) {
-            var span = document.createElement("SPAN");
-            var txt = document.createTextNode("\u00D7");
-            span.className = "close";
-            span.appendChild(txt);
-            indexList[i].appendChild(span);
-        }
-
-
-        var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function () {
-                var div = this.parentElement;
-                div.style.display = "none";
-            }
-        }
-
-
-        function newElement() {
-            var li = document.createElement("li");
-            var inputValue = document.getElementById("color").value;
-            var t = document.createTextNode(inputValue);
-            li.appendChild(t);
-            if (inputValue === '') {
-                alert("You haven't added a color");
-            } else {
-                document.getElementById("colorList").appendChild(li);
-            }
-            document.getElementById("color").value = "";
-
-            var span = document.createElement("SPAN");
-            var txt = document.createTextNode("\u00D7");
-            span.className = "close";
-            span.appendChild(txt);
-            li.appendChild(span);
-
-            for (i = 0; i < close.length; i++) {
-                close[i].onclick = function () {
-                    var div = this.parentElement;
-                    div.style.display = "none";
-                }
-            }
-        }
-    </script>
-    <script>
-        const actualBtn = document.getElementById('actual-btn');
-
-        const fileChosen = document.getElementById('file-chosen');
-
-        actualBtn.addEventListener('change', function () {
-            fileChosen.textContent = this.files[0].name
-        })
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
+    <script src="/javascript/add-new-product.js"></script>
 </body>
 
 </html>

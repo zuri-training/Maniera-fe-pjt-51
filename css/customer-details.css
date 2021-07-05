@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font: Metropolis;
+}
+
+body {
+	background-color: #f3f3f3;
+}
+
+.customer-details-main {
+	padding: 3rem 0 !important;
+}
+
+.customer-details-main h3 {
+	font-weight: 600;
+}
+
+.customer-details-main input:focus {
+	outline: none;
+	border: 2px solid #000000;
+	box-shadow: none;
+}
+
+/* .hero-background {
+	background-color: #f3f3f3;
+	position: absolute;
+	width: 1440px;
+	height: 1901px;
+	left: 0px;
+	top: -1px;
+} */
+
+/* .rectangle {
+	background: #fefefe;
+	position: absolute;
+	width: 1202px;
+	height: 1586px;
+	left: 120px;
+	top: 218px;
+} */
+
+span,
+i {
+	font-size: 0.5em;
+	color: #00579f;
+}
+
+a {
+	text-decoration: none;
+}
+
+button.save-btn {
+	margin: 12rem 0 3rem 0;
+	background: #db3022;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 22px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+	button.save-btn {
+		margin: 3rem 0;
+	}
+}

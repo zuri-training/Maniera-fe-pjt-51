@@ -20,3 +20,21 @@ The product seeks to do the following;
 # NOTE
 
 Remember to pull from upstream dev branch before pushing
+
+# HOW TO CONTRIBUTE
+
+For those yet to start, after forking and cloning the repo, do this
+
+run this command to add up stream
+
+git remote add upstream https://github.com/zuri-training/Maniera-fe-pjt-51.git
+
+then to check if it has added you should run
+
+git remote -v
+
+it will show you an origin branch fetch and push, and an upstream fetch and push
+
+then do this to get the updates from the dev branch (this is where all our updates are)
+
+git pull upstream dev
