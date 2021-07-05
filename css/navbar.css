@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.nav-header {
+	background: transparent;
+}
+
 .maniera-home {
 	font-weight: 600;
 	font-size: 1.45rem;
