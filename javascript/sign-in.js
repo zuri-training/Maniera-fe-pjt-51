@@ -1,8 +1,7 @@
 const form = document.getElementById('form');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
 
-const BASE_URL = 'https://maniera-dev.herokuapp.com/api/';
+
+const BASE_URL = 'https://maniera-dev.herokuapp.com/api';
 
 //----signin loader---
 const loading = document.getElementById('loading');
@@ -12,19 +11,50 @@ loading.style.display = 'none';
 
 
 
+function showAlert(message, type) {
+    const alertMessage = document.querySelector("#alert-message");
+    alertMessage.innerHTML = `<div class="alert alert-${type} alert-block text-center" role="alert">
+    ${message}
+    </div>
+    `
+    alertMessage.style.display = "block";
 
-form.addEventListener('submit', async e => {
+    setTimeout(function () {
+        alertMessage.style.display = "none";
+    }, 8000)
+}
+
+const loginForm = async () => {
     e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    if (!password || !email)
+        return showAlert("Field can not be empty", "danger");
+    try {
+        
+        const response = await fetch(`${BASE_URL}`/auth/signin, {
+            method:"POST", 
+            headers:{
+                "Accept": "application/json, text/plain",
+                "Content-type": "application/json"
 
-    loading.style.display = 'block';
+            },
+            body: JSON.stringify({
+                email,
+                password
+            })
+        })
+        const data = await response.json();
+        console.log(data);
+        window.location.replace('https://maniera-beta-tesing.netlify.app');
+        form.reset();
+    } catch (error) {
+        showAlert("Sorry! Error signing in.", "danger")
+        console.log(error);
+    }
+}
 
-    let response = await axios.post(`${BASE_URL}auth/signin`, {
-        email: email.value,
-        password: password.value
-    })
-    localStorage.setItem('token', response.data.token);
-    loading.style.display = 'none';
-})
+form.addEventListener("submit", loginForm);
 
 
 // google signin
