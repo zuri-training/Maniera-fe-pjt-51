@@ -66,6 +66,12 @@ function onSignIn(googleUser) {
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
 
+let id_token = googleUser.getAuthResponse().id_token;
+post(`${BASE_URL}`, {id_token: id_token})
+.then(() => {
+    window.location.replace('https://maniera-beta-tesing.netlify.app');
+})
+
 // facebook login
 function facebookLogin() {
     FB.login((response) => {
