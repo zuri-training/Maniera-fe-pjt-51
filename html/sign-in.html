@@ -47,6 +47,7 @@
 							<span style="color: red; font-size: x-small; margin-left: 50px; margin-top: 2px;">Forgot your password?</span>
 						</div>
 						<button class="desktop-login-button" type="submit">Login</button>
+						<div id="alert-message"></div>
 						<div style="display: flex; flex-direction: row; margin-top: 10px;">
 							<p style="width: 200px;">Don't have an account?</p>
 							<span style="color: red; margin-top: 0px; padding-right: -200px;">Sign Up</span>
@@ -55,6 +56,7 @@
 							<div class="g-signin2" data-onsuccess="onSignIn" data-width="280" data-height="40" data-longtitle="false"></div>
 							<button class="facebook" onclick="facebookLogin()">Log in with facebook</button>
 						</div>
+					</form>
 					<p id="loading">loading</p>
 				</div>
 			</div>
@@ -67,7 +69,7 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script> -->
 		<script src="/javascript/sign-in.js"></script>
 		
 	</body>
