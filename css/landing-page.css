@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-h1 {
+.maniera-home {
     font-weight: 600;
     font-size: 1.45rem;
     line-height: 2.1;
@@ -26,6 +26,14 @@ li {
 
 img {
     display: block;
+}
+
+.wrapper a {
+    color: unset;
+    text-decoration: none;
+}
+.wrapper a:hover {
+    color: unset;
 }
 
 @font-face {
@@ -143,7 +151,6 @@ div.form-group {
     justify-content: flex-end;
     width: 15vw;
 }
-
 .bar {
     display: block;
     width: 1.5625rem;
@@ -459,10 +466,9 @@ section.recently-viewed {
         position: relative;
     }
 
-    h1.maniera-home {
+    .maniera-home {
         width: 10vw;
     }
-
     .search {
         width: 70.33vw;
         margin-left: 1.5rem;

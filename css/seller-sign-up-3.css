@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+.seller-sign-up-left-side {
+	background: #db3022;
+	width: 30%;
+}
+
+.seller-sign-up-left-side .mind-your-business {
+	height: 80vh;
+}
+.seller-sign-up-left-side .mind-your-business p {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.seller-sign-up-right-side {
+	width: 70%;
+}
+
+.seller-sign-up-right-side div button {
+	color: #db3022;
+}
+
+.tab-3 div .page-one,
+.tab-3 div .page-two,
+.tab-3 p span {
+	color: #db3022;
+}
+
+.tab-3 div .page-three {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background: #db3022;
+	color: #ffffff;
+}
+
+.tab-3 div .page-dash-one,
+.tab-3 div .page-dash-two {
+	border: 2px solid #db3022;
+}
+
+.tab-3 .other {
+	height: 30px;
+	border: 1px solid #db3022;
+}
+
+.tab-3 .submit-application-btn {
+	background: #db3022;
+}
+
+/* The checkbox-option */
+.checkbox-option {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-option input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #ffffff;
+	border: 2px solid #db3022;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-option:hover input ~ .checkmarker {
+	background-color: #ccc;
+}
+
+.checkbox-option input:checked ~ .checkmarker {
+	background-color: #db3022;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarker:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-option input:checked ~ .checkmarker:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-option .checkmarker:after {
+	left: 6px;
+	top: 1px;
+	width: 10px;
+	height: 15px;
+	border: solid #ffffff;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+	.seller-sign-up-left-side {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.seller-sign-up-right-side {
+		width: 100%;
+	}
+
+	.logo-div span {
+		color: #db3022 !important;
+	}
+	.logo-div img {
+		border: 2px solid#db3022 !important;
+		border-radius: 50%;
+	}
+}

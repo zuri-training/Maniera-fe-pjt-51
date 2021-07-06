@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<script src="https://kit.fontawesome.com/b5b706e1e7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+		<link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/product-list.css">
+		<title>Product-List</title>
+	</head>
+	<body>
+        <!--HEADER-->
+		<header class="container d-flex align-items-center flex-wrap text-sm-right main-header">
+            <div class="header-logo my-3">
+                <h1>Maniera</h1>
+            </div>
+            <form class="my-3">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control header-input" placeholder="Search Clothes..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary btn-danger header-btn" type="button" id="button-addon2"><span><img src="../assets/icons/search.png" alt="search"></button>
+                </div>
+            </form>
+			<div class="open-menu"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Cart<span class="badge bg-danger rounded-pill">3</span></a></li>
+                    <li><a href="#">My Requests</a></li>
+                    <li><a href="#">Profile <img src="../assets/icons/chevron-down.svg" alt="down"></a></li>
+					<div class="close-menu"><i class="fas fa-times"></i></div>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page">
+            <h4 style="font-size: 16px;"><span style="color: #e2594e;">Home</span> / Top Rated</h4>
+        </div>
+
+        <!--SECTIONS-->
+
+        <section class="container d-flex justify-content-between">
+
+            <div class="side-bar container d-flex flex-column flex-fill">
+
+                <!--HOT DEALS SECTION-->
+                <div class="hot-deals">
+                    <h4>Hot Deals</h4>
+                    <ul>
+                        <li class="d-flex justify-content-between">Denim Trousers<span> $150</span></li>
+                        <li class="d-flex justify-content-between" style="color: #e2594e;">Fitted Suit<span> $350</span></li>
+                        <li class="d-flex justify-content-between">Office Shirts<span> $110</span></li>
+                        <li class="d-flex justify-content-between">Plain Tees<span> $50</span></li>
+                        <li class="d-flex justify-content-between">Red Gown<span> $95</span></li>
+                        <li class="d-flex justify-content-between">Ankara Tops<span> $75</span></li>
+                        <li class="d-flex justify-content-between">Denim Shorts<span> $80</span></li>
+                    </ul>
+                </div>
+
+                <!--PRICES SECTION-->
+                <div class="prices">
+                    <h4>Prices</h4>
+                    <div>
+                        <p class="d-flex justify-content-between">Range: <span>$75.00-$350.00</span></p>
+                    </div>
+                    <input type="range" name="Price-range" id="slider">
+                </div>
+
+                <!--BRAND SECTION-->
+                <div class="brand">
+                    <h4>Brand</h4>
+                    <ul>
+                        <li class="d-flex justify-content-between">Ankara <span>2</span></li>
+                        <li style="color:#e2594e" class="d-flex justify-content-between">Vento <span>3</span></li>
+                        <li class="d-flex justify-content-between">Denim <span>5</span></li>
+                        <li class="d-flex justify-content-between">Viisco <span>5</span></li>
+                    </ul>
+                </div>
+                <button style="width: 100%;" class="btn btn-primary btn-lg btn-danger btn-side">More</button>
+            </div>
+
+            <div class="main container text-center text-sm-start d-flex flex-wrap flex-column">
+                <div class="showcase d-sm-flex align-items-center justify-content-between my-4 px-2">
+					<div class="px-3">
+						<h1 style="letter-spacing: 10px;">Red Gown</h1>
+						<p class="lead my-3">Perfect for that evening date</p>
+						<button class="btn btn-danger btn-lg">Shop Now</button>
+					</div>
+					<img class="img-fluid" src="../assets/images/Red Gown Image.png" alt="showcase">
+				</div>
+
+                <div></div>
+                
+				<div class="product-list my-4">
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Denim Trousers</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Safari Wears</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image1.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Fitted Suits</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">One Boutique</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image2.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Plain Tees</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Josh Wears</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image3.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Pleated skirt</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Fashion Hub</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image4.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Native Gown</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Josh Wears</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image5.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Ankara Tops</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">One Boutique</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image7.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Nitted Sweater</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Temi's Gallery</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image8.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Office Shirts</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">One Boutique</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+					<div class="card my-4 main-card" style="width: 16rem;">
+						<img src="../assets/images/Denim Trousers Image9.png" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Denim Trousers</h5>
+						  	<span class="d-flex justify-content-between">
+							  <p class="card-text">Safari Wears</p>
+							  <div class="d-flex">
+								<p style="text-decoration: line-through;">$150</p>
+								<b style="color: #e2594e;">$114</b>
+							  </div>
+							</span>
+							<span>
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">
+								<img class="my-2" src="../assets/icons/star.png" alt="Star">	
+							</span>
+						  <span class="d-flex justify-content-between">
+							<a href="#" class="btn btn-outline-primary btn-sm">Add to cart</a>
+							  <a href="#" class="btn btn-primary btn-sm">Buy now</a>
+							</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+
+		<footer class="maniera-footer py-2">
+			<section class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
+				<div class="footer-logo my-3">
+					<!-- <img src="./assets/logos/Maniera.png" alt="footer logo" /> -->
+					<h1><a href="/">Maniera</a></h1>
+				</div>
+				<form class="footer-subscription-form my-3">
+					<h4>NEW TO MANIERA?</h4>
+					<p>Subscribe to our newsletter to get updates on our latest offers</p>
+					<div class="d-flex justify-content-between rounded">
+						<input type="text" />
+						<button class="btn footer-btn rounded-0">
+							<span><img src="../assets/icons/footer-arrow.png" alt="arrow" /></span><span class="ms-2 send">Send</span>
+						</button>
+					</div>
+				</form>
+				<div class="footer-download-app my-3">
+					<h4>DOWNLOAD THE MANIERA APP</h4>
+				</div>
+			</section>
+			<section class="footer-section-2 container d-flex flex-wrap justify-content-between pt-sm-5 mb-5">
+				<div class="my-3 mx-2">
+					<h4 class="pb-4">Contact Us</h4>
+					<div class="d-flex justify-content-evenly">
+						<div class="footer-social-icons">
+							<a href="www.facebook.com"><img src="../assets/icons/Facebook Icon.png" alt="facebook" /></a>
+						</div>
+						<div class="footer-social-icons">
+							<a href="www.twitter.com"><img src="../assets/icons/Twitter Icon.png" alt="twitter" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 mx-2">
+					<h4 class="pb-4">Let us help</h4>
+					<p><a href="">How to Shop?</a></p>
+					<p><a href="">How to request a design?</a></p>
+					<p><a href="">Delivery Options</a></p>
+					<p><a href="">Delivery timeline</a></p>
+					<p><a href="">How to upload my product?</a></p>
+					<p><a href="">Bulk purchases</a></p>
+					<p><a href="">Return policy</a></p>
+					<p><a href="">Report a product</a></p>
+					<p><a href="">Help Center</a></p>
+					<p><a href="">FAQ</a></p>
+				</div>
+				<div class="my-3 mx-2">
+					<h4 class="pb-4">About Maniera</h4>
+					<p><a href=""> About Us</a></p>
+					<p><a href="">Terms and Conditions</a></p>
+					<p><a href="">Privacy policy</a></p>
+				</div>
+				<div class="my-3 mx-2">
+					<h4 class="pb-4">Earn on Maniera</h4>
+					<p><a href="">Become a Seller</a></p>
+					<p><a href="">Become a Logistics Partner</a></p>
+				</div>
+			</section>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="../javascript/product-list.js"></script>
+	</body>
+</html>

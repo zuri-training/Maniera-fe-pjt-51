@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Metropolis&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.page-indicator {
+	margin: 4rem 0;
+	background: #f6f7f8;
+}
+.page-indicator span:first-child {
+	color: #db3022;
+}
+.page-indicator span {
+	font-weight: 600;
+}
+
+main {
+	position: relative;
+}
+
+.left-section {
+	position: relative;
+	background: #db3022;
+	width: 50%;
+	padding: 12rem 0;
+}
+
+.img-bg {
+	position: absolute;
+	left: -100px;
+	top: 0;
+}
+
+.img-bg > .img {
+	height: 600px;
+}
+
+.text-content-wrapper {
+	margin: 0 138px 0 255px;
+	padding: 140px 0 100px 0;
+}
+
+.text-content {
+	width: 50%;
+	float: right;
+}
+.text {
+	font-size: 40px;
+	line-height: 47px;
+}
+
+.circle {
+	position: absolute;
+	top: 38.99%;
+	right: -18px;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background: #db3022 !important;
+}
+
+.form-wrapper {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
+}
+
+.form-group {
+	padding-bottom: 21px;
+}
+
+.form-group label {
+	line-height: 16px;
+	padding-bottom: 7px;
+}
+
+.search {
+	margin: auto;
+	width: 60%;
+}
+
+.query-search {
+	margin-top: 50px;
+}
+
+.query-search input:focus,
+.top-section input:focus,
+.top-section textarea:focus {
+	box-shadow: none;
+	outline: none;
+	border: 2px solid #000000;
+}
+
+.search-btn {
+	background: #db3022;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.left-section {
+		width: 60%;
+	}
+	.form-wrapper {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.img-bg {
+		display: none;
+	}
+
+	.left-section {
+		width: 50%;
+	}
+	.form-wrapper {
+		width: 50%;
+	}
+
+	.text-content {
+		width: 50%;
+		float: unset;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.top-section {
+		flex-direction: column;
+	}
+
+	.img-bg {
+		display: none;
+	}
+
+	.left-section {
+		width: unset;
+		padding: 2rem 0;
+	}
+
+	.circle {
+		top: 10%;
+		right: -18px;
+	}
+
+	.text-content {
+		width: 100%;
+		float: unset;
+		margin: auto;
+		text-align: center;
+	}
+	.form {
+		margin: auto;
+	}
+
+	.text-content-wrapper {
+		margin: auto;
+	}
+
+	.text {
+		padding-bottom: 10px;
+		margin-bottom: 0;
+	}
+
+	.search {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	.left-section {
+		width: unset;
+		padding: 2rem 0;
+	}
+
+	.circle {
+		top: 32%;
+		right: -15px;
+	}
+
+	.text {
+		padding-bottom: unset;
+	}
+}

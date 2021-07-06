@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/sign-up.css" />
+		<title>Maniera Sign Up</title>
+	</head>
+	<body>
+		<main class="d-flex">
+			<section class="left-section text-white d-none d-md-block d-lg-block px-md-2 px-lg-5 py-5">
+				<div class="logo d-flex align-items-center">
+					<h3 class="logo-text-wrapper text-dark bg-white d-flex align-items-center justify-content-center mb-0">
+						<span> M </span>
+					</h3>
+					<p class="logo-text-01 mb-0">Maniera</p>
+				</div>
+				<div class="lead-wrapper">
+					<h3 class="maniera-text">Maniera</h3>
+					<p class="text-lead mb-5">Look through the clothes of your choice</p>
+					<p class="small">Maniera is a platform that connect fashion designers and their client.</p>
+				</div>
+			</section>
+			<section class="right-section py-5 px-4 px-lg-5">
+				<div class="d-flex justify-content-end">
+					<button class="seller-btn btn px-3 py-2">
+						<a href="seller-sign-up.html" class="text-white text-decoration-none">Become a seller</a>
+					</button>
+				</div>
+				<div class="form-holder mt-5 px-md-3">
+					<div class="d-flex align-items-center mb-3">
+						<h2 class="fw-bold mb-0">Sign Up</h2>
+						<img class="preloader" src="../assets/icons/Iphone-spinner-2.gif" alt="preloader" />
+					</div>
+
+					<form method="POST" class="form" id="myform">
+						<div class="form-group">
+							<label for="first-name" id="first-name-label" class="from-label">First Name</label>
+							<input type="text" name="firstName" id="firstName" class="form-control form-control-lg form-control-sm" minlength="2" required />
+						</div>
+						<div class="form-group">
+							<label for="last-name" id="last-name-label" class="from-label">Last Name</label>
+							<input type="text" name="lastName" id="lastName" class="form-control form-control-lg form-control-sm" minlength="2" required />
+						</div>
+						<div class="form-group">
+							<label for="email" id="email-label" class="from-label">Email</label>
+							<input type="email" name="email" id="email" class="form-control form-control-lg form-control-sm" required />
+						</div>
+						<div class="form-group pass">
+							<label for="password" id="password-label" class="from-label">Password</label>
+							<input type="password" name="password" id="password" class="form-control form-control-lg form-control-sm" minlength="8" required />
+							<i class="bi bi-eye-slash-fill" id="togglePassword"></i>
+							<p class="password-error fw-bold p-2"></p>
+						</div>
+						<div class="form-group pass">
+							<label for="confirm-password" id="confirm-password-label" class="from-label"> Confirm Password</label>
+
+							<input
+								type="password"
+								name="confirmPassword"
+								id="confirmPassword"
+								class="form-control form-control-lg form-control-sm"
+								minlength="8"
+								required
+							/>
+							<i class="bi bi-eye-slash-fill" id="toggle-confirm-password"></i>
+							<p class="confirm-password-error fw-bold p-2"></p>
+						</div>
+						<div class="form-group">
+							<button type="submit" id="submit" class="btn sign-up-btn text-white w-100">Sign up</button>
+						</div>
+						<p class="lower-text">
+							Already have an account?
+							<a href="../html/sign-in.html">Login</a>
+						</p>
+						<div class="d-flex align-items-center justify-content-evenly sign-up-socials">
+							<img class="sign-up-google" src="../assets/logos/Continue with Gmail.png" alt="gmail" role="button" />
+							<img class="sign-up-facebook" src="../assets/logos/Continue with Facebook.png" alt="facebook" role="button" />
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="../javascript/sign-up.js"></script>
+	</body>
+</html>
