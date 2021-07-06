@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-weight: normal;
+    src: url('../Fonts/metropolis.thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-weight: bold;
+    src: url('../Fonts/metropolis.bold.otf') format('opentype');
+}
+
+.request-banner {
+    position: relative;
+    width: 100vw;
+    min-height: 653px;
+    background: #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+div.request-banner-heading {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Metropolis';
+    color: #000000;
+}
+
+div.request-banner-heading h2 {
+    font-size: 2.325rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+div.request-banner-heading p {
+    font-size: 1.2125rem;
+    font-weight: normal;
+}
+
+section.request-form {
+    margin-top: -17.456rem;
+    position: relative;
+}
+
+form {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0.25rem 0.25rem 0.271rem 0.342rem rgba(0, 0, 0, 0.04),
+        -0.25rem -0.25rem 0.75rem 0.342rem rgba(0, 0, 0, 0.04);
+    padding: 4.125rem 3.625rem;
+}
+
+div.req-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Metropolis';
+    padding: 1.325rem 0rem;
+}
+
+div.req-form-group label {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+div.req-form-group .form-control {
+    height: 2.543rem;
+    border: 0.06rem solid #000000;
+    border-radius: 0.25rem;
+}
+
+div.req-form-group:nth-child(5),
+div.req-form-group:nth-child(6),
+div.req-form-group:nth-child(7),
+div.req-form-group:nth-child(8) {
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+div.sub-form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 45%;
+}
+
+div.sub-form-group div.select-control {
+    font-family: 'Metropolis';
+    font-size: 0.852rem;
+    font-weight: 600;
+    height: 2.543rem;
+    border-radius: 0.25rem;
+    padding: 0 2.5rem 0 0.625rem;
+    box-shadow: inset 0 -1.3rem 1rem 0 rgba(0, 0, 0, 0.02);
+    background-color: #ffffff;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAHCAYAAAD9NeaIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDE1LTA0LTE3VDE3OjEyOjQyKzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNS0wNC0yMFQxNzoxNjoyNCswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNS0wNC0yMFQxNzoxNjoyNCswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTU4MjBDRURERjVCMTFFNEEzN0FCODBEM0I5MTExMjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTU4MjBDRUVERjVCMTFFNEEzN0FCODBEM0I5MTExMjkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2RUVFRDJCNkREQzMxMUU0QTM3QUI4MEQzQjkxMTEyOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNTgyMENFQ0RGNUIxMUU0QTM3QUI4MEQzQjkxMTEyOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuShL/sAAABeSURBVHjaYszOzjZnYGDYCcT8DMSBv0AcP2XKlKVEqmdgAuKTQOwOxB+JtQCIibYAZgkDkRaRZQGyJYQsItsCdEtwWUSRBdgsQbeIYgtAgAWHOMwiJSBezkAhAAgwAJSTG/DI0S9VAAAAAElFTkSuQmCC');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0.1rem solid #000000;
+    cursor: pointer;
+}
+
+div.select-control:focus {
+    border-color: #aaaaaa;
+    outline: 0;
+    box-shadow: inset 0 -1.3rem 1rem 0 rgba(0, 0, 0, 0.09);
+}
+
+div.option-items-list {
+    position: absolute;
+    display: none;
+    background-color: #f7f7f7;
+    z-index: 1;
+    overflow: auto;
+}
+
+div.select-control,
+div.option-items {
+    font-weight: 600;
+    line-height: 1.5;
+    height: 2.732rem;
+    box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+}
+
+div.option-items {
+    border: 0.02rem solid #b2b2b5;
+    padding: 0.625rem 0.912rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+div.option-items:hover {
+    background-color: #db3022;
+    color: #ffffff;
+}
+
+div.option-items-list .show {
+    display: block;
+}
+
+div.req-form-group textarea {
+    height: 12rem;
+    background: #f3f3f3;
+    border: 0.04rem solid #000000;
+    border-radius: 0.25rem;
+    padding-top: 0.852rem;
+    padding-left: 1.625rem;
+    font-family: 'Metropolis';
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+div.req-form-group div.upload-group {
+    background: #f3f3f3;
+    border: 0.125rem dashed #000000;
+    border-radius: 0.25rem;
+    height: 9rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.req-form-group div.upload-group p {
+    font-family: 'Metropolis';
+    font-weight: 600;
+    font-size: 0.9123rem;
+    line-height: 1.5;
+    padding-bottom: 0.7125rem;
+    color: #760900;
+}
+
+div.req-form-group div.upload-group button.btn.btn-request-upload {
+    width: 12rem;
+    height: 3rem;
+    background: #db3022;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 0.9123rem;
+    font-weight: 600;
+    border: none;
+}
+
+form button.btn.btn-request-form {
+    width: 17.5rem;
+    height: 3rem;
+    background: #db3022;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 0.9123rem;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    margin-top: 6rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

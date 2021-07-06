@@ -1,10 +1,8 @@
+// Selecting general elements
 const form = document.getElementById("form");
-
-const BASE_URL = "https://maniera-dev.herokuapp.com/api";
-
-//----signin loader---
-const loading = document.getElementById("loading");
-loading.style.display = "none";
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const preloader = document.querySelector(".preloader");
 
 function showAlert(message, type) {
 	const alertMessage = document.querySelector("#alert-message");
@@ -19,31 +17,44 @@ function showAlert(message, type) {
 	}, 8000);
 }
 
-const loginForm = async (e) => {
+const loginForm = (e) => {
 	e.preventDefault();
-	const email = document.getElementById("email").value;
-	const password = document.getElementById("password").value;
-	if (!password || !email) return showAlert("Field can not be empty", "danger");
-	try {
-		const response = await fetch(`${BASE_URL}/auth/signin`, {
-			method: "POST",
-			headers: {
-				Accept: "application/json, text/plain",
-				"Content-type": "application/json",
-			},
-			body: JSON.stringify({
-				email: email,
-				password: password,
-			}),
-		});
-		const data = await response.json();
-		console.log(data);
-		window.location.replace("/");
-		form.reset();
-	} catch (error) {
-		showAlert("Sorry! Error signing in.", "danger");
-		console.log(error);
+	preloader.style.display = "block";
+	if (!password.value || !email.value) {
+		preloader.style.display = "none";
+		return showAlert("Field can not be empty", "danger");
 	}
+
+	const user = {
+		email: email.value,
+		password: password.value,
+	};
+
+	console.log(user);
+
+	fetch("https://maniera-dev.herokuapp.com/api/auth/signin", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json, text/plain",
+		},
+		body: JSON.stringify(user),
+	})
+		.then((res) => {
+			if (res.status === 200 || res.status === 201) {
+				console.log(res);
+				preloader.style.display = "none";
+				localStorage.setItem("data", JSON.stringify(res));
+				window.location = "/";
+			} else if (res.status === 401 || res.status === 404 || res.status === 400) {
+				preloader.style.display = "none";
+				console.log(res.statusText);
+			}
+		})
+		.catch((error) => {
+			preloader.style.display = "none";
+			console.error(error);
+		});
 };
 
 form.addEventListener("submit", loginForm);

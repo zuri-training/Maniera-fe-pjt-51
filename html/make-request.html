@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maniera Project | Team 51</title>
+    <link rel="stylesheet" href="../css/make-request.css">
+</head>
+
+<body>
+    <section class="request-banner">
+        <div class="request-banner-heading">
+            <h2>Make a Request</h2>
+            <p>Fill this form to make clothes request of your choice</p>
+        </div>
+    </section>
+
+    <section class="request-form">
+        <form action="">
+            <div class="req-form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="" class="form-control" />
+            </div>
+            <div class="req-form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" class="form-control" />
+            </div>
+            <div class="req-form-group">
+                <label for="number">Phone Number</label>
+                <input type="text" name="number" id="" class="form-control" />
+            </div>
+            <div class="req-form-group">
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" id="" class="form-control" />
+            </div>
+            <div class="req-form-group">
+                <div class="sub-form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="" class="form-control" />
+                </div>
+                <div class="sub-form-group">
+                    <label for="address">Street Address</label>
+                    <input type="text" name="address" id="" class="form-control" />
+                </div>
+            </div>
+            <div class="req-form-group">
+                <div class="sub-form-group">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="" class="form-control" />
+                </div>
+                <div class="sub-form-group">
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="" class="form-control" />
+                </div>
+            </div>
+            <div class="req-form-group">
+                <div class="sub-form-group">
+                    <label for="clothing">Clothing Type</label>
+                    <div name="clothing" onclick="dropdownMenu()" class="select-control">
+                        <div id="dropdowMenu" class="option-items-list">
+                            <div class="option-items">Dress</div>
+                            <div class="option-items">Swimwear</div>
+                            <div class="option-items">Sweater</div>
+                            <div class="option-items">Shirt</div>
+                            <div class="option-items">Skirt</div>
+                            <div class="option-items">Suit</div>
+                            <div class="option-items">Jeans</div>
+                            <div class="option-items">Trousers</div>
+                            <div class="option-items">Blouse</div>
+                            <div class="option-items">T-shirt</div>
+                            <div class="option-items">Dress Shirt</div>
+                            <div class="option-items">Coat</div>
+                            <div class="option-items">Others, Please Specify</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-form-group">
+                    <label for="material">Material Type</label>
+                    <div name="material" onclick="dropdownMenu()" class="select-control">
+                        <div id="dropdownMenu" class="option-items-list">
+                            <div class="option-items">Cotton</div>
+                            <div class="option-items">Silk</div>
+                            <div class="option-items">Wool</div>
+                            <div class="option-items"></div>
+                            <div class="option-items">Polyester</div>
+                            <div class="option-items">Velvet</div>
+                            <div class="option-items">Chiffon</div>
+                            <div class="option-items">Damask</div>
+                            <div class="option-items">Others, Please Specify</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="req-form-group">
+                <div class="sub-form-group">
+                    <label for="size">Size</label>
+                    <div name="size" onclick="dropdownMenu()" class="select-control">
+                        <div id="dropdownMenu" class="option-items-list">
+                            <div class="option-items">
+                                <input type="radio" name="small" id="" />
+                                <label for="small">Small</label>
+                            </div>
+                            <div class="option-items">
+                                <input type="radio" name="medium" id="" />
+                                <label for="medium">Medium</label>
+                            </div>
+                            <div class="option-items">
+                                <input type="radio" name="large" id="" />
+                                <label for="large">Large</label>
+                            </div>
+                            <div class="option-items">
+                                <input type="radio" name="ex-large" id="" />
+                                <label for="ex-large">Extra-Large</label>
+                            </div>
+                            <div class="option-items">
+                                <input type="radio" name="specify" id="" />
+                                <label for="specify">Specify Size</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-form-group">
+                    <label for="color">Colour</label>
+                    <input type="text" name="color" id="" class="form-control" />
+                </div>
+            </div>
+            <div class="req-form-group">
+                <label for="description">Other description</label>
+                <textarea placeholder="Type description here" name="description"></textarea>
+            </div>
+            <div class="req-form-group">
+                <label for="upload">Upload a Sample File/Picture</label>
+                <div class="upload-group">
+                    <p>Drag a file here or click the button below</p>
+                    <button type="submit" class="btn btn-request-upload">Upload File</button>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-request-form">Request</button>
+        </form>
+    </section>
+
+    <script src="../javascript/make-request.js"></script>
+</body>
+
+</html>
