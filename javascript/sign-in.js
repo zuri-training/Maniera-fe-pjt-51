@@ -45,7 +45,7 @@ const loginForm = (e) => {
 				console.log(res);
 				preloader.style.display = "none";
 				localStorage.setItem("data", JSON.stringify(res));
-				window.location = "/";
+				// window.location = "/";
 			} else if (res.status === 401 || res.status === 404 || res.status === 400) {
 				preloader.style.display = "none";
 				console.log(res.statusText);
