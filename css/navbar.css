@@ -149,8 +149,8 @@ div.form-group {
 		background-color: #fdf0ef;
 		width: 0;
 		text-align: center;
-		transition: width 2s linear 1s;
-		/* transition: 0.3s ease; */
+		/* transition: width 2s linear 1s; */
+		transition: all 0.3s ease;
 		box-shadow: 0 0.625rem 1.6875rem rgba(0, 0, 0, 0.05);
 		position: fixed;
 		/* flex-direction: column; */
