@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 html,body{
     padding: 0;
     margin: 0;
@@ -5,6 +6,106 @@ html,body{
 }
 
 .customer-list-container{
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
+}
+
+aside{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 260px;
+    height: 100vh;
+    padding: 10px;
+}
+
+aside h3{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #222222;
+    margin-top: -50px;
+}
+
+@font-face {
+    font-family: metropolis;
+    src: url("/Fonts/metropolis-bold.otf");
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    font-family: metropolis;
+    text-transform: uppercase;
+    text-align: left;
+    color: #2F2F2F;
+    padding: 10px;
+    position: relative;
+    left: -30px;
+    text-justify: justify;
+}
+aside ul li img{
+    position: relative;
+    left: -30px;
+}
+
+.main-customer-list{
+    width: 900px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: 3fr 8fr 1fr 3fr;
+    margin-left: 70px;
+ 
+}
+
+.first-row input{
+    background: #F9F9F9;
+    border: 2px solid #979797;
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+}
+
+.first-row input::placeholder{
+    position: relative;
+    left: 20px;
+}
+
+.first-row .profile{
+    width: 60px;
+    height: 60px;
+}
+
+.second-row{
+    display: grid;
+    grid-template-columns: 10fr 3fr 3fr;
+    margin-top: 55px;
+}
+
+.second-row :nth-child(2){
+    width: 142px;
+    background-color: white;
+    border: 1px solid #DB3022;
+    border-radius: 4px;
+}
+
+.second-row :nth-child(3){
+    width: 212px;
+    color: white;
+    background-color: #DB3022;
+    border: none;
+    border-radius: 4px;
 }
