@@ -1,189 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
-html, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-y: hidden !important;
-    background-color: whitesmoke;
-    font-family: Playfair Display, sanserif;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-y: hidden !important;
+	background-color: whitesmoke;
+	font-family: Playfair Display, sanserif;
 }
 
-
-.signin-container{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 5fr 4fr;
+a {
+	text-decoration: none;
+	color: #db3022;
 }
 
-.first-column{
-    background-color: #DB3022;
-    color: white;
-    padding: 130px 50px;
+.preloader {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	display: none;
 }
 
-.first-column .top-row{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: -100px;
+.second-column input:focus {
+	outline: none;
+	box-shadow: none;
+}
+.form-div:focus-within label {
+	color: #000000;
 }
 
-.first-column .second-row{
-    position: relative;
-    top: 50px;
-    padding: 0%;
+.signin-container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 5fr 4fr;
 }
 
-.first-column .second-row .connect{
-    width: 300px;
-    height: 50px;
-    font-family: Metropolis;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24.57px;
-    color: #FFFFFF;
+.first-column {
+	background-color: #db3022;
+	color: white;
+	padding: 130px 50px;
 }
 
+.first-column .top-row {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: -100px;
+}
+
+.first-column .second-row {
+	position: relative;
+	top: 50px;
+	padding: 0%;
+}
+
+.first-column .second-row .connect {
+	width: 300px;
+	height: 50px;
+	font-family: Metropolis;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24.57px;
+	color: #ffffff;
+}
 
 @font-face {
-    font-family: metropolis;
-    src: url("/Fonts/metropolis-bold.otf");
+	font-family: metropolis;
+	src: url("/Fonts/metropolis-bold.otf");
 }
 
-.look-through{
-    font-family: metropolis, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3.8rem;
-    width: 400px;
-    line-height: 50px;
-    color: #FFFFFF;
+.look-through {
+	font-family: metropolis, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.8rem;
+	width: 400px;
+	line-height: 50px;
+	color: #ffffff;
 }
 
-
-.second-column{
-    font-family: metropolis, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    background-color: white;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 30px;
+.second-column {
+	font-family: metropolis, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	padding-left: 30px;
 }
 
-.login{
-    font-family: metropolis, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 36px;
+.login {
+	font-family: metropolis, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 36px;
 }
 
-.second-column .seller-button{
-   border: none;
-   border-radius: 4px;
-   color: white;
-   background-color: #DB3022;
-    margin-left: 200px;
-    font-size: 16px;
-    width: 150px;
-    height: 40px;
-    padding: 5px;
-    position: relative;
-    top: -25px;
+.second-column .seller-button {
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background-color: #db3022;
+	margin-left: 200px;
+	font-size: 16px;
+	width: 150px;
+	height: 40px;
+	padding: 5px;
+	position: relative;
+	top: -25px;
 }
 
-.second-column label{
-    color: rgb(138, 138, 138);;
+.second-column label {
+	color: rgb(138, 138, 138);
 }
 
-.second-column input{
-    width: 280px;
-    height: 30px;
-    background-color: whitesmoke;
-} 
-
-.second-column input:focus{
-    background-color: white;
-    border: 2px solid black;
-    outline: none !important;
+.second-column input {
+	width: 280px;
+	height: 30px;
+	background-color: whitesmoke;
 }
 
-.second-column span{
-    margin-top: -5px;
+.second-column input:focus {
+	background-color: white;
+	border: 2px solid black;
+	outline: none !important;
 }
 
-.empty-div{
-    width: 12px;
-    height: 12px;
-    border: 2px solid #2F2F2F;
+.second-column span {
+	margin-top: -5px;
 }
 
-.desktop-login-button{
-    margin-top: 20px;
-    background: #DB3022;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    padding: 5px;
+.empty-div {
+	width: 12px;
+	height: 12px;
+	border: 2px solid #2f2f2f;
 }
 
-.desktop-google{
-    border: 1px solid #ff3d00;
-    color: black;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    font-size: 10px;
-    width: 130px;
-    padding: 5px;
-    color: #FF3D00;
-    background-color: white;
+.desktop-login-button {
+	margin-top: 20px;
+	background: #db3022;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	width: 280px;
+	padding: 5px;
 }
 
-.desktop-facebook{
-    border: none;
-    background-color: #395185;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    color: white;
-    font-size: 10px;
-    padding: 5px;
-    width: 130px;
-} 
-
-@media screen and (max-width:768px) {
-
-    html,body{
-        overflow-x: hidden;
-    }
-
-    .signin-container{
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .first-column{
-        display: none;
-    }
-
-    .second-column{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;   
-        padding-left: 10px; 
-    }
-    .second-column .seller-button{
-        position: relative;
-        right: 30px;
-    }
+.desktop-google {
+	border: 1px solid #ff3d00;
+	color: black;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	font-size: 10px;
+	width: 130px;
+	padding: 5px;
+	color: #ff3d00;
+	background-color: white;
 }
 
+.desktop-facebook {
+	border: none;
+	background-color: #395185;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	color: white;
+	font-size: 10px;
+	padding: 5px;
+	width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	.signin-container {
+		width: 100vw;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.first-column {
+		display: none;
+	}
+
+	.second-column {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 10px;
+	}
+	.second-column .seller-button {
+		position: relative;
+		right: 30px;
+	}
+}

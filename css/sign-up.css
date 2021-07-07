@@ -12,6 +12,13 @@ body {
 	background: #fefefe;
 }
 
+.preloader {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	display: none;
+}
+
 /* logo */
 
 .logo-text-01 {

@@ -11,6 +11,7 @@ const lastName = document.querySelector("#lastName");
 const email = document.querySelector("#email");
 const passwordError = document.querySelector(".password-error");
 const confirmPasswordError = document.querySelector(".confirm-password-error");
+const preloader = document.querySelector(".preloader");
 
 //  toggling the password visilibilty
 
@@ -33,6 +34,7 @@ toggleConfirmPassword.addEventListener("click", function (e) {
 // sending form data with fetch api
 myForm.addEventListener("submit", function (e) {
 	e.preventDefault();
+	preloader.style.display = "block";
 
 	const user = {
 		firstName: firstName.value,
@@ -54,6 +56,7 @@ myForm.addEventListener("submit", function (e) {
 	};
 
 	if (!CheckPassword(password)) {
+		preloader.style.display = "none";
 		passwordError.classList.add("alert", "alert-danger");
 		passwordError.innerHTML =
 			"Password should contain at least an uppercase letter, a lower case letter, a digit, a symbol and not less than 8 characters in total";
@@ -63,6 +66,7 @@ myForm.addEventListener("submit", function (e) {
 			passwordError.innerHTML = "";
 		}, 10000);
 	} else if (password.value !== confirmPassword.value) {
+		preloader.style.display = "none";
 		confirmPasswordError.classList.add("alert", "alert-danger");
 		confirmPasswordError.innerHTML = "Password does not match";
 
@@ -75,7 +79,11 @@ myForm.addEventListener("submit", function (e) {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
+<<<<<<< HEAD
 				Accept: "application/json",
+=======
+				Accept: "application/json, text/plain",
+>>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
 			},
 			body: JSON.stringify(user),
 		})
@@ -83,11 +91,13 @@ myForm.addEventListener("submit", function (e) {
 				if (res.status === 200 || res.status === 201) {
 					localStorage.setItem("user", JSON.stringify(res.json()));
 					window.location = "/html/sign-in.html";
-				} else if (res.status === 401 || res.status === 404) {
-					console.log("error");
+				} else if (res.status === 401 || res.status === 404 || res.status) {
+					preloader.style.display = "none";
+					console.log(res.status, res.statusText);
 				}
 			})
 			.catch((error) => {
+				preloader.style.display = "none";
 				console.error(error);
 			});
 	}
