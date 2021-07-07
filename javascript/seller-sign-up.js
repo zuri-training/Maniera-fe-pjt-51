@@ -141,7 +141,11 @@ form.addEventListener("submit", (e) => {
 
 	// const userId = email.value;
 
+<<<<<<< HEAD
+	fetch(`https://maniera-dev.herokuapp.com/api/auth/seller/userId`, {
+=======
 	fetch(`https://maniera-dev.herokuapp.com/api/auth/seller`, {
+>>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
 		method: "POST",
 		body: JSON.stringify(seller),
 		headers: {
