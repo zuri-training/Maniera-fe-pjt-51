@@ -11,10 +11,67 @@
 		/>
 
 		<link rel="stylesheet" href="../css/customer-details.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
 		<link rel="stylesheet" href="../css/footer.css" />
 		<title>Add Customer Details</title>
 	</head>
 	<body>
+		<!-- HEADER START HERE-->
+		<header class="nav-header">
+			<div class="container">
+				<nav class="d-flex justify-content-between">
+					<h1 class="maniera-home"><a href="/"> Maniera</a></h1>
+
+					<div class="main-nav d-flex justify-content-between align-items-center">
+						<form class="search">
+							<div class="form-group">
+								<input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+								<button class="btn home-search"><i class="fal fa-search"></i></button>
+							</div>
+						</form>
+
+						<ul class="nav-list d-none d-lg-flex justify-content-between align-items-center mb-0">
+							<li class="categories py-3" role="button">
+								<span>Categories</span>
+								<div class="categories-dropdown">
+									<a href="#">Hand-Made</a>
+									<a href="#">Factory Made</a>
+									<a href="#">For Men</a>
+									<a href="#">For Women</a>
+									<a href="#">For Children</a>
+									<a href="#">All Wears</a>
+								</div>
+							</li>
+							<li role="button">Cart <span class="cart-count">3</span></li>
+							<li role="button">My Requests</li>
+							<li class="join">
+								<button class="btn join-now" type="submit"><a href="./html/sign-up.html" class="">Join us</a></button>
+							</li>
+							<li class="account py-3" role="button">
+								<span>Account <i class="fal fa-chevron-down"></i></span>
+								<div class="account-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Messages</a>
+									<a href="#">Favorites</a>
+									<a href="#">Purchases</a>
+									<a href="#">Track Order</a>
+									<a href="#">Sign Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="hamburger d-flex justify-content-center align-items-center d-lg-none">
+						<div>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
 		<main class="customer-details-main">
 			<form class="container px-4 py-5 bg-white rectangle">
 				<section>
@@ -158,5 +215,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 		<script src="https://kit.fontawesome.com/89ef06f590.js" crossorigin="anonymous"></script>
+		<script src="../javascript/navbar.js"></script>
 	</body>
 </html>

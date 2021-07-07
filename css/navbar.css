@@ -4,8 +4,14 @@
 	box-sizing: border-box;
 }
 
+.account,
+.join {
+	display: none;
+}
+
 .nav-header {
 	background: transparent;
+	margin-bottom: 1rem;
 }
 
 .maniera-home {
@@ -39,10 +45,49 @@ nav a:hover {
 	src: url("../Fonts/metropolis.bold.otf") format("opentype");
 }
 
+.categories,
+.account {
+	position: relative;
+	/* display: inline-block; */
+}
+.categories-dropdown,
+.account-dropdown {
+	display: none;
+	transition: all 0.9s ease;
+	margin-top: 10px;
+	position: absolute;
+	background-color: #ffffff;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+}
+
+.categories-dropdown > a,
+.account-dropdown > a {
+	text-align: left;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid #c4c4c433;
+}
+
+/* Change color of dropdown links on hover */
+.categories-dropdown > a:hover,
+.account-dropdown > a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.categories:hover .categories-dropdown,
+.account:hover > .account-dropdown {
+	display: block;
+}
+
 /** HEADER SECTION STYLE  **/
 header {
 	width: 100%;
-	position: absolute;
+	/* position: absolute; */
 	z-index: 9;
 }
 
@@ -82,7 +127,7 @@ nav {
 	width: 50%;
 }
 
-div.form-group {
+.main-nav div.form-group {
 	display: flex;
 	width: 100%;
 	flex-grow: 1;
@@ -91,7 +136,7 @@ div.form-group {
 	height: 48px;
 }
 
-.form-control {
+.main-nav .form-control {
 	width: 85%;
 	border: 2px solid #979797;
 	border-radius: 4px 0px 0px 4px;
@@ -130,6 +175,12 @@ div.form-group {
 @media screen and (max-width: 768px) {
 	.nav-list.active {
 		width: 100% !important;
+	}
+
+	.categories,
+	.account {
+		width: 50%;
+		margin: auto !important;
 	}
 }
 
