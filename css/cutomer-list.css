@@ -49,7 +49,7 @@ aside ul li{
     text-transform: uppercase;
     text-align: left;
     color: #2F2F2F;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     left: -30px;
     text-justify: justify;
@@ -178,4 +178,5 @@ td{
     color: white;
     background-color: #DB3022;
 }
+
 

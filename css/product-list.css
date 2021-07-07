@@ -1,230 +1,132 @@
-body{
-    font-family: 'Inter', sans-serif;
+body {
+	font-family: "Inter", sans-serif;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
-nav ul{
-    display: flex;
-    justify-content: space-between;    
-    align-items: center;
-}
-nav ul li{
-    list-style: none;
-    font-size: 14px;
-}
-nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.header-btn{
-    border: none;
-    height: 40px;
-    width: 50px;
-}
-.header-btn img{
-    height: 25px;
-    width: 25px;
-    margin: auto;
-}
-.header-input{
-    height: 40px;
-    font-size: 14px;
-}
-header div{
-    flex: 1;
-}
-header form{
-    flex: 2;
-}
-header nav{
-    flex: 2;
-}
-.open-menu{
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-nav .main-menu .close-menu{
-    display: none;
-    cursor: pointer;
-    font-size: 2rem;
-}
-.page{
-    text-align: center;
-    font-size: 14px;
-    background-color: rgb(247, 242, 242);
-    padding: 5px;
+.page {
+	text-align: center;
+	font-size: 14px;
+	background-color: rgb(247, 242, 242);
+	padding: 5px;
 }
 
 /*S I D E B A R  S T Y L E S*/
-.hot-deals{
-    border-radius: 2px;
-    padding: 10px;
-    margin: 2rem 0;
-    box-shadow: lightgray 0px 1px 0px 1px;
+.hot-deals {
+	border-radius: 2px;
+	padding: 10px;
+	margin: 2rem 0;
+	box-shadow: lightgray 0px 1px 0px 1px;
 }
-.hot-deals li{
-    list-style: none;
-    font-size: 14px;
-    line-height: 2rem;
+.hot-deals li {
+	list-style: none;
+	font-size: 14px;
+	line-height: 2rem;
 }
-.hot-deals ul{
-    padding: 0;
+.hot-deals ul {
+	padding: 0;
 }
-#slider{
-    margin-bottom: 1rem;
-    position: relative;
-    -webkit-appearance: none;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, rgb(200, 15, 15) 60%, rgb(200, 15, 15) 60%);
-    opacity: 0.7;
-    outline: none;
-    transition: opacity 200ms ;
-    cursor: pointer;
+#slider {
+	margin-bottom: 1rem;
+	position: relative;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, rgb(200, 15, 15) 60%, rgb(200, 15, 15) 60%);
+	opacity: 0.7;
+	outline: none;
+	transition: opacity 200ms;
+	cursor: pointer;
 }
-#slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: rgb(200, 15, 15);
-    border: rgb(200, 15, 15) 2px solid;
-    border-radius: 50%;
+#slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background: rgb(200, 15, 15);
+	border: rgb(200, 15, 15) 2px solid;
+	border-radius: 50%;
 }
-.prices{
-    border-radius: 2px;
-    padding: 10px;
-    margin-bottom: 2rem;
-    box-shadow: lightgray 0px 1px 0px 1px;
+.prices {
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 2rem;
+	box-shadow: lightgray 0px 1px 0px 1px;
 }
-.prices p{
-    font-size: 14px;
+.prices p {
+	font-size: 14px;
 }
-.prices li{
-    list-style: none;
-    font-size: 14px;
+.prices li {
+	list-style: none;
+	font-size: 14px;
 }
-.prices ul{
-    padding: 0;
+.prices ul {
+	padding: 0;
 }
-.brand{
-    border-radius: 2px;
-    box-shadow: lightgray 0px 1px 0px 1px;
-    padding: 10px;
-    margin-bottom: 2rem;
+.brand {
+	border-radius: 2px;
+	box-shadow: lightgray 0px 1px 0px 1px;
+	padding: 10px;
+	margin-bottom: 2rem;
 }
-.brand li{
-    list-style: none;
-    font-size: 14px;
-    line-height: 2rem;
+.brand li {
+	list-style: none;
+	font-size: 14px;
+	line-height: 2rem;
 }
-.brand ul{
-    padding: 0;
+.brand ul {
+	padding: 0;
 }
-.btn-side{
-    margin-bottom: 2rem;
+.btn-side {
+	margin-bottom: 2rem;
 }
 
 /* M A I N  S T Y L E S */
-.showcase{
-    background-color: rgb(250, 240, 240);
+.showcase {
+	background-color: rgb(250, 240, 240);
 }
-.showcase img{
-    width: 300px;
+.showcase img {
+	width: 300px;
 }
-.product-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
+.product-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
 }
-.product-list p{
-    color: grey;
+.product-list p {
+	color: grey;
 }
-.side-bar{
-    margin-right: 20px;
+.side-bar {
+	margin-right: 20px;
 }
 
 /*MEDIA Qz*/
-@media(max-width:768px){
-    header{
-        justify-content: space-between;
-    }
-    .header-logo{
-        flex: 1;
-    }
-    .open-menu{
-        flex: 1;
-    }
-    .main-header form{
-        display: none;
-    }
-    .main-header nav ul{
-        padding-left: 0;
-    }
-    .main-header nav ul li{
-        padding: 7px;
-    }
-    nav .main-menu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(250, 240, 240);
-        transition: display 1s ease-in-out;
-        display: none;
-    }
-    nav .main-menu .close-menu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    header .open-menu{
-        display: block;
-        font-size: 2rem;
-    }
-    nav .main-menu li a:hover{
-        font-size: 1.6rem;
-    }
-
-    section{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .side-bar{
-        width: 90%;
-        margin: 1rem auto;
-    }
-    .page{
-        text-align: center;
-    }
-    .product-list{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .showcase h1{
-        padding-top: 1rem;
-    }
-    .main-card p{
-        font-size: 14px;
-    }
-    .main-card{
-        width: 18rem;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+@media (max-width: 768px) {
+	section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.side-bar {
+		width: 90%;
+		margin: 1rem auto;
+	}
+	.page {
+		text-align: center;
+	}
+	.product-list {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.showcase h1 {
+		padding-top: 1rem;
+	}
+	.main-card p {
+		font-size: 14px;
+	}
+	.main-card {
+		width: 18rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }
