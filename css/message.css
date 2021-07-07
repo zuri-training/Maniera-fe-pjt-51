@@ -73,11 +73,11 @@ main {
 	align-items: center;
 }
 
-.form-group {
+.form-wrapper .form-group {
 	padding-bottom: 21px;
 }
 
-.form-group label {
+.form-wrapper .form-group label {
 	line-height: 16px;
 	padding-bottom: 7px;
 }

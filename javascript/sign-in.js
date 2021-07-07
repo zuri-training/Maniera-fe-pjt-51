@@ -29,6 +29,10 @@ const loginForm = (e) => {
 		email: email.value,
 		password: password.value,
 	};
+	const cookie = document.cookie
+		.split(";")
+		.map((cookie) => cookie.split("="))
+		.reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
 
 	console.log(user);
 
@@ -42,6 +46,11 @@ const loginForm = (e) => {
 	})
 		.then((res) => {
 			if (res.status === 200 || res.status === 201) {
+				const cookie = document.cookie
+					.split(";")
+					.map((cookie) => cookie.split("="))
+					.reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
+				console.log(cookie);
 				console.log(res);
 				preloader.style.display = "none";
 				localStorage.setItem("data", JSON.stringify(res));
@@ -69,10 +78,9 @@ function onSignIn(googleUser) {
 }
 
 let id_token = googleUser.getAuthResponse().id_token;
-post(`${BASE_URL}`, {id_token: id_token})
-.then(() => {
-    window.location.replace('https://maniera-beta-tesing.netlify.app');
-})
+post(`${BASE_URL}`, { id_token: id_token }).then(() => {
+	window.location.replace("https://maniera-beta-tesing.netlify.app");
+});
 
 // facebook login
 function facebookLogin() {

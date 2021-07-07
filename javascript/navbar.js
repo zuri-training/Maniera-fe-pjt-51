@@ -13,3 +13,11 @@ const mobileMenu = () => {
 };
 
 hamburger.addEventListener("click", mobileMenu);
+
+// window.open(checkStatus());
+
+window.onload = () => {
+	let loggedIn = "5";
+	if (loggedIn === "") join.style.display = "block";
+	if (loggedIn !== "") account.style.display = "block";
+};
