@@ -12,6 +12,13 @@ body {
 	background: #fefefe;
 }
 
+.preloader {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	display: none;
+}
+
 /* logo */
 
 .logo-text-01 {
@@ -29,7 +36,7 @@ body {
 .left-section {
 	background: #db3022;
 	width: 60%;
-	height: 115vh;
+	height: 136vh;
 }
 .lead-wrapper {
 	padding-top: 160px;
@@ -44,8 +51,8 @@ body {
 .text-lead {
 	font-family: "Metropolis";
 	font-weight: bold;
-	font-size: 56px;
-	width: 393px;
+	font-size: 68px;
+	width: 420px;
 	line-height: 60px;
 }
 
@@ -123,6 +130,13 @@ i {
 .lower-text a {
 	text-decoration: none;
 	color: #db3022;
+}
+
+/* .sign-up-socials {
+	height: 50px;
+} */
+.sign-up-facebook {
+	height: 50px;
 }
 
 /* setting the media query */

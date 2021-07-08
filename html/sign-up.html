@@ -36,7 +36,11 @@
 					</button>
 				</div>
 				<div class="form-holder mt-5 px-md-3">
-					<h2 class="fw-bold mb-3">Sign Up</h2>
+					<div class="d-flex align-items-center mb-3">
+						<h2 class="fw-bold mb-0">Sign Up</h2>
+						<img class="preloader" src="../assets/icons/Iphone-spinner-2.gif" alt="preloader" />
+					</div>
+
 					<form method="POST" class="form" id="myform">
 						<div class="form-group">
 							<label for="first-name" id="first-name-label" class="from-label">First Name</label>
@@ -75,8 +79,12 @@
 						</div>
 						<p class="lower-text">
 							Already have an account?
-							<a href="/">Login</a>
+							<a href="../html/sign-in.html">Login</a>
 						</p>
+						<div class="d-flex align-items-center justify-content-evenly sign-up-socials">
+							<img class="sign-up-google" src="../assets/logos/Continue with Gmail.png" alt="gmail" role="button" />
+							<img class="sign-up-facebook" src="../assets/logos/Continue with Facebook.png" alt="facebook" role="button" />
+						</div>
 					</form>
 				</div>
 			</section>

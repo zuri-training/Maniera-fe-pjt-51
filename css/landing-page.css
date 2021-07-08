@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;700;800&display=swap");
+@import url("header.css");
 
 * {
 	padding: 0;
@@ -56,6 +57,7 @@ img {
 	margin-left: auto;
 }
 
+<<<<<<< HEAD
 /** HEADER SECTION STYLE  **/
 header {
 	width: 100%;
@@ -151,7 +153,6 @@ div.form-group {
 	justify-content: flex-end;
 	width: 15vw;
 }
-
 .bar {
 	display: block;
 	width: 1.5625rem;
@@ -164,6 +165,8 @@ div.form-group {
 
 /** HEADER SECTION STYLE ENDS **/
 
+=======
+>>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
 /** HERO SECTION STYLE  **/
 .maniera-hero {
 	position: relative;
@@ -391,6 +394,7 @@ div.main-heading {
 	font-size: 1.11rem;
 	text-align: center;
 	cursor: pointer;
+	margin-bottom: 4.125rem;
 }
 
 .btn-order:hover {
@@ -444,56 +448,6 @@ section.recently-viewed {
 }
 
 @media (min-width: 320px) and (max-width: 780px) {
-	.main-nav {
-		background-color: #fdf0ef;
-		text-align: center;
-		transition: 0.3s;
-		box-shadow: 0 0.625rem 1.6875rem rgba(0, 0, 0, 0.05);
-		position: fixed;
-		flex-direction: column;
-		left: -160%;
-		top: 15%;
-		z-index: 9;
-	}
-
-	.main-nav.active {
-		left: 0;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	.main-nav > li {
-		margin: 2.5rem 0;
-		position: relative;
-	}
-
-	.maniera-home {
-		width: 10vw;
-	}
-	.search {
-		width: 70.33vw;
-		margin-left: 1.5rem;
-	}
-
-	.hamburger {
-		display: block;
-		user-select: none;
-		outline: none;
-		cursor: pointer;
-	}
-
-	.hamburger.active .bar:nth-child(2) {
-		opacity: 0;
-	}
-
-	.hamburger.active .bar:nth-child(1) {
-		transform: translateY(0.425rem) rotate(45deg);
-	}
-
-	.hamburger.active .bar:nth-child(3) {
-		transform: translateY(-0.425rem) rotate(-45deg);
-	}
-
 	.maniera-hero {
 		width: 100%;
 	}
@@ -521,14 +475,6 @@ section.recently-viewed {
 }
 
 @media (max-width: 425px) {
-	.search {
-		display: none;
-	}
-
-	nav {
-		justify-content: space-between;
-	}
-
 	.hero-text {
 		width: 100%;
 	}

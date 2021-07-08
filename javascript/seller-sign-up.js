@@ -139,22 +139,29 @@ form.addEventListener("submit", (e) => {
 		clothType: clothType,
 	};
 
-	fetch("https://maniera-dev.herokuapp.com/api/auth/seller/userId", {
-		method: "post",
+	// const userId = email.value;
+
+<<<<<<< HEAD
+	fetch(`https://maniera-dev.herokuapp.com/api/auth/seller/userId`, {
+=======
+	fetch(`https://maniera-dev.herokuapp.com/api/auth/seller`, {
+>>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
+		method: "POST",
 		body: JSON.stringify(seller),
 		headers: {
 			"Content-Type": "application/json",
 		},
+		body: JSON.stringify(seller),
 	})
 		.then((res) => {
 			if (res.status === 200 || res.status === 201) {
 				localStorage.setItem("seller", JSON.stringify(res.json()));
-				window.location = "/admin/html/dashboard.html";
+				window.location = "/";
 			} else if (res.status === 401 || res.status === 404) {
 				console.log("error");
 			}
 		})
-		.catch(function (error) {
+		.catch((error) => {
 			console.error(error);
 		});
 

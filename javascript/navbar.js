@@ -1,11 +1,23 @@
 //Declare all Global Variable
 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.main-nav');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".main-nav");
+const navList = document.querySelector(".nav-list");
+const join = document.querySelector(".join");
+const account = document.querySelector(".account");
 
 const mobileMenu = () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
+	navList.classList.toggle("active");
 };
 
-hamburger.addEventListener('click', mobileMenu);
+hamburger.addEventListener("click", mobileMenu);
+
+// window.open(checkStatus());
+
+window.onload = () => {
+	let loggedIn = "5";
+	if (loggedIn === "") join.style.display = "block";
+	if (loggedIn !== "") account.style.display = "block";
+};

@@ -45,6 +45,9 @@
 	border: none;
 	outline: none;
 }
+.maniera-footer .footer-subscription-form div input::placeholder {
+	font-size: 20px;
+}
 
 .maniera-footer .footer-subscription-form div button span {
 	color: #ffffff;

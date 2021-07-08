@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/product.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<title>Maniera Product</title>
+	</head>
+	<body>
+		<!-- HEADER START HERE-->
+		<header class="nav-header">
+			<div class="container">
+				<nav class="d-flex justify-content-between">
+					<h1 class="maniera-home"><a href="/"> Maniera</a></h1>
+
+					<div class="main-nav d-flex justify-content-between align-items-center">
+						<form class="search">
+							<div class="form-group">
+								<input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+								<button class="btn home-search"><i class="fal fa-search"></i></button>
+							</div>
+						</form>
+
+						<ul class="nav-list d-none d-lg-flex justify-content-between align-items-center mb-0">
+							<li class="categories py-3" role="button">
+								<span>Categories</span>
+								<div class="categories-dropdown">
+									<a href="#">Hand-Made</a>
+									<a href="#">Factory Made</a>
+									<a href="#">For Men</a>
+									<a href="#">For Women</a>
+									<a href="#">For Children</a>
+									<a href="#">All Wears</a>
+								</div>
+							</li>
+							<li role="button">Cart <span class="cart-count">3</span></li>
+							<li role="button">My Requests</li>
+							<li class="join">
+								<button class="btn join-now" type="submit"><a href="./html/sign-up.html" class="">Join us</a></button>
+							</li>
+							<li class="account py-3" role="button">
+								<span>Account <i class="fal fa-chevron-down"></i></span>
+								<div class="account-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Messages</a>
+									<a href="#">Favorites</a>
+									<a href="#">Purchases</a>
+									<a href="#">Track Order</a>
+									<a href="#">Sign Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="hamburger d-flex justify-content-center align-items-center d-lg-none">
+						<div>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="page-indicator p-3 text-center"><span>Home</span> <span>/</span> <span>Top Rated</span></div>
+
+		<main class="container pb-5">
+			<div class="row">
+				<section class="product-left-section col-12 col-lg-7">
+					<div class="current-product-image w-100">
+						<img class="w-100 h-100" src="../assets/images/Denim trousers large.png" alt="denim" />
+						<div class="switch-image-div"><i class="bi bi-chevron-left"></i><i class="bi bi-chevron-right"></i></div>
+					</div>
+
+					<div class="shadow-lg px-4 py-3">
+						<div class="product-sample-images">
+							<div>
+								<img class="p-1" src="../assets/images/Denim trousers small.png" alt="denim small" />
+								<img class="p-1" src="../assets/images/Denim trousers small 2.png" alt="denim small" />
+							</div>
+
+							<h5 class="pt-4 fw-bold">Description</h5>
+							<p class="py-2">
+								At Safari Wears we specialize in quality hand made denim wears, denim custom loafers, Jean jackets, and denim hats. We also accept
+								custom requests and you get your within a week of approval. <br />
+
+								<span>Contact us with the number below and leave us a message.</span>
+							</p>
+							<p class="desciption-time d-flex justify-content-between">
+								<span>Posted 2 days ago</span>
+								<span><i class="bi bi-eye pe-2"></i>All Views (102)</span>
+							</p>
+						</div>
+
+						<div>
+							<div>
+								<h5 class="pt-4 fw-bold">Cloth Category</h5>
+								<p>Factory Made, Hand-sewn, For Men, For Women, For Children</p>
+							</div>
+							<div>
+								<h5 class="pt-4 fw-bold">Cloth Type</h5>
+								<p>Jeans, Denim</p>
+							</div>
+							<div>
+								<h5 class="pt-4 fw-bold">Color</h5>
+								<p>Blue, Black, White</p>
+							</div>
+							<div>
+								<h5 class="pt-4 fw-bold">Request</h5>
+								<p>Available</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="product-right-section col-12 col-lg-5">
+					<div class="shadow rounded py-4 px-4">
+						<h3 class="fw-bold">Denim Trousers</h3>
+						<p class="fw-5 text-secondary mb-1">Safari Wears</p>
+						<div class="item-rating">
+							<img src="../assets/icons/Rating star.png" alt="rating" />
+							<img src="../assets/icons/Rating star.png" alt="rating" />
+							<img src="../assets/icons/Rating star.png" alt="rating" />
+							<img src="../assets/icons/Rating star.png" alt="rating" />
+							<img src="../assets/icons/Rating star.png" alt="rating" />
+							<span class="text-secondary">(10)</span>
+						</div>
+						<div class="py-4">
+							<p class="mb-1">Size</p>
+							<div class="sizes d-flex">
+								<div class="sizes-div">S</div>
+								<div class="sizes-div">M</div>
+								<div class="sizes-div current-size">L</div>
+								<div class="sizes-div">XL</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-between">
+							<div class="product-price d-flex align-items-baseline p-0">
+								<p class="fs-2 fw-bold mb-0">$114</p>
+								<p class="former-price fs-5 ms-2 text-decoration-line-through mb-0">$150</p>
+							</div>
+							<div class="product-quantity">
+								<p class="mb-0">Quantity:</p>
+								<div class="d-flex">
+									<div class="add fs-2 text-secondary p-2">-</div>
+									<div class="fw-bold fs-4 p-2">1</div>
+									<div class="substract fs-2 text-secondary p-2">+</div>
+								</div>
+							</div>
+						</div>
+						<button class="checkout-btn fs-5 btn text-white w-100 rounded-0 p-2 my-4">Proceed to Checkout</button>
+						<button class="add-to-cart-btn fw-bold fs-5 btn w-100 rounded-0 p-2 my-2">Add to Cart</button>
+					</div>
+					<div class="make-request-div shadow rounded py-4 px-4 my-4">
+						<p class="fs-3 fw-bold mb-0">Need a custom size tailored only for you?</p>
+						<button class="make-a-request-btn fs-5 btn text-white w-100 rounded-0 p-2 my-4">Make a request</button>
+					</div>
+				</section>
+				<form class="product-msg-form col-12 col-lg-7 my-5">
+					<textarea class="p-4 w-100" name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
+					<button class="send-msg-btn btn rounded-1 px-4 py-2 my-4 me-3">
+						<img class="mb-1" src="../assets/icons/Send Icon.png" width="25px" height="25px" alt="send icon" /><span class="fs-5 ms-2">Send</span>
+					</button>
+					<button class="call-btn btn rounded-1 px-4 py-2 my-4">
+						<img class="mb-1" src="../assets/icons/Call Icon.png" width="20px" height="28px" alt="call icon" /><span class="fs-5 ms-2">Call</span>
+					</button>
+				</form>
+				<section class="py-5">
+					<div class="d-flex justify-content-between mb-2">
+						<h2 class="fw-bold">Similar Products</h2>
+						<span>View all</span>
+					</div>
+					<div class="product-items-list d-block d-md-flex flex-md-wrap flex-lg-nowrap justify-content-between">
+						<div class="card product-card mx-auto mx-lg-1">
+							<img src="../assets/images/Denim Shorts stacked.png" class="card-img-top" alt="..." />
+							<div class="card-body p-2">
+								<h4 class="card-title fw-bold">Denim Shorts</h4>
+								<div>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<span class="text-secondary">(12)</span>
+								</div>
+								<div class="d-flex justify-content-between py-2">
+									<span class="text-secondary">Lavander Wears</span><span class="fw-bold">$80</span>
+								</div>
+								<div class="d-flex justify-content-between mt-4">
+									<a href="#" class="btn product-card-bttn product-add-cart-bttn">Add to cart</a
+									><a href="#" class="btn product-card-bttn product-buy-bttn">Buy now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card product-card mx-auto mx-lg-1">
+							<img src="../assets/images/Denim Trousers Image2.png" class="card-img-top" alt="..." />
+							<div class="card-body p-2">
+								<h4 class="card-title fw-bold">Plain Tees</h4>
+								<div>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<span class="text-secondary">(53)</span>
+								</div>
+								<div class="d-flex justify-content-between py-2"><span class="text-secondary">Josh Wears</span><span class="fw-bold">$50</span></div>
+								<div class="d-flex justify-content-between mt-4">
+									<a href="#" class="btn product-card-bttn product-add-cart-bttn">Add to cart</a
+									><a href="#" class="btn product-card-bttn product-buy-bttn">Buy now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card product-card mx-auto mx-lg-1">
+							<img src="../assets/images/Denim Trousers Image7.png" class="card-img-top" alt="..." />
+							<div class="card-body p-2">
+								<h4 class="card-title fw-bold">Nitted Sweater</h4>
+								<div>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<span class="text-secondary">(10)</span>
+								</div>
+								<div class="d-flex justify-content-between py-2">
+									<span class="text-secondary">Temi's Gallery</span><span class="fw-bold">$76</span>
+								</div>
+								<div class="d-flex justify-content-between mt-4">
+									<a href="#" class="btn product-card-bttn product-add-cart-bttn">Add to cart</a
+									><a href="#" class="btn product-card-bttn product-buy-bttn">Buy now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card product-card mx-auto mx-lg-1">
+							<img src="../assets/images/Denim Trousers Image8.png" class="card-img-top" alt="..." />
+							<div class="card-body p-2">
+								<h4 class="card-title fw-bold">Office Shirts</h4>
+								<div>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<span class="text-secondary">(30)</span>
+								</div>
+								<div class="d-flex justify-content-between py-2">
+									<span class="text-secondary">One Boutique</span><span class="fw-bold">$110</span>
+								</div>
+								<div class="d-flex justify-content-between mt-4">
+									<a href="#" class="btn product-card-bttn product-add-cart-bttn">Add to cart</a
+									><a href="#" class="btn product-card-bttn product-buy-bttn">Buy now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card product-card mx-auto mx-lg-1">
+							<img src="../assets/images/Denim Trousers Image1.png" class="card-img-top" alt="..." />
+							<div class="card-body p-2">
+								<h4 class="card-title fw-bold">Fitted Suits</h4>
+								<div>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.5 14.9252L4.52509 17.5306C4.15817 17.7227 3.7301 17.411 3.80038 17.0028L4.75 11.4875L0.729136 7.58336C0.431403 7.29427 0.595107 6.78925 1.00582 6.7298L6.56434 5.92523L9.05197 0.90428C9.23564 0.53358 9.76436 0.533579 9.94803 0.904279L12.4357 5.92523L17.9942 6.7298C18.4049 6.78925 18.5686 7.29427 18.2709 7.58336L14.25 11.4875L15.1996 17.0028C15.2699 17.411 14.8418 17.7227 14.4749 17.5306L9.5 14.9252Z"
+											fill="#FFBA49"
+										/>
+									</svg>
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M10 14.9252L4.71213 17.556C4.34376 17.7393 3.92406 17.424 3.99743 17.0192L5 11.4875L0.778921 7.59389C0.468297 7.30736 0.631165 6.7886 1.04982 6.73103L6.90983 5.92523L9.55667 0.850063C9.74358 0.491675 10.2564 0.491675 10.4433 0.850063L13.0902 5.92523L18.9502 6.73103C19.3688 6.7886 19.5317 7.30736 19.2211 7.59389L15 11.4875L16.0026 17.0192C16.0759 17.424 15.6562 17.7393 15.2879 17.556L10 14.9252Z"
+											fill="white"
+											stroke="#979797"
+										/>
+									</svg>
+									<span class="text-secondary">(22)</span>
+								</div>
+								<div class="d-flex justify-content-between py-2">
+									<span class="text-secondary">One Boutique</span><span class="fw-bold">$350</span>
+								</div>
+								<div class="d-flex justify-content-between mt-4">
+									<a href="#" class="btn product-card-bttn product-add-cart-bttn">Add to cart</a
+									><a href="#" class="btn product-card-bttn product-buy-bttn">Buy now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="maniera-footer py-2">
+			<section class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
+				<div class="footer-logo my-2">
+					<h1><a href="/">Maneira</a></h1>
+				</div>
+				<form class="footer-subscription-form my-2">
+					<h4>NEW TO MANIERA?</h4>
+					<p>Subscribe to our newsletter to get updates on our latest offers</p>
+					<div class="d-flex justify-content-between rounded">
+						<input class="p-2" type="text" placeholder="Enter Email Address" />
+						<button class="btn footer-btn rounded-0">
+							<span><img src="../assets/icons/footer-arrow.png" alt="arrow" /></span><span class="ms-2 send">Send</span>
+						</button>
+					</div>
+				</form>
+				<div class="footer-download-app my-2">
+					<h4>DOWNLOAD THE MANIERA APP</h4>
+				</div>
+			</section>
+			<section class="footer-section-2 container d-flex flex-wrap justify-content-between pt-sm-5">
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Contact Us</h4>
+					<div class="d-flex justify-content-evenly">
+						<div class="footer-social-icons">
+							<a href="www.facebook.com"><img src="../assets/icons/Facebook Icon.png" alt="facebook" /></a>
+						</div>
+						<div class="footer-social-icons">
+							<a href="www.twitter.com"><img src="../assets/icons/Twitter Icon.png" alt="twitter" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Let us help</h4>
+					<p class="mb-2"><a href="">How to Shop?</a></p>
+					<p class="mb-2"><a href="">How to request a design?</a></p>
+					<p class="mb-2"><a href="">Delivery Options</a></p>
+					<p class="mb-2"><a href="">Delivery timeline</a></p>
+					<p class="mb-2"><a href="">How to upload my product?</a></p>
+					<p class="mb-2"><a href="">Bulk purchases</a></p>
+					<p class="mb-2"><a href="">Return policy</a></p>
+					<p class="mb-2"><a href="">Report a product</a></p>
+					<p class="mb-2"><a href="">Help Center</a></p>
+					<p class="mb-2"><a href="">FAQ</a></p>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">About Maniera</h4>
+					<p class="mb-2"><a href=""> About Us</a></p>
+					<p class="mb-2"><a href="">Terms and Conditions</a></p>
+					<p class="mb-2"><a href="">Privacy policy</a></p>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Earn on Maniera</h4>
+					<p class="mb-2"><a href="">Become a Seller</a></p>
+					<p class="mb-2"><a href="">Become a Logistics Partner</a></p>
+				</div>
+			</section>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="../javascript/navbar.js"></script>
+	</body>
+</html>
