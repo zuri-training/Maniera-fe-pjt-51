@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    font-family: "inter", sans-serif;
+}
+
+.forgot-password-card {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: 15%;
+    right: 50px;
+    /* max-width: 1020px; */
+    margin: 5rem;
+    /* background-color: #ffff7f; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-icons img {
+    margin-top: -150px;
+}
+
+.back-icon {
+    /* position: relative;
+    top: 4px;
+    left: 4px; */
+    float: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding-right: 350px;
+}
+
+.cancel-icon {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    padding-left: 350px;
+}
+
+.password-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-tab h1 {
+    font-size: 32px;
+    line-height: 38.73px;
+    color: #22262A;
+}
+
+h1 {
+    position: relative;
+    top: -90px;
+}
+
+#password-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 16px;
+    border: none;
+    background-color: #DFDEDE;
+    color: #999999;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 2px solid #db3022;
+}
+
+button {
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    background-color: #DB3022;
+    padding: 10px 50px;
+    border-radius: 4px;
+    /* margin-bottom: 8px; */
+}
+
+button:hover {
+    background-color: rgba(219, 48, 34, 0.85);
+}
+
+
+
+
+
+
