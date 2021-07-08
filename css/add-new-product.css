@@ -62,8 +62,8 @@ header nav {
   width: 100%;
 }
 .main .half-width {
-    width: 70%;
-  }
+  width: 70%;
+}
 
 .main form {
   width: 70%;
@@ -108,18 +108,19 @@ textarea {
 }
 .main form .checkbox {
   margin-bottom: 10px;
-}   
+}
 .main form #color {
   margin-bottom: 10px;
 }
 .main form i {
-    display: inline-block;
+  display: inline-block;
   outline: none;
   cursor: pointer;
   border: 1px solid #d6d6d6;
   padding: 5px 10px;
   transition: 0.3s;
-  /* margin-top: 100px !important; */
+  top: 6px !important;
+  position: relative;
 }
 .main form i:hover {
   border: 1px solid #d6d6d6;
@@ -144,9 +145,9 @@ textarea {
   grid-template-columns: 212px 210px;
 }
 .main form .three {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
 /* Color list */
 .main form ul li {
@@ -314,6 +315,9 @@ textarea {
   .top-half {
     margin-bottom: 160%;
   }
+  .main form ul li {
+    width: 50%;
+  }
 }
 
 /* -------------------------------------------------- 
@@ -342,12 +346,15 @@ textarea {
     display: grid;
     grid-template-columns: auto auto;
   }
-  .main form .two{
+  .main form .two {
     display: grid;
     grid-template-columns: auto auto;
   }
+  .main form ul li {
+    width: 60%;
   }
 }
+
 @media (min-width: 540px) and (max-width: 540px) {
   .top-half {
     margin-bottom: 350% !important;
@@ -369,6 +376,21 @@ textarea {
   .top-half {
     margin-bottom: 220%;
   }
+  .main form .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .main form .two {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .main form .three {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .main form ul li {
+    width: 60%;
+  }
 }
 
 /* -------------------------------------------------- 
@@ -382,7 +404,7 @@ textarea {
   }
   .main form {
     width: 90%;
-    top: 75%;
+    top: 500px;
     left: 5%;
     padding: 70px 30px 100px 30px;
   }
@@ -490,11 +512,11 @@ textarea {
 @media only screen and (min-device-width: 280px) and (max-width: 365px) {
   .top-half {
     padding: 100px 0px;
-    margin-bottom: 600%;
+    margin-bottom: 750%;
   }
   .main form {
     width: 95%;
-    top: 90%;
+    top: 500px;
     left: 2.5%;
     padding: 70px 20px 100px 20px;
   }
