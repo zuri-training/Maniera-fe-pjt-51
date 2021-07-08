@@ -26,7 +26,6 @@ body {
     width: 140%;
     height: auto;
     background-color: #F7F6F6;
-    /* margin-left: -30px; */
 }
 
 .page-logo {
@@ -37,7 +36,6 @@ body {
     line-height: 38.73px;
     text-decoration: none;
     color: #222222;
-
 }
 
 nav {
