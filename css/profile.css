@@ -8,15 +8,12 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-
-
 .profile-page-container {
     display: flex;
     margin: 4rem;
     align-items: center;
     justify-content: center;
 }
-
 
 .side-nav {
     display: flex;
