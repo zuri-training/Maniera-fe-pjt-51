@@ -200,13 +200,8 @@ nav {
 		background-color: #fdf0ef;
 		width: 0;
 		text-align: center;
-<<<<<<< HEAD
-		transition: width 2s linear 1s;
-		/* transition: 0.3s ease; */
-=======
 		/* transition: width 2s linear 1s; */
 		transition: all 0.3s ease;
->>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
 		box-shadow: 0 0.625rem 1.6875rem rgba(0, 0, 0, 0.05);
 		position: fixed;
 		/* flex-direction: column; */
