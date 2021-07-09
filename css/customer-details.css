@@ -23,26 +23,8 @@ body {
 	box-shadow: none;
 }
 
-/* .hero-background {
-	background-color: #f3f3f3;
-	position: absolute;
-	width: 1440px;
-	height: 1901px;
-	left: 0px;
-	top: -1px;
-} */
-
-/* .rectangle {
-	background: #fefefe;
-	position: absolute;
-	width: 1202px;
-	height: 1586px;
-	left: 120px;
-	top: 218px;
-} */
-
-span,
-i {
+.customer-details-main h3 > span,
+.customer-details-main > h3 > i {
 	font-size: 0.5em;
 	color: #00579f;
 }

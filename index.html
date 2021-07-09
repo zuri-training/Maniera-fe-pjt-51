@@ -15,44 +15,68 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
 
     <!-- PAGE HERO START HERE-->
-    <!-- HEADER START HERE-->
-    <header>
-        <div class="wrapper">
-            <nav>
-                <h1 class="maniera-home">Maniera</h1>
+    		<!-- HEADER START HERE-->
+		<header class="nav-header">
+			<div class="container">
+				<nav class="d-flex justify-content-between">
+					<h1 class="maniera-home"><a href="/"> Maniera</a></h1>
 
-                <div class="search">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
-                            <button class="btn home-search"><i class="fal fa-search"></i></button>
-                        </div>
-                    </form>
-                </div>
+					<div class="main-nav d-flex justify-content-between align-items-center">
+						<form class="search">
+							<div class="form-group">
+								<input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+								<button class="btn home-search"><i class="fal fa-search"></i></button>
+							</div>
+						</form>
 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+						<ul class="nav-list d-none d-lg-flex justify-content-between align-items-center mb-0">
+							<li class="categories py-3" role="button">
+								<span>Categories</span>
+								<div class="categories-dropdown">
+									<a href="#">Hand-Made</a>
+									<a href="#">Factory Made</a>
+									<a href="#">For Men</a>
+									<a href="#">For Women</a>
+									<a href="#">For Children</a>
+									<a href="#">All Wears</a>
+								</div>
+							</li>
+							<li role="button">Cart <span class="cart-count">3</span></li>
+							<li role="button">My Requests</li>
+							<li class="join">
+								<button class="btn join-now" type="submit"><a href="./html/sign-up.html" class="">Join us</a></button>
+							</li>
+							<li class="account py-3" role="button">
+								<span>Account <i class="fal fa-chevron-down"></i></span>
+								<div class="account-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Messages</a>
+									<a href="#">Favorites</a>
+									<a href="#">Purchases</a>
+									<a href="#">Track Order</a>
+									<a href="#">Sign Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 
-                
-                    <ul class="main-nav">
-                        <li>Categories</li>
-                        <li>Cart <span class="cart-count">3</span></li>
-                        <li>My Requests</li>
-                        <li><button class="btn join-now" type="submit"><a href="./html/sign-up.html" class="">Join us</a></button></li>
-                    </ul>
-                
-            </nav>
-        </div>
-    </header>
+					<div class="hamburger d-flex justify-content-center align-items-center d-lg-none">
+						<div>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
     <section class="maniera-hero">
         <div class="wrapper">
