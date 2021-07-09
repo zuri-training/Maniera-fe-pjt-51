@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=Metropolis");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", sans-serif !important;
+	letter-spacing: 0.02em;
+}
+.current-size {
+	background: #5b5b5b;
+	color: #ffffff;
+}
+
+.page-indicator {
+	margin: 4rem 0;
+	background: #f6f7f8;
+}
+.page-indicator > span:first-child {
+	color: #db3022;
+}
+.page-indicator > span {
+	font-weight: 600;
+}
+
+.product-left-section > .current-product-image {
+	position: relative;
+	height: 550px;
+}
+
+.switch-image-div {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	top: 250px;
+}
+.switch-image-div > i {
+	padding: 3px;
+	font-size: 35px;
+	background: #000000;
+	color: #ffffff;
+	opacity: 0.3;
+	transition: 0.5s ease;
+}
+.switch-image-div > i:hover {
+	opacity: unset;
+	cursor: pointer;
+}
+
+.product-sample-images {
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.desciption-time {
+	font-size: 14px;
+	color: #222222cc;
+}
+
+.sizes-div {
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	border: 1px solid #979797;
+	margin-right: 10px;
+}
+
+.product-price > .former-price {
+	color: #db3022;
+}
+
+.product-quantity > div > div {
+	height: 30px;
+	border: 1px solid #9b9b9b;
+	display: flex;
+	align-items: center;
+	border-radius: 2px;
+}
+
+.checkout-btn,
+.send-msg-btn {
+	background: #db3022;
+	color: #ffffff;
+}
+.add-to-cart-btn {
+	color: #db3022;
+	border: 2px solid #db3022;
+}
+
+.make-request-div > p {
+	line-height: 30px;
+}
+
+.make-a-request-btn {
+	background: #00579f;
+	color: #ffffff;
+}
+
+.product-msg-form > textarea {
+	background: rgba(249, 246, 246, 0.5);
+	border: 2px solid rgba(34, 34, 34, 0.4);
+	border-radius: 12px;
+	transition: 1s ease;
+}
+.product-msg-form > textarea:focus {
+	border: 2px solid #000000;
+	outline: none;
+}
+/* .product-msg-form textarea:focus {
+	border: ;
+} */
+
+.product-msg-form > textarea::placeholder {
+	font-size: 20px;
+	font-weight: 500;
+}
+.call-btn {
+	background: #00579f;
+	color: #ffffff;
+}
+.call-btn,
+.send-msg-btn {
+	width: 155px;
+}
+
+/* FOR THE CARDS */
+.product-card {
+	margin: 20px 0;
+	width: 18rem !important;
+}
+
+.product-items-list > .product-card img {
+	height: 216px;
+	/* width: 226px; */
+}
+
+.product-card-bttn {
+	width: 90px;
+	font-size: 12px;
+	padding: 5px 0;
+	font-weight: 600;
+}
+.product-add-cart-bttn {
+	border: 2px solid #00579f;
+	color: #00579f;
+}
+.product-buy-bttn {
+	background: #00579f;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+	.product-left-section > .current-product-image {
+		height: 400px;
+	}
+	.switch-image-div {
+		top: 170px;
+	}
+}

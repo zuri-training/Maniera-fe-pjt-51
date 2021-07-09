@@ -10,12 +10,65 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
+		<script src="https://kit.fontawesome.com/b5b706e1e7.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
 		<link rel="stylesheet" href="../css/footer.css" />
-		<title>Maniera</title>
+		<link rel="stylesheet" href="../css/cart.css" />
+		<title>Cart</title>
 	</head>
 	<body>
-		<h1>Footer Component</h1>
+		<!--HEADER-->
+		<div class="page-indicator p-3 text-center"><span>Home</span> <span>/</span> <span>Top Rated</span></div>
+
+		<section class="container-fluid">
+			<div class="product">
+				<h2>PRODUCT</h2>
+				<div>
+					<h2>PRICE</h2>
+					<h2>QTY</h2>
+					<h2>UNIT PRICE</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="item d-flex justify-content-between align-items-center my-3">
+			<div class="item-1 d-flex align-items-center container-fluid my-3">
+				<div style="color: #e2594e; cursor: pointer; margin-right: 2rem;"><i class="fas fa-times"></i></div>
+                <img style="margin-right: 2rem;" src="../assets/images/Porduct Image.png" alt="product image">
+				<p>Denim Trousers</p>
+			</div>
+			<div class="item-2 container-fluid d-flex justify-content-around align-items-center my-3">
+				<p style="margin-bottom: 0">$114</p>
+				<div class="spin">
+					<span style="color: #e2594e" class="prev" onclick="prevNum()">-</span>
+					<div id="box">1</div>
+					<span style="color: #e2594e" class="next" onclick="nextNum()">+</span>
+				</div>
+				<p style="margin-bottom: 0">$114</p>
+			</div>
+		</section>
+
+		<section class="container-fluid">
+			<div class="d-flex align-items-center justify-content-around flex-wrap bottom">
+				<div class="d-flex justify-content-between redeem">
+					<input type="text" class="px-2 px-lg-3" placeholder="Voucher code" />
+					<button class="redeem-btn btn btn-sm py-2">Redeem</button>
+				</div>
+
+				<div class="brand">
+					<ul>
+						<li class="d-flex justify-content-between">Subtotal <span>$114</span></li>
+						<li class="d-flex justify-content-between">Coupon <span>No</span></li>
+						<li class="d-flex justify-content-between">Shipping Fee <span>$25</span></li>
+						<li class="d-flex justify-content-between">Date of Delivery <span>10-June-2021</span></li>
+						<li style="font-weight: bold" class="d-flex justify-content-between">TOTAL <span>$139</span></li>
+					</ul>
+					<button style="width: 100%" class="checkout-btn btn btn-sm btn-side py-2">Checkout</button>
+				</div>
+			</div>
+		</section>
+
+		<!--FOOTER-->
 		<footer class="maniera-footer py-2">
 			<section class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
 				<div class="footer-logo my-2">
@@ -78,5 +131,6 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+		<script src="../javascript/cart.js"></script>
 	</body>
 </html>
