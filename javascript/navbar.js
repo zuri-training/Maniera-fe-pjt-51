@@ -17,7 +17,8 @@ hamburger.addEventListener("click", mobileMenu);
 // window.open(checkStatus());
 
 window.onload = () => {
-	let loggedIn = "5";
+	// let loggedIn = localStorage.getItem("loggedIn");
+	let loggedIn = "";
 	if (loggedIn === "") join.style.display = "block";
 	if (loggedIn !== "") account.style.display = "block";
 };
