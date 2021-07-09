@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+	margin: 0;
+	/*box-sizing: border-box;*/
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	height: 100vh;
+	max-width: 1440px;
+	background-color: #FFFFFF;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 2.5rem;
+}
+
+.page-logo {
+	height: 126px;
+	width: 260px;
+	margin-left: 2.5rem;
+	color: #222222;
+
+}
+
+header {
+	flex-basis: 15%;
+	margin-top: -27.5rem;
+	margin-left: 5rem;
+}
+
+.side-nav {
+	width: 260px;
+	height: 997px;
+	background-color: #F7F6F6;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-logo {
+	font-family: "inter", sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	height: 300px;
+	width: 260px;
+	padding: 2rem;
+	margin-bottom: 6rem;
+	text-decoration: none;
+	color: #222222;
+	flex-flow: flex-start;
+	flex-basis: 20%;
+}
+
+nav {
+    
+}
+
+nav > a, nav > img {
+	font-family: "inter", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	display: block;
+	text-decoration: none;
+	flex-basis: 80%;
+	color: #DB3022;
+	margin: 1rem;
+}
+
+nav > a > img {
+	width: 16px;
+	height: 16px;
+	padding: 0.5rem;
+	/*align-items: center;
+	margin: 1rem;*/
+}
+
+.icon {
+	
+}
+
+/*i {
+	padding: 0.7rem;
+}*/
+
+.user-info {
+	flex-basis: 75%;
+	text-align: center;
+	margin: 2.5rem;
+}
+
+.all-profile-card {
+	margin: 2.5rem;
+	text-align: center;
+}
+
+.user-profile-card {
+	width: 200px;
+	height: 263px;
+	margin-top: -100px;
+	margin-left: -4rem;
+	text-align: center;
+	padding-left: 40%;
+}
+
+.img-accent {
+	width: 907px;
+	height: 126px;
+	background-color: #DB3022;
+	display: block;
+	margin-left: -5rem;
+}
+
+.users-name {
+	font-family: "inter", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.users-occupation {
+	font-family: "inter", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	/*margin-top: -0.7rem;*/
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: #F7F6F6;
+}
+
+.info-boxes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 687px;
+	height: 1145px;
+	background-color: #F7F6F6;
+	margin-left: 4.5rem;
+}
+
+table {
+	background-color: #D6D3D3;
+	width: 432px;
+	height: 304px;
+	margin: 15px;
+	border-collapse: collapse;
+}
+
+tr {
+	width: 415px;
+	height: 54px;
+	background-color: #F7F6F6;
+	border-collapse: collapse;
+}
+
+.first-info {
+	font-weight: 700;
+  
+}
+
+.user-details, td {
+	margin: 5px;
+	font-family: "inter", sans-serif;
+	font-size: 16px;
+}
+
+input {
+	margin: 1rem;
+}
+
+caption {
+	font-family: "inter", sans-serif;
+	font-weight: 700;
+	margin: 5px;
+	text-align: left;
+	font-size: 18px;
+}
+
+td {
+	border-bottom: 0.5rem solid #D6D3D3; 
+	border-top: 0.5rem solid #D6D3D3;
+	border-left: solid #D6D3D3;
+	border-right: solid #D6D3D3;
+	padding: 20px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.mastercard-logo {
+	width: 40px;
+	height: 20px;
+	margin: 0 0 0 0.5rem;
+}
+
+.visa-logo {
+	width: 40px;
+	height: 17px;
+	margin: 0 0 0 6rem;
+}
+
+.fa-star {
+	color: #FFBA49;
+	margin: -0.5srem;
+} 
+
+@media screen and (max-width: 768px) {
+
+	body{
+		margin: 0rem;
+		max-width:90vw;
+		padding: 8rem;
+		box-sizing: border-box;
+		/*display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;*/
+	}
+	.profile-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 10rem;
+		padding: 10rem;
+    }
+	
+	header {
+		/*flex-basis: 20%;*/
+		align-items: center
+		justify-content: center;
+		/*margin-top: -27.5rem;*/
+	}
+
+	/*.side-nav {
+		max-width: 768px;
+		height: auto;
+		background-color: #F7F6F6;
+		display: flex;
+		flex-direction: column;
+	}
+*/
+	.page-logo {
+		flex-basis: 10%;
+		text-align: center;
+	}
+    nav {
+    	width: 100%;
+		height: auto;
+		margin: 5rem;
+		display: flex;
+		/*flex-direction: row;*/
+		justify-content: space-between;
+		align-items: center;
+    }
+
+    a img {
+    	display: none;
+    }
+
+    nav > a {
+		font-family: "inter", sans-serif;
+		font-weight: 600;
+		font-size: 16px;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		/*flex-basis: 50%;*/
+		color: #DB3022;
+		padding: -3rem;
+		margin: -10rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+    .img-accent {
+		display: none;
+		/*margin-left: -5rem;*/
+	}
+
+	.side-nav {
+		width: 92vw;
+		height: 200px;
+		display: flex;
+		/*flex-direction: column;*/
+		align-items: center;
+		justify-content: center;
+		margin-top: 5rem;
+		max-width: 768px;
+		/*height: auto;*/
+		background-color: #F7F6F6;
+		display: flex;
+		flex-direction: column;
+	}	
+
+    .user-info {
+    	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    }
+
+    .info-boxes {
+    	width: 90vw;
+		height: 1145px
+		margin: 8rem;
+		padding: 1rem;
+    }
+
+}

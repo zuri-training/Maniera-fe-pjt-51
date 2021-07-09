@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+}
+
+.forgot-password-card {
+    position: relative;
+    margin: 5rem 2rem;
+    padding: 1rem;
+}
+
+.back-icon {
+    float: left;
+}
+
+.cancel-icon {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 10rem 0 5rem 0;
+    line-height: 38.73px;
+    color: #22262A;
+}
+
+#password-form {
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: #DFDEDE;
+    color: #999999;
+    opacity: 0.9;
+    display: inline-block;
+    padding: 10px 50px 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    background-color: #DB3022;
+    padding: 10px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.82;
+}
+
+
+
+
