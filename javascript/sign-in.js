@@ -29,10 +29,6 @@ const loginForm = (e) => {
 		email: email.value,
 		password: password.value,
 	};
-	const cookie = document.cookie
-		.split(";")
-		.map((cookie) => cookie.split("="))
-		.reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
 
 	console.log(user);
 
@@ -44,23 +40,13 @@ const loginForm = (e) => {
 		},
 		body: JSON.stringify(user),
 	})
-		.then((res) => {
-			if (res.status === 200 || res.status === 201) {
-				const cookie = document.cookie
-					.split(";")
-					.map((cookie) => cookie.split("="))
-					.reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {});
-				console.log(cookie);
-				console.log(res);
-				preloader.style.display = "none";
-
-				let loggedIn = "";
-				localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
-				window.location = "/";
-			} else if (res.status === 401 || res.status === 404 || res.status === 400) {
-				preloader.style.display = "none";
-				console.log(res.statusText);
-			}
+		.then((res) => res.json())
+		.then((data) => {
+			preloader.style.display = "none";
+			console.log(data.token);
+			let token = data.token;
+			localStorage.setItem("userToken", token);
+			window.location = "/";
 		})
 		.catch((error) => {
 			preloader.style.display = "none";

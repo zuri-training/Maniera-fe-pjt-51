@@ -18,7 +18,5 @@ hamburger.addEventListener("click", mobileMenu);
 
 window.onload = () => {
 	// let loggedIn = localStorage.getItem("loggedIn");
-	let loggedIn = "";
-	if (loggedIn === "") join.style.display = "block";
-	if (loggedIn !== "") account.style.display = "block";
+	!localStorage.getItem("userToken") ? (join.style.display = "block") : (account.style.display = "block");
 };
