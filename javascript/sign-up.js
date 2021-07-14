@@ -79,11 +79,7 @@ myForm.addEventListener("submit", function (e) {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-<<<<<<< HEAD
 				Accept: "application/json",
-=======
-				Accept: "application/json, text/plain",
->>>>>>> 5415f844e7010926fb2efca2b6f959f004ac88f8
 			},
 			body: JSON.stringify(user),
 		})
