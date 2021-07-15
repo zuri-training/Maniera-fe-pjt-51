@@ -36,7 +36,7 @@ const loginForm = (e) => {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
-			Accept: "application/json, text/plain",
+			Accept: "application/json",
 		},
 		body: JSON.stringify(user),
 	})
