@@ -1,158 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maniera Project | Team 51</title>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/make-request.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maniera Project | Team 51</title>
-    <link rel="stylesheet" href="../css/make-request.css">
-</head>
+	<body>
+		<!-- HEADER START HERE-->
+		<header class="nav-header">
+			<div class="container">
+				<nav class="d-flex justify-content-between">
+					<h1 class="maniera-home"><a href="/"> Maniera</a></h1>
 
-<body>
-    <section class="request-banner">
-        <div class="request-banner-heading">
-            <h2>Make a Request</h2>
-            <p>Fill this form to make clothes request of your choice</p>
-        </div>
-    </section>
+					<div class="main-nav d-flex justify-content-between align-items-center">
+						<form class="search">
+							<div class="form-group">
+								<input type="text" name="search" class="form-control" placeholder="Search Clothes..." />
+								<button class="btn home-search"><i class="fal fa-search"></i></button>
+							</div>
+						</form>
 
-    <section class="request-form">
-        <form action="">
-            <div class="req-form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="" class="form-control" />
-            </div>
-            <div class="req-form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="" class="form-control" />
-            </div>
-            <div class="req-form-group">
-                <label for="number">Phone Number</label>
-                <input type="text" name="number" id="" class="form-control" />
-            </div>
-            <div class="req-form-group">
-                <label for="gender">Gender</label>
-                <input type="text" name="gender" id="" class="form-control" />
-            </div>
-            <div class="req-form-group">
-                <div class="sub-form-group">
-                    <label for="address">Address</label>
-                    <input type="text" name="address" id="" class="form-control" />
-                </div>
-                <div class="sub-form-group">
-                    <label for="address">Street Address</label>
-                    <input type="text" name="address" id="" class="form-control" />
-                </div>
-            </div>
-            <div class="req-form-group">
-                <div class="sub-form-group">
-                    <label for="city">City</label>
-                    <input type="text" name="city" id="" class="form-control" />
-                </div>
-                <div class="sub-form-group">
-                    <label for="state">State</label>
-                    <input type="text" name="state" id="" class="form-control" />
-                </div>
-            </div>
-            <div class="req-form-group">
-                <div class="sub-form-group">
-                    <label for="clothing">Clothing Type</label>
-                    <div name="clothing" class="select-control">
-                        <div class="display-select-input">
-                            <div class="option-display"></div>
-                            <div class="option-items-list">
-                                <div class="option-items selected" data-value="Dress">Dress</div>
-                                <div class="option-items" data-value="Swimwear">Swimwear</div>
-                                <div class="option-items" data-value="Sweater">Sweater</div>
-                                <div class="option-items" data-value="Shirt">Shirt</div>
-                                <div class="option-items" data-value="Skirt">Skirt</div>
-                                <div class="option-items" data-value="Suit">Suit</div>
-                                <div class="option-items" data-value="Jeans">Jeans</div>
-                                <div class="option-items" data-value="Trousers">Trousers</div>
-                                <div class="option-items" data-value="Blouse">Blouse</div>
-                                <div class="option-items" data-value="T-shirt">T-shirt</div>
-                                <div class="option-items" data-value="Dress Shirt">Dress Shirt</div>
-                                <div class="option-items" data-value="Coat">Coat</div>
-                                <div class="option-items" data-value="Others, Please Specify">Others, Please Specify
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-form-group">
-                    <label for="material">Material Type</label>
-                    <div name="material" class="select-control">
-                        <div class="display-select-input">
-                            <div class="option-display"></div>
-                            <div class="option-items-list">
-                                <div class="option-items">Cotton</div>
-                                <div class="option-items">Silk</div>
-                                <div class="option-items">Wool</div>
-                                <div class="option-items"></div>
-                                <div class="option-items">Polyester</div>
-                                <div class="option-items">Velvet</div>
-                                <div class="option-items">Chiffon</div>
-                                <div class="option-items">Damask</div>
-                                <div class="option-items">Others, Please Specify</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="req-form-group">
-                <div class="sub-form-group">
-                    <label for="size">Size</label>
-                    <div name="size" class="select-control">
-                        <div class="display-select-input">
-                            <div class="option-display"></div>
-                            <div class="option-items-list">
-                                <div class="option-items">
-                                    <input type="radio" name="small" id="" />
-                                    <label for="small">Small</label>
-                                </div>
-                                <div class="option-items">
-                                    <input type="radio" name="medium" id="" />
-                                    <label for="medium">Medium</label>
-                                </div>
-                                <div class="option-items">
-                                    <input type="radio" name="large" id="" />
-                                    <label for="large">Large</label>
-                                </div>
-                                <div class="option-items">
-                                    <input type="radio" name="ex-large" id="" />
-                                    <label for="ex-large">Extra-Large</label>
-                                </div>
-                                <div class="option-items">
-                                    <input type="radio" name="specify" id="" />
-                                    <label for="specify">Specify Size</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-form-group">
-                    <label for="color">Colour</label>
-                    <input type="text" name="color" id="" class="form-control" />
-                </div>
-            </div>
-            <div class="req-form-group">
-                <label for="description">Other description</label>
-                <textarea placeholder="Type description here" name="description"></textarea>
-            </div>
-            <div class="req-form-group">
-                <label for="upload">Upload a Sample File/Picture</label>
-                <div class="upload-group">
-                    <p>Drag a file here or click the button below</p>
-                    <button type="submit" class="btn btn-request-upload">Upload File</button>
-                </div>
-            </div>
+						<ul class="nav-list d-none d-lg-flex justify-content-between align-items-center mb-0">
+							<li class="categories py-3" role="button">
+								<span>Categories</span>
+								<div class="categories-dropdown">
+									<a href="#">Hand-Made</a>
+									<a href="#">Factory Made</a>
+									<a href="#">For Men</a>
+									<a href="#">For Women</a>
+									<a href="#">For Children</a>
+									<a href="#">All Wears</a>
+								</div>
+							</li>
+							<li role="button">Cart <span class="cart-count"></span></li>
+							<li role="button">My Requests</li>
+							<li class="join">
+								<button class="btn join-now" type="submit"><a href="./html/sign-up.html" class="">Join us</a></button>
+							</li>
+							<li class="account py-3" role="button">
+								<span>Account <i class="fal fa-chevron-down"></i></span>
+								<div class="account-dropdown">
+									<a href="/html/profile.html">My Profile</a>
+									<a href="#">Messages</a>
+									<a href="#">Favorites</a>
+									<a href="#">Purchases</a>
+									<a href="#">Track Order</a>
+									<a class="sign-out">Sign Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 
-            <button type="submit" class="btn btn-request-form">Request</button>
-        </form>
-    </section>
+					<div class="hamburger d-flex justify-content-center align-items-center d-lg-none">
+						<div>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-    <script src="../javascript/make-request.js"></script>
-</body>
+		<section class="request-banner">
+			<div class="request-banner-heading">
+				<h2>Make a Request</h2>
+				<p>Fill this form to make clothes request of your choice</p>
+			</div>
+		</section>
 
+		<section class="request-form">
+			<form action="">
+				<div class="req-form-group">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="" class="form-control" />
+				</div>
+				<div class="req-form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="" class="form-control" />
+				</div>
+				<div class="req-form-group">
+					<label for="number">Phone Number</label>
+					<input type="text" name="number" id="" class="form-control" />
+				</div>
+				<div class="req-form-group">
+					<label for="gender">Gender</label>
+					<input type="text" name="gender" id="" class="form-control" />
+				</div>
+				<div class="req-form-group">
+					<div class="sub-form-group">
+						<label for="address">Address</label>
+						<input type="text" name="address" id="" class="form-control" />
+					</div>
+					<div class="sub-form-group">
+						<label for="address">Street Address</label>
+						<input type="text" name="address" id="" class="form-control" />
+					</div>
+				</div>
+				<div class="req-form-group">
+					<div class="sub-form-group">
+						<label for="city">City</label>
+						<input type="text" name="city" id="" class="form-control" />
+					</div>
+					<div class="sub-form-group">
+						<label for="state">State</label>
+						<input type="text" name="state" id="" class="form-control" />
+					</div>
+				</div>
+				<div class="req-form-group">
+					<div class="sub-form-group">
+						<label for="clothing">Clothing Type</label>
+						<div name="clothing" class="select-control">
+							<div class="display-select-input">
+								<div class="option-display"></div>
+								<div class="option-items-list">
+									<div class="option-items selected" data-value="Dress">Dress</div>
+									<div class="option-items" data-value="Swimwear">Swimwear</div>
+									<div class="option-items" data-value="Sweater">Sweater</div>
+									<div class="option-items" data-value="Shirt">Shirt</div>
+									<div class="option-items" data-value="Skirt">Skirt</div>
+									<div class="option-items" data-value="Suit">Suit</div>
+									<div class="option-items" data-value="Jeans">Jeans</div>
+									<div class="option-items" data-value="Trousers">Trousers</div>
+									<div class="option-items" data-value="Blouse">Blouse</div>
+									<div class="option-items" data-value="T-shirt">T-shirt</div>
+									<div class="option-items" data-value="Dress Shirt">Dress Shirt</div>
+									<div class="option-items" data-value="Coat">Coat</div>
+									<div class="option-items" data-value="Others, Please Specify">Others, Please Specify</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-form-group">
+						<label for="material">Material Type</label>
+						<div name="material" class="select-control">
+							<div class="display-select-input">
+								<div class="option-display"></div>
+								<div class="option-items-list">
+									<div class="option-items">Cotton</div>
+									<div class="option-items">Silk</div>
+									<div class="option-items">Wool</div>
+									<div class="option-items"></div>
+									<div class="option-items">Polyester</div>
+									<div class="option-items">Velvet</div>
+									<div class="option-items">Chiffon</div>
+									<div class="option-items">Damask</div>
+									<div class="option-items">Others, Please Specify</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="req-form-group">
+					<div class="sub-form-group">
+						<label for="size">Size</label>
+						<div name="size" class="select-control">
+							<div class="display-select-input">
+								<div class="option-display"></div>
+								<div class="option-items-list">
+									<div class="option-items">
+										<input type="radio" name="small" id="" />
+										<label for="small">Small</label>
+									</div>
+									<div class="option-items">
+										<input type="radio" name="medium" id="" />
+										<label for="medium">Medium</label>
+									</div>
+									<div class="option-items">
+										<input type="radio" name="large" id="" />
+										<label for="large">Large</label>
+									</div>
+									<div class="option-items">
+										<input type="radio" name="ex-large" id="" />
+										<label for="ex-large">Extra-Large</label>
+									</div>
+									<div class="option-items">
+										<input type="radio" name="specify" id="" />
+										<label for="specify">Specify Size</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-form-group">
+						<label for="color">Colour</label>
+						<input type="text" name="color" id="" class="form-control" />
+					</div>
+				</div>
+				<div class="req-form-group">
+					<label for="description">Other description</label>
+					<textarea placeholder="Type description here" name="description"></textarea>
+				</div>
+				<div class="req-form-group">
+					<label for="upload">Upload a Sample File/Picture</label>
+					<div class="upload-group">
+						<p>Drag a file here or click the button below</p>
+						<button type="submit" class="btn btn-request-upload">Upload File</button>
+					</div>
+				</div>
+
+				<button type="submit" class="btn btn-request-form">Request</button>
+			</form>
+		</section>
+
+		<footer class="maniera-footer py-2">
+			<section class="footer-section-1 container d-flex flex-wrap justify-content-between align-items-baseline text-sm-right">
+				<div class="footer-logo my-2">
+					<h1><a href="/">Maneira</a></h1>
+				</div>
+				<form class="footer-subscription-form my-2">
+					<h4>NEW TO MANIERA?</h4>
+					<p>Subscribe to our newsletter to get updates on our latest offers</p>
+					<div class="d-flex justify-content-between rounded">
+						<input class="p-2" type="text" placeholder="Enter Email Address" />
+						<button class="btn footer-btn rounded-0">
+							<span><img src="../assets/icons/footer-arrow.png" alt="arrow" /></span><span class="ms-2 send">Send</span>
+						</button>
+					</div>
+				</form>
+				<div class="footer-download-app my-2">
+					<h4>DOWNLOAD THE MANIERA APP</h4>
+				</div>
+			</section>
+			<section class="footer-section-2 container d-flex flex-wrap justify-content-between pt-sm-5">
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Contact Us</h4>
+					<div class="d-flex justify-content-evenly">
+						<div class="footer-social-icons">
+							<a href="www.facebook.com"><img src="../assets/icons/Facebook Icon.png" alt="facebook" /></a>
+						</div>
+						<div class="footer-social-icons">
+							<a href="www.twitter.com"><img src="../assets/icons/Twitter Icon.png" alt="twitter" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Let us help</h4>
+					<p class="mb-2"><a href="">How to Shop?</a></p>
+					<p class="mb-2"><a href="">How to request a design?</a></p>
+					<p class="mb-2"><a href="">Delivery Options</a></p>
+					<p class="mb-2"><a href="">Delivery timeline</a></p>
+					<p class="mb-2"><a href="">How to upload my product?</a></p>
+					<p class="mb-2"><a href="">Bulk purchases</a></p>
+					<p class="mb-2"><a href="">Return policy</a></p>
+					<p class="mb-2"><a href="">Report a product</a></p>
+					<p class="mb-2"><a href="">Help Center</a></p>
+					<p class="mb-2"><a href="">FAQ</a></p>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">About Maniera</h4>
+					<p class="mb-2"><a href=""> About Us</a></p>
+					<p class="mb-2"><a href="">Terms and Conditions</a></p>
+					<p class="mb-2"><a href="">Privacy policy</a></p>
+				</div>
+				<div class="my-2 mx-2">
+					<h4 class="pb-3">Earn on Maniera</h4>
+					<p class="mb-2"><a href="">Become a Seller</a></p>
+					<p class="mb-2"><a href="">Become a Logistics Partner</a></p>
+				</div>
+			</section>
+		</footer>
+
+		<script src="../javascript/make-request.js"></script>
+		<script src="../javascript/navbar.js"></script>
+	</body>
 </html>
