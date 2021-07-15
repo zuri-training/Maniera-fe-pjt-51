@@ -111,6 +111,7 @@ nav {
 }
 
 .cart-count {
+	display: none;
 	background-color: #e2271c;
 	border-radius: 50%;
 	color: #ffffff;
