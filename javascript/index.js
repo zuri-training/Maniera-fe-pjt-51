@@ -9,6 +9,11 @@ const viewCart = () => {
 	!localStorage.getItem("userToken") ? (window.location = "/html/sign-in.html") : (window.location = "/html/cart.html");
 };
 
+const productPage = () => {
+	console.log("Product page clicked");
+	!localStorage.getItem("userToken") ? (window.location = "/html/sign-in.html") : (window.location = "/html/product.html");
+};
+
 window.onload = () => {
 	fetch("https://maniera-dev.herokuapp.com/api/auth/products", {
 		method: "GET",
@@ -38,7 +43,7 @@ window.onload = () => {
                     </div>
                     <div class="purchase-selector">
                         <button class="btn-product add-cart" onclick='viewCart()'>Add to cart</button>
-                        <button class="btn-product">Buy now</button>
+                        <button class="btn-product" onclick="productPage()">Buy now</button>
                     </div>
                 </div>
             </div>`;
