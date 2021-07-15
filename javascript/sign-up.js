@@ -83,14 +83,11 @@ myForm.addEventListener("submit", function (e) {
 			},
 			body: JSON.stringify(user),
 		})
-			.then((res) => {
-				if (res.status === 200 || res.status === 201) {
-					localStorage.setItem("user", JSON.stringify(res.json()));
-					window.location = "/html/sign-in.html";
-				} else if (res.status === 401 || res.status === 404 || res.status) {
-					preloader.style.display = "none";
-					console.log(res.status, res.statusText);
-				}
+			.then((res) => res.json())
+			.then((data) => {
+				console.log(data);
+				window.location = "/html/sign-in.html";
+				preloader.style.display = "none";
 			})
 			.catch((error) => {
 				preloader.style.display = "none";
