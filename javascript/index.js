@@ -1,5 +1,6 @@
 //selecting general elements
 const productContainer = document.querySelector(".products");
+
 // const addCart = document.querySelectorAll(".add-cart");
 let output = "";
 
